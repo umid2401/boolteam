@@ -767,22 +767,7 @@
             </main>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdown = document.querySelector(".dropdown");
-            const toggleBtn = document.querySelector(".dropdown-toggle");
-            toggleBtn.addEventListener("click", function (e) {
-                e.stopPropagation();
-                dropdown.classList.toggle("active");
-            });
-            document.addEventListener("click", function (e) {
-                if (!dropdown.contains(e.target)) {
-                    dropdown.classList.remove("active");
-                }
-            });
-        });
-
-    </script>
+    <script src="js/profile/profile.js"></script>
     <script src="js/slider/ranking_slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/slider/ans_slider.js"> </script>

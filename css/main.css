@@ -66,8 +66,11 @@
 .main .chat-section .chat-container .chat-list ul li:hover, .main .chat-section .chat-container .chat-list ul li.active {
   background: #e0e0e0;
 }
+.main .chat-section .chat-container .chat-list.hidden {
+  display: none !important;
+}
 .main .chat-section .chat-container .chat-window {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -230,6 +233,40 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 1092px) {
+  .main .chat-section .chat-container .chat-list {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .chat-section {
+    padding: 10px 20px;
+  }
+  .main .chat-section .chat-container .chat-list {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+  .main .chat-section .chat-container .chat-window {
+    display: none;
+  }
+  .main .chat-section .chat-container.active {
+    display: flex !important;
+  }
+  .main .chat-section .chat-container .chat-messages .message {
+    max-width: 100% !important;
+    padding: 0px 0 !important;
+  }
+  .main .chat-section .chat-container .chat-messages .message ._div {
+    align-items: center;
+  }
+  .main .chat-section .chat-container .chat-messages .message ._div img {
+    width: 40px;
+    height: 40px;
+  }
+  .main .chat-section .chat-container .chat-messages .message .message-content {
+    padding: 12px 12px !important;
+  }
+}
 @font-face {
   font-family: "TT Commons";
   src: url("../../assets/fonts/TT Commons Regular.otf") format("opentype");

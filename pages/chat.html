@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +13,25 @@
         <!-- Sidebar of website -->
         <aside class="sidebar_wrapper">
             <div class="image_links">
-                <a class="image_link" href="#">
+                <a class="image_link" href="https://kun.uz" data-text="Друзья">
                     <img src="../assets/icons/Vector1.svg" alt="Vector">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Сообщения">
                     <img src="../assets/icons/Frame 27.svg" alt="Frame 27">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 29.svg" alt="Frame 29">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 30.svg" alt="Frame 30">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 31.svg" alt="Frame 31">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 33.svg" alt="Frame 33">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/users-alt 1.svg" alt="Users Alt">
                 </a>
 
@@ -44,6 +44,7 @@
                 <div class="header_left">
                     <a href="#">
                         <img src="../assets/icons/blotem.svg" alt="Logo" class="logo">
+
                     </a>
                     <div class="search_box">
                         <input type="text" placeholder="Поиск">
@@ -67,19 +68,39 @@
                         <div class="progress_value"></div>
                     </div>
                     <div class="icons">
-                        <img src="../assets/icons/Vector.svg" width="24" height="24" alt="Settings">
-                        <img src="../assets/icons/sms.svg" width="24" height="24" alt="Notifications">
+                        <img src="../assets/icons/sms.svg" alt="Notifications">
                         <div class="notification_badge">
-                            <img src="../assets/icons/notif.svg" width="24" height="24" alt="Messages">
+                            <img src="../assets/icons/notif.svg" alt="Messages">
                             <div class="badge">
                                 <p>25</p>
                             </div>
                         </div>
+                        <img src="../assets/icons/settingss.svg" alt="Settings">
                     </div>
                     <div class="user_profile">
-                        <span class="user_name">Иван Иванов</span>
-                        <div class="user_img">
-                            <img src="../assets/images/user.png" alt="User Avatar">
+                        <!-- <span class="user_name">Иванов</span> -->
+                        <div class="dropdown">
+                            <div class="dropdown-toggle">
+                                <img src="../assets/images/user.png" alt="User Avatar">
+                            </div>
+                            <div class="dropdown-menu">
+                                <p>Иван Иванов</p>
+                                <ul>
+                                    <li>
+                                        <img src="../assets/images/setting.svg" alt="Error">
+                                        <a href="#"> Настройки</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/help.svg" alt="Error">
+                                        <a href="#"> Помощь</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/layer.svg" alt="Error">
+                                        <a href="#"> Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -89,54 +110,7 @@
                     <div class="chat-container">
                         <div class="chat-list">
                             <ul id="userList" class="user-list">
-                                <!-- <li data-user="1" class="active">
-                                    <img src="../assets/icons/Ellipse 7-1.svg" alt="User">
-                                    <div class="details">
-                                        <div class="detail">
-                                            <p class="name">Nikita Ryzhkov</p>
-                                            <span>13:33</span>
-                                        </div>
-                                        <div class="detail">
-                                            <small>Забаню</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-user="2">
-                                    <img src="../assets/icons/Ellipse 7-2.svg" alt="User">
-                                    <div class="details">
-                                        <div class="detail">
-                                            <p class="name">Nikita Ryzhkov</p>
-                                            <span>13:33</span>
-                                        </div>
-                                        <div class="detail">
-                                            <small>Забаню</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-user="3">
-                                    <img src="../assets/icons/Ellipse 7-2.svg" alt="User">
-                                    <div class="details">
-                                        <div class="detail">
-                                            <p class="name">Nikita Ryzhkov</p>
-                                            <span>13:33</span>
-                                        </div>
-                                        <div class="detail">
-                                            <small>Забаню</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-user="4">
-                                    <img src="../assets/icons/Ellipse 7.svg" alt="User">
-                                    <div class="details">
-                                        <div class="detail">
-                                            <p class="name">Nikita Ryzhkov</p>
-                                            <span>13:33</span>
-                                        </div>
-                                        <div class="detail">
-                                            <small>Забаню</small>
-                                        </div>
-                                    </div>
-                                </li> -->
+
                             </ul>
                         </div>
                         <div class="chat-window">
@@ -150,7 +124,8 @@
                                         <span>был(а) в сети 10 часов назад</span>
                                     </div>
                                     <div class="right">
-                                        <img id="menuButton" src="../assets/icons/three_dot.svg" width="32" alt="Button">
+                                        <img id="menuButton" src="../assets/icons/three_dot.svg" width="32"
+                                            alt="Button">
                                         <div id="menu" class="menu">
                                             <div class="triangle">
 
@@ -204,26 +179,27 @@
                 </div>
             </main>
         </div>
+        <script src="../js/profile/profile.js"></script>
         <script>
-        const menuButton = document.getElementById("menuButton");
-        const menu = document.getElementById("menu");
-        const menuItems = document.querySelectorAll(".menu .item");
-        menuButton.addEventListener("click", function (event) {
-            event.stopPropagation();
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-        });
-        document.addEventListener("click", function (event) {
-            if (!menu.contains(event.target) && event.target !== menuButton) {
-                menu.style.display = "none";
-            }
-        });
-        menuItems.forEach(item => {
-            item.addEventListener("click", function () {
-                menu.style.display = "none";
+            const menuButton = document.getElementById("menuButton");
+            const menu = document.getElementById("menu");
+            const menuItems = document.querySelectorAll(".menu .item");
+            menuButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                menu.style.display = menu.style.display === "block" ? "none" : "block";
             });
-        });
-      
-        const users = [
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && event.target !== menuButton) {
+                    menu.style.display = "none";
+                }
+            });
+            menuItems.forEach(item => {
+                item.addEventListener("click", function () {
+                    menu.style.display = "none";
+                });
+            });
+
+            const users = [
     {
         id: 1,
         name: "Nikita Ryzhkov",
@@ -273,6 +249,22 @@
 const userList = document.getElementById("userList");
 const chatTitle = document.getElementById("chatTitle");
 const chatMessages = document.getElementById("chatMessages");
+const chatContainer = document.querySelector(".chat-container");
+const chatList = document.querySelector(".chat-list");
+const chatWindow = document.querySelector(".chat-window");
+const backButton = document.createElement("button");
+
+// Orqaga qaytish tugmasi
+backButton.textContent = "← Orqaga";
+backButton.classList.add("back-btn");
+backButton.style.display = "none";
+backButton.addEventListener("click", () => {
+    chatContainer.classList.remove("chat-active");
+    chatList.style.display = "block";
+    chatWindow.style.display = "none";
+});
+chatWindow.prepend(backButton);
+
 function renderUsers() {
     userList.innerHTML = "";
     users.forEach(user => {
@@ -294,7 +286,7 @@ function renderUsers() {
         userList.appendChild(li);
     });
 }
-renderUsers();
+
 function loadChat(user) {
     chatTitle.textContent = user.name;
     chatMessages.innerHTML = "";
@@ -302,13 +294,39 @@ function loadChat(user) {
         const div = document.createElement("div");
         div.classList.add("message", msg.sender);
         div.innerHTML = `
-        <div class="_div">
+            <div class="_div">
                 <img src="${user.img}" alt="Avatar">
                 <div class="message-content">${msg.text}</div>
-            </div>   `;
+            </div>
+        `;
         chatMessages.appendChild(div);
     });
+
+    if (window.innerWidth <= 768) {
+        chatContainer.classList.add("active");
+        chatList.style.display = "none";
+        chatWindow.style.display = "flex";
+        backButton.style.display = "block";
+    }
 }
+function handleResize() {
+    if (window.innerWidth > 768) {
+        chatList.style.display = "flex";
+        chatWindow.style.display = "flex";
+        backButton.style.display = "none";
+    } else if (!chatContainer.classList.contains("chat-active")) {
+        chatList.style.display = "block";
+        chatWindow.style.display = "none";
+    }
+}
+
+// Resize hodisasini qo‘shish
+window.addEventListener("resize", handleResize);
+
+// Boshlang‘ich holatni sozlash
+handleResize();
+renderUsers();
+
         </script>
 </body>
 

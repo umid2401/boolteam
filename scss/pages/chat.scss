@@ -6,7 +6,6 @@
 }
 $font-primary: 'TT Commons', sans-serif;
 .main{
-  
     .chat-section {
         font-family: $font-primary;
         padding: 20px 40px;
@@ -17,8 +16,7 @@ $font-primary: 'TT Commons', sans-serif;
             width: 100%;
             max-width: 1450px;
             margin: 0 auto;
-            background: linear-gradient(0deg, #F6F7F9, #F6F7F9), #F8F8FB;
-            
+            background: linear-gradient(0deg, #F6F7F9, #F6F7F9), #F8F8FB; 
             .chat-list {
                 width: 25%;
                 background: #fff;
@@ -70,10 +68,13 @@ $font-primary: 'TT Commons', sans-serif;
                         }
                     }
                 }
+                &.hidden {
+                    display: none !important; // Chat tanlanganda yashiramiz
+                }
             }
     
             .chat-window {
-                flex: 1;
+                flex-grow: 1;
                 display: flex;
                 flex-direction: column;
                 .chat-header {
@@ -252,6 +253,56 @@ $font-primary: 'TT Commons', sans-serif;
                         }
                     }
                 }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 1092px){
+    .main{
+        .chat-section{
+            .chat-container{
+                .chat-list{
+                    width: 40% !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .main{
+        .chat-section{
+            padding: 10px 20px;
+            .chat-container{
+                .chat-list{
+                    width: 100% !important;
+                    padding: 10px !important;
+                }
+                .chat-window{
+                    display: none;
+                }
+                &.active {
+                    display: flex !important; 
+                }
+                .chat-messages{
+                    .message{
+                        max-width: 100% !important;
+                        padding: 0px 0 !important;
+                        ._div{
+                            align-items: center;
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                
+                            }
+                        }
+                        .message-content{
+                            padding: 12px 12px !important;
+                        }
+                        
+                    }
+                }
+
             }
         }
     }
