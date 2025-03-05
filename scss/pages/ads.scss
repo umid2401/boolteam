@@ -43,7 +43,6 @@ $font-main: 'TT Commons';
                                             align-items: center;
                                             gap: 5px;
                                         }
-        
                                         .announcements__tabs {
                                             .tab {
                                                 font-family: $font-main;
@@ -56,21 +55,17 @@ $font-main: 'TT Commons';
                                                 border-radius: 5px;
                                                 cursor: pointer;
                                             }
-        
                                             .active {
-        
                                                 border: none;
                                                 background-color: #0041F2;
                                                 color: white;
                                             }
                                         }
                                     }
-        
                                     .right {
                                         display: flex;
                                         gap: 20px;
                                         align-items: center;
-        
                                         .div {
                                             width: 28px;
                                             height: 28px;
@@ -83,11 +78,9 @@ $font-main: 'TT Commons';
                                         }
                                     }
                                 }
-        
                                 .swiper-wrapper {
                                     padding: 30px 0 0 0;
                                     height: auto !important;
-        
                                     .card {
                                         background: #DDE2EE;
                                         border-radius: 10px;
@@ -95,30 +88,24 @@ $font-main: 'TT Commons';
                                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                                         transition: transform 0.3s ease;
                                         margin: 0 auto;
-        
                                         &:hover {
                                             transform: translateY(-5px);
                                         }
-        
                                         .card__image {
                                             width: 100%;
                                             height: 300px;
-        
                                             img {
                                                 width: 100%;
                                                 height: 100%;
                                                 object-fit: cover;
                                             }
                                         }
-        
                                         .card__info {
                                             padding: 0px 20px 0 20px;
                                             display: block;
-        
                                             .card__item {
                                                 position: relative;
                                                 display: block;
-        
                                                 h3 {
                                                     padding-top: 20px;
                                                     font-size: 21px;
@@ -128,7 +115,6 @@ $font-main: 'TT Commons';
                                                     color: #00195B;
                                                     line-height: 25px;
                                                 }
-        
                                                 .card__score {
                                                     width: 30px;
                                                     height: 30px;
@@ -161,7 +147,6 @@ $font-main: 'TT Commons';
                                                     color: rgba(19, 32, 48, 0.5);
                                                     line-height: 20px;
                                                 }
-        
                                                 .gold {
                                                     display: block;
                                                     color: #132030;
@@ -172,15 +157,13 @@ $font-main: 'TT Commons';
                                                     line-height: 24px;
                                                     color: #132030;
                                                     opacity: 0.6;
-        
                                                 }
                                             }
         
                                         }
                                     }
                                 }
-        
-                                .ranking_link {
+                                  .ranking_link {
                                     text-decoration: none;
                                     display: flex;
                                     align-items: center;
@@ -195,4 +178,24 @@ $font-main: 'TT Commons';
             }
         }
     }
+}
+@media screen and (max-width: 1092px){
+    .wrapper{
+        .main_wrapper{
+            .main{
+                .location{
+                    .location-container{
+                       .ads{
+                        width: 100% !important;
+                        .swiper-wrapper{
+                            padding-top: 0px !important;
+                        }
+                       }
+                        
+                    }
+                }
+            }
+        }
+    }
+   
 }

@@ -48,6 +48,7 @@
                 <div class="header_left">
                     <a href="#">
                         <img src="../assets/icons/blotem.svg" alt="Logo" class="logo">
+
                     </a>
                     <div class="search_box">
                         <input type="text" placeholder="Поиск">
@@ -71,19 +72,39 @@
                         <div class="progress_value"></div>
                     </div>
                     <div class="icons">
-                        <img src="../assets/icons/Vector.svg" width="24" height="24" alt="Settings">
-                        <img src="../assets/icons/sms.svg" width="24" height="24" alt="Notifications">
+                        <img src="../assets/icons/sms.svg" alt="Notifications">
                         <div class="notification_badge">
-                            <img src="../assets/icons/notif.svg" width="24" height="24" alt="Messages">
+                            <img src="../assets/icons/notif.svg" alt="Messages">
                             <div class="badge">
                                 <p>25</p>
                             </div>
                         </div>
+                        <img src="../assets/icons/settingss.svg" alt="Settings">
                     </div>
                     <div class="user_profile">
-                        <span class="user_name">Иван Иванов</span>
-                        <div class="user_img">
-                            <img src="../assets/images/user.png" alt="User Avatar">
+                        <!-- <span class="user_name">Иванов</span> -->
+                        <div class="dropdown">
+                            <div class="dropdown-toggle">
+                                <img src="../assets/images/user.png" alt="User Avatar">
+                            </div>
+                            <div class="dropdown-menu">
+                                <p>Иван Иванов</p>
+                                <ul>
+                                    <li>
+                                        <img src="../assets/images/setting.svg" alt="Error">
+                                        <a href="#"> Настройки</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/help.svg" alt="Error">
+                                        <a href="#"> Помощь</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/layer.svg" alt="Error">
+                                        <a href="#"> Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -154,6 +175,7 @@
 
                         </div>
                         <div class="profile-menu">
+                            <button class="menu-toggle-links">&#9776;</button>
                             <ul class="tabs">
                                 <li class="active">O себе</li>
                                 <li>Фото (5)</li>
@@ -217,9 +239,10 @@
                                         <small>С вас</small>
                                     </div>
                                     <div class="footer-items">
-                                        <a href="#"  class="ranking_link">
+                                        <a href="#" class="ranking_link">
                                             <span>Посетить форум</span>
-                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15" srcset="">
+                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15"
+                                                srcset="">
                                         </a>
                                         <div class="hotel-meta">
                                             <div class="meta_div">
@@ -279,9 +302,10 @@
                                         <small>С вас</small>
                                     </div>
                                     <div class="footer-items">
-                                        <a href="#"  class="ranking_link">
+                                        <a href="#" class="ranking_link">
                                             <span>Посетить форум</span>
-                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15" srcset="">
+                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15"
+                                                srcset="">
                                         </a>
                                         <div class="hotel-meta">
                                             <div class="meta_div">
@@ -294,7 +318,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -303,8 +327,24 @@
             </main>
         </div>
 
-       
+        <script src="../js/profile/profile.js"></script>
         <script>
+            const menuToggle = document.querySelector(".menu-toggle-links");
+            const menu = document.querySelector(".tabs");
+
+            
+            menuToggle.addEventListener("click", function (event) {
+                event.stopPropagation();
+                menu.classList.toggle("show");
+            });
+
+            
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    menu.classList.remove("show");
+                }
+            });
+            //
             const map = L.map('map').setView([41.2995, 69.2401], 12);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
