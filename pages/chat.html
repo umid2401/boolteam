@@ -115,7 +115,8 @@
                         </div>
                         <div class="chat-window">
                             <div class="chat-header">
-                                <div class="img">
+                                <div class="img" style="display: flex; align-items: center;">
+                                    <img class="right_btn" style="width: 14px; margin-right: 5px; display: none;" src="../assets/icons/right.svg" alt="left"/>
                                     <img src="../assets/icons/Ellipse 7-3.svg" alt="User">
                                 </div>
                                 <div class="title">
@@ -252,13 +253,12 @@ const chatMessages = document.getElementById("chatMessages");
 const chatContainer = document.querySelector(".chat-container");
 const chatList = document.querySelector(".chat-list");
 const chatWindow = document.querySelector(".chat-window");
+const right = document.querySelector(".right_btn")
 const backButton = document.createElement("button");
 
 // Orqaga qaytish tugmasi
-backButton.textContent = "← Orqaga";
-backButton.classList.add("back-btn");
-backButton.style.display = "none";
-backButton.addEventListener("click", () => {
+
+right.addEventListener("click", () => {
     chatContainer.classList.remove("chat-active");
     chatList.style.display = "block";
     chatWindow.style.display = "none";
@@ -295,6 +295,7 @@ function loadChat(user) {
         div.classList.add("message", msg.sender);
         div.innerHTML = `
             <div class="_div">
+                
                 <img src="${user.img}" alt="Avatar">
                 <div class="message-content">${msg.text}</div>
             </div>
@@ -307,6 +308,7 @@ function loadChat(user) {
         chatList.style.display = "none";
         chatWindow.style.display = "flex";
         backButton.style.display = "block";
+        right.style.display="block";
     }
 }
 function handleResize() {
@@ -314,6 +316,7 @@ function handleResize() {
         chatList.style.display = "flex";
         chatWindow.style.display = "flex";
         backButton.style.display = "none";
+        right.style.display="none";
     } else if (!chatContainer.classList.contains("chat-active")) {
         chatList.style.display = "block";
         chatWindow.style.display = "none";

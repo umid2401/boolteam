@@ -13,8 +13,8 @@
 .main .chat-section .chat-container {
   display: flex;
   height: 100vh;
-  width: 100%;
   max-width: 1450px;
+  width: 100%;
   margin: 0 auto;
   background: linear-gradient(0deg, #F6F7F9, #F6F7F9), #F8F8FB;
 }
@@ -25,6 +25,7 @@
   border-right: 1px solid #ddd;
 }
 .main .chat-section .chat-container .chat-list ul {
+  width: 100%;
   list-style: none;
 }
 .main .chat-section .chat-container .chat-list ul li {
@@ -268,6 +269,10 @@
   }
   .main .chat-section .chat-container .chat-messages .message .message-content {
     padding: 12px 12px !important;
+  }
+  .main .chat-section .chat-container .chat-header {
+    padding: 10px !important;
+    gap: 10px !important;
   }
 }
 @font-face {
