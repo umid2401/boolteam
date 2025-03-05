@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../../assets/fonts/TT\ Commons\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+$font-main: "TT Commons";
+.wrapper {
+    .main_wrapper {
+        .main {
+            .subscribe {
+                width: 100%;
+                height: 350px;
+                background-image: url("..//../assets/images/subscribe_bg.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .sub {
+                position: relative;
+                bottom: 0px;
+                margin-top: -200px;
+            }
+            .sub,
+            .friends_section {
+                .container {
+                    .main_friend {
+                        background-color: #fff;
+                        padding: 20px 30px;
+                        margin: 25px 0;
+                        .friends_ {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 15px;
+                            flex-wrap: wrap;
+                            .card {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                width: calc(100% /3 - 15px);
+                                justify-content: space-between;
+                                padding: 10px;
+                                border-radius: 6px;
+                                background-color: rgba(127, 134, 151, 0.03);
+                                .img {
+                                    width: 70px;
+                                    height: 70px;
+                                    border-radius: 50%;
+                                    position: relative;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                    .badge {
+                                        position: absolute;
+                                        bottom: 0;
+                                        width: 25px;
+                                        height: 25px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: #fff;
+                                        background-color: blue;
+                                        border-radius: 50%;
+                                    }
+                                }
+                                .info {
+                                    flex-grow: 1;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    h3 {
+                                        line-height: 22px;
+                                        font-size: 22px;
+                                        font-weight: 500;
+                                        color: rgba(0, 25, 91, 1);
+                                    }
+                                    p {
+                                        font-size: 15px;
+                                        font-weight: 400;
+                                        color: rgba(85, 89, 97, 1);
+                                    }
+                                    .btn-group {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        .sms{
+                                            width: 35px !important;
+                                            height: 35px !important;
+                                            background-color: rgba(0, 65, 242, 1);
+                                            border-radius: 8px;
+                                            cursor: pointer;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                        .menu-button {
+                                            width: 35px !important;
+                                            height: 35px !important;
+                                           display: flex;
+                                           align-items: center;
+                                           justify-content: center;
+                                            color: blue;
+                                            gap: 3px;
+                                            background-color: #fff;
+                                            border: none;
+                                            border-radius: 12px;
+                                            cursor: pointer;
+                                            .dots {
+                                                width: 5px;
+                                                height: 5px;
+                                                background-color: rgba(0, 65, 242, 1);
+                                                border-radius: 50%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .search-container {
+                            margin-bottom: 25px;
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid rgba(210, 214, 223, 0.5);
+                            border-radius: 8px;
+                            padding: 8px;
+                            background: #fff;
+
+                            .search-input {
+                                flex-grow: 1;
+                                border: none;
+                                outline: none;
+                                padding: 8px;
+                                background: transparent;
+
+                                &::placeholder,
+                                {
+                                font-size: 17px;
+                                font-weight: 400;
+                                color: rgba(109, 114, 126, 1);
+                                line-height: 20px;
+                                font-family: $font-main;
+
+                            }
+                        }
+
+                        .search-options {
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: rgba(109, 114, 126, 1);
+                            line-height: 20px;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+}

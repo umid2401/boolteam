@@ -1,0 +1,783 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../../assets/fonts/TT\ Commons\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+$font-main: 'TT Commons';
+
+.wrapper {
+    .main_wrapper {
+        .main {
+            .location {
+                .container {
+                    .location-container {
+                        display: flex;
+                        align-items: center;
+
+                        .swiper,
+                        .forum {
+                            border-radius: 8px;
+
+                        }
+
+                        .swiper {
+                            background-color: #fff;
+                        }
+
+                        .ads {
+                            width: 55%;
+
+                            .slide-tab {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .left {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+
+                                    h2 {
+                                        font-family: $font-main;
+                                        font-size: 28px;
+                                        font-weight: 900;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                    }
+
+                                    .announcements__tabs {
+                                        .tab {
+                                            font-family: $font-main;
+                                            font-size: 17px;
+                                            margin: 0 10px;
+                                            padding: 8px 20px;
+                                            background-color: white;
+                                            color: black;
+                                            border: 1px solid #9EA5B6;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                        }
+
+                                        .active {
+
+                                            border: none;
+                                            background-color: #0041F2;
+                                            color: white;
+                                        }
+                                    }
+                                }
+
+                                .right {
+                                    display: flex;
+                                    gap: 20px;
+                                    align-items: center;
+
+                                    .div {
+                                        width: 28px;
+                                        height: 28px;
+                                        border-radius: 50%;
+                                        background-color: #94B1FF;
+                                        align-content: center;
+                                        align-items: center;
+                                        cursor: pointer;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            .swiper-wrapper {
+                                padding: 30px 0 0 0;
+                                height: auto !important;
+
+                                .card {
+                                    background: #DDE2EE;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                    transition: transform 0.3s ease;
+                                    margin: 0 auto;
+
+                                    &:hover {
+                                        transform: translateY(-5px);
+                                    }
+
+                                    .card__image {
+                                        width: 100%;
+                                        height: 300px;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+
+                                    .card__info {
+                                        padding: 0px 20px 0 20px;
+                                        display: block;
+
+                                        .card__item {
+                                            position: relative;
+                                            display: block;
+
+                                            h3 {
+                                                padding-top: 20px;
+                                                font-size: 21px;
+                                                align-items: center;
+                                                font-family: $font-main;
+                                                font-weight: 700;
+                                                color: #00195B;
+                                                line-height: 25px;
+                                            }
+
+                                            .card__score {
+                                                width: 30px;
+                                                height: 30px;
+                                                display: grid;
+                                                place-items: center;
+                                                background-color: #EB0D6F;
+                                                color: #fff;
+                                                border-radius: 50%;
+                                                position: absolute;
+                                                top: -10%;
+                                            }
+
+                                            .__img {
+                                                position: absolute;
+                                                top: -10%;
+                                                right: 0;
+                                                width: 55px;
+                                                height: 55px;
+                                            }
+
+                                            .card__status {
+                                                color: #05974E;
+                                                font-family: $font-main;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                margin-bottom: 20px;
+                                            }
+
+                                            .card__age {
+                                                font-family: $font-main;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                color: rgba(19, 32, 48, 0.5);
+                                                line-height: 20px;
+                                            }
+
+                                            .gold {
+                                                display: block;
+                                                color: #132030;
+                                                font-family: $font-main;
+                                                font-size: 21px;
+                                                font-weight: 500;
+                                                margin-bottom: 20px !important;
+                                                line-height: 24px;
+                                                color: #132030;
+                                                opacity: 0.6;
+
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .ranking_link {
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                                gap: 3px;
+                                padding-top: 30px;
+                            }
+                        }
+                    }
+                    .social-layout {
+                        display: flex;
+                        margin: 25px 0;
+                        gap: 25px;
+                        align-items: stretch;
+                        box-sizing: border-box;
+                        .sidebar {
+                            width: 30%;
+                            .sidebar__one {
+                                padding: 20px 30px;
+                                background-color: #fff;
+                                border-radius: 8px;
+
+                                h3 {
+                                    font-size: 20px;
+                                    color: rgba(0, 19, 70, 1);
+                                    line-height: 19px;
+                                    font-weight: 600;
+                                    margin-bottom: 20px;
+                                }
+
+                                .friends-list {
+                                    display: grid;
+                                    gap: 10px;
+
+                                    .card {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        border-radius: 6px;
+                                        background-color: transparent;
+                                        cursor: pointer;
+
+                                        .img {
+                                            width: 50px;
+                                            height: 50px;
+                                            border-radius: 50%;
+                                            position: relative;
+
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+
+                                            .badge {
+                                                position: absolute;
+                                                bottom: 0;
+                                                width: 20px;
+                                                height: 20px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                color: #fff;
+                                                background-color: blue;
+                                                border-radius: 50%;
+                                            }
+                                        }
+
+                                        .info {
+                                            flex-grow: 1;
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            h3 {
+                                                line-height: 19px;
+                                                font-size: 19px;
+                                                font-weight: 500;
+                                                color: rgba(0, 25, 91, 1);
+                                                margin-bottom: 5px;
+                                            }
+
+                                            p {
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: rgba(85, 89, 97, 1);
+                                            }
+
+                                        }
+                                    }
+                                }
+
+                                .view-all {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 10px;
+                                    width: 100%;
+                                    padding: 8px 20px;
+                                    background-color: #0041F2;
+                                    border: none;
+                                    color: #fff;
+                                    border-radius: 5px;
+                                    margin-top: 20px;
+                                }
+                            }
+                            .sidebar__two {
+                                padding: 20px 30px;
+                                margin-top: 25px;
+                                background-color: #fff;
+                                border-radius: 8px;
+
+                                .album {
+                                    width: 100%;
+
+                                    .slide-tab {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        .left {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 20px;
+
+                                            h2 {
+                                                font-family: $font-main;
+                                                font-size: 28px;
+                                                font-weight: 900;
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 5px;
+                                            }
+
+
+                                        }
+
+                                        .right {
+                                            display: flex;
+                                            gap: 20px;
+                                            align-items: center;
+
+                                            .div {
+                                                display: block;
+                                                width: 28px;
+                                                height: 28px;
+                                                border-radius: 50%;
+                                                background-color: #94B1FF;
+                                                align-content: center;
+                                                align-items: center;
+                                                cursor: pointer;
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+
+                                    .photo,
+                                    .photo-1 {
+                                        width: 100%;
+
+                                        .swiper-button-next,
+                                        .swiper-button-prev {
+                                            display: none !important;
+                                        }
+
+                                        .slide-tab {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                            .left {
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 20px;
+
+                                                h2 {
+                                                    font-family: $font-main;
+                                                    font-size: 28px;
+                                                    font-weight: 900;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    gap: 5px;
+                                                }
+
+                                                .announcements__tabs {
+                                                    .tab {
+                                                        font-family: $font-main;
+                                                        font-size: 17px;
+                                                        margin: 0 10px;
+                                                        padding: 8px 20px;
+                                                        background-color: white;
+                                                        color: black;
+                                                        border: 1px solid #9EA5B6;
+                                                        border-radius: 5px;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .active {
+
+                                                        border: none;
+                                                        background-color: #0041F2;
+                                                        color: white;
+                                                    }
+                                                }
+                                            }
+
+                                            .right {
+                                                display: flex;
+                                                gap: 20px;
+                                                align-items: center;
+
+                                                .div {
+                                                    width: 28px;
+                                                    height: 28px;
+                                                    border-radius: 50%;
+                                                    background-color: #94B1FF;
+                                                    align-content: center;
+                                                    align-items: center;
+                                                    cursor: pointer;
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+
+                                        .swiper-wrapper {
+                                            margin-top: 20px;
+                                            height: auto !important;
+
+                                            .card {
+                                                background: #DDE2EE;
+                                                border-radius: 10px;
+                                                overflow: hidden;
+                                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                                transition: transform 0.3s ease;
+                                                margin: 0 auto;
+
+                                                &:hover {
+                                                    transform: translateY(-5px);
+                                                }
+
+                                                .card__image {
+                                                    width: 100%;
+                                                    height: 300px;
+
+                                                    img {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+
+
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+                                    .view-all {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        gap: 10px;
+                                        width: 100%;
+                                        padding: 10px 20px;
+                                        background-color: #0041F2;
+                                        border: none;
+                                        color: #fff;
+                                        border-radius: 5px;
+                                        margin-top: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .content {
+                            width: calc(70% - 25px);
+                            box-sizing: border-box;
+                            .tabs {
+                                display: flex;
+                                padding: 20px;
+                                background-color: #fff;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 100%;
+
+                                .links {
+                                    display: flex;
+                                    gap: 10px;
+
+                                    a {
+                                        font-size: 16px;
+                                        text-decoration: none;
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        opacity: 0.5;
+                                        color: rgba(0, 25, 91, 1);
+                                    }
+                                }
+
+                                .dropdown {
+                                    position: relative;
+                                    display: inline-block;
+
+                                    .dropdown-btn {
+                                        background: none;
+                                        border: none;
+                                        font-size: 16px;
+                                        color: rgba(109, 114, 126, 1);
+                                        cursor: pointer;
+                                        padding: 8px 12px;
+                                        display: flex;
+                                        align-items: center;
+                                        font-family: $font-main;
+                                        display: flex;
+                                        gap: 5px;
+
+                                    }
+
+                                    .dropdown-menu {
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 0;
+                                        background: white;
+                                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                        border-radius: 6px;
+                                        list-style: none;
+                                        padding: 0;
+                                        margin: 5px 0;
+                                        width: 150px;
+                                        display: none;
+
+                                        li {
+                                            font-family: $font-main;
+
+                                            border-bottom: 1px solid #eee;
+
+                                            &:last-child {
+                                                border-bottom: none;
+                                            }
+
+                                            a {
+                                                display: block;
+                                                padding: 10px;
+                                                text-decoration: none;
+
+                                                font-size: 17px;
+                                                font-family: $font-main;
+                                                color: rgba(109, 114, 126, 1);
+
+                                                &:hover {
+                                                    background: #f5f5f5;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.active .dropdown-menu {
+                                        display: block;
+                                    }
+                                }
+
+                            }
+                            .post {
+                                background-color: #fff;
+                                margin-top: 25px;
+                                padding: 20px;
+
+                                .post-header {
+                                    margin-bottom: 20px;
+
+                                    .card {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        justify-content: space-between;
+
+                                        border-radius: 6px;
+
+                                        .img {
+                                            width: 60px;
+                                            height: 60px;
+                                            border-radius: 50%;
+                                            position: relative;
+
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+
+                                            .badge {
+                                                position: absolute;
+                                                bottom: 0;
+                                                width: 25px;
+                                                height: 25px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                color: #fff;
+                                                background-color: blue;
+                                                border-radius: 50%;
+                                            }
+                                        }
+
+                                        .info {
+                                            flex-grow: 1;
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            h3 {
+                                                line-height: 22px;
+                                                font-size: 22px;
+                                                font-weight: 500;
+                                                color: rgba(0, 25, 91, 1);
+                                            }
+
+                                            p {
+                                                font-size: 15px;
+                                                font-weight: 400;
+                                                color: rgba(85, 89, 97, 1);
+                                            }
+
+                                            .btn-group {
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 10px;
+
+                                                .sms {
+                                                    width: 35px !important;
+                                                    height: 35px !important;
+                                                    background-color: rgba(0, 65, 242, 1);
+                                                    border-radius: 8px;
+                                                    cursor: pointer;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
+
+                                                .menu-button {
+                                                    width: 35px !important;
+                                                    height: 35px !important;
+                                                    display: flex;
+                                                    border-radius: 50%;
+                                                    align-items: center;
+                                                    justify-content: center;
+
+                                                    color: blue;
+                                                    gap: 3px;
+                                                    background-color: rgba(127, 134, 151, 0.03);
+                                                    border: none;
+                                                    padding: 5px;
+                                                    cursor: pointer;
+
+                                                    .dots {
+                                                        width: 5px;
+                                                        height: 5px;
+                                                        background-color: rgba(0, 65, 242, 1);
+                                                        border-radius: 50%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .post-images {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 15px;
+                                    margin-bottom: 20px;
+
+                                    .post-image {
+                                        width: calc(100% /3 - 15px);
+                                        border-radius: 8px;
+                                        height: 280px;
+                                        overflow: hidden;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+
+                                }
+
+                                .post-footer {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin-top: 25px;
+
+                                    .hotel-meta {
+                                        display: flex;
+                                        align-items: center;
+
+                                        gap: 10px;
+
+                                        .meta_div {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 5px;
+                                            background-color: rgba(0, 65, 242, 0.09);
+                                            padding: 5px 10px;
+                                            border-radius: 15px;
+                                            cursor: pointer;
+                                        }
+
+                                        .meta_div1 {
+                                            background: transparent;
+                                        }
+                                    }
+                                }
+
+                                .travel-card {
+                                    display: flex;
+                                    background: white;
+                                    gap: 25px;
+                                    
+                                    &__image-wrapper {
+                                        width: 45%;
+                                        height: 270px;
+                                        border-radius: 15px;
+                                        overflow: hidden;
+                                    }
+                                    &__image {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                    &__content {
+                                        padding: 15px;
+                                        width: calc(55% - 25px);
+                                    }
+                                    &__title {
+                                        font-size: 20px;
+                                        font-weight: 6 00;
+                                        line-height: 23px;
+                                        margin-bottom: 10px;
+                                    }
+                                    &__tags {
+                                        display: flex;
+                                        gap: 5px;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    .tag {
+                                        background: #f0f0f0;
+                                        color: rgba(83, 86, 94, 1);
+                                        font-size: 14px;
+                                        padding: 8px 12px;
+                                        border-radius: 15px;
+                                        font-weight: 400;
+                                        cursor: pointer;
+                                    }
+
+                                    &__text {
+                                        font-size: 16px;
+                                        color: #666;
+                                        line-height: 20px;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    &__link {
+                                        font-size: 14px;
+                                        color: #007bff;
+                                        font-weight: bold;
+                                        text-decoration: none;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .ranking_link {
+                                        text-decoration: none;
+                                        margin-top: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 3px;
+                                        font-size: 17px;
+                                        font-weight: 600;
+                                        img{
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

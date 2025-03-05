@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../../assets/fonts/TT\ Commons\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-main: 'TT Commons';
+
+.wrapper {
+    .main_wrapper {
+        .main {
+            .location {
+                .container {
+                    .location-container {
+                          display: flex;
+                          align-items: center;
+                            .swiper,
+                            .forum {
+                                border-radius: 8px;
+                                
+                            }
+                            .swiper{
+                                background-color: #fff;
+                            }
+                            .ads {
+                                width: 55%;
+                                .slide-tab {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+        
+                                    .left {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+        
+                                        h2 {
+                                            font-family: $font-main;
+                                            font-size: 28px;
+                                            font-weight: 900;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 5px;
+                                        }
+        
+                                        .announcements__tabs {
+                                            .tab {
+                                                font-family: $font-main;
+                                                font-size: 17px;
+                                                margin: 0 10px;
+                                                padding: 8px 20px;
+                                                background-color: white;
+                                                color: black;
+                                                border: 1px solid #9EA5B6;
+                                                border-radius: 5px;
+                                                cursor: pointer;
+                                            }
+        
+                                            .active {
+        
+                                                border: none;
+                                                background-color: #0041F2;
+                                                color: white;
+                                            }
+                                        }
+                                    }
+        
+                                    .right {
+                                        display: flex;
+                                        gap: 20px;
+                                        align-items: center;
+        
+                                        .div {
+                                            width: 28px;
+                                            height: 28px;
+                                            border-radius: 50%;
+                                            background-color: #94B1FF;
+                                            align-content: center;
+                                            align-items: center;
+                                            cursor: pointer;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+        
+                                .swiper-wrapper {
+                                    padding: 30px 0 0 0;
+                                    height: auto !important;
+        
+                                    .card {
+                                        background: #DDE2EE;
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                        transition: transform 0.3s ease;
+                                        margin: 0 auto;
+        
+                                        &:hover {
+                                            transform: translateY(-5px);
+                                        }
+        
+                                        .card__image {
+                                            width: 100%;
+                                            height: 300px;
+        
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
+        
+                                        .card__info {
+                                            padding: 0px 20px 0 20px;
+                                            display: block;
+        
+                                            .card__item {
+                                                position: relative;
+                                                display: block;
+        
+                                                h3 {
+                                                    padding-top: 20px;
+                                                    font-size: 21px;
+                                                    align-items: center;
+                                                    font-family: $font-main;
+                                                    font-weight: 700;
+                                                    color: #00195B;
+                                                    line-height: 25px;
+                                                }
+        
+                                                .card__score {
+                                                    width: 30px;
+                                                    height: 30px;
+                                                    display: grid;
+                                                    place-items: center;
+                                                    background-color: #EB0D6F;
+                                                    color: #fff;
+                                                    border-radius: 50%;
+                                                    position: absolute;
+                                                    top: -10%;
+                                                }
+                                                .__img{
+                                                    position: absolute;
+                                                    top: -10%;
+                                                    right: 0;
+                                                    width: 55px;
+                                                    height: 55px;
+                                                }
+                                                .card__status {
+                                                    color: #05974E;
+                                                    font-family: $font-main;
+                                                    font-size: 14px;
+                                                    font-weight: 500;
+                                                    margin-bottom: 20px;
+                                                }
+                                                .card__age {
+                                                    font-family: $font-main;
+                                                    font-size: 14px;
+                                                    font-weight: 500;
+                                                    color: rgba(19, 32, 48, 0.5);
+                                                    line-height: 20px;
+                                                }
+        
+                                                .gold {
+                                                    display: block;
+                                                    color: #132030;
+                                                    font-family: $font-main;
+                                                    font-size: 21px;
+                                                    font-weight: 500;
+                                                    margin-bottom: 20px !important;
+                                                    line-height: 24px;
+                                                    color: #132030;
+                                                    opacity: 0.6;
+        
+                                                }
+                                            }
+        
+                                        }
+                                    }
+                                }
+        
+                                .ranking_link {
+                                    text-decoration: none;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 3px;
+                                    padding-top: 30px;
+                                }
+                            }
+                    }
+
+                   
+                }
+            }
+        }
+    }
+}
