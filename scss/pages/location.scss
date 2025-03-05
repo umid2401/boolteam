@@ -507,9 +507,16 @@ $font-main: 'TT Commons';
                     .cards{
                         .card{
                            flex-wrap: wrap;
+                           gap: 10px !important;
                            .card-left{
                                 gap: 10px !important;
                                 width: 100% !important;
+                                .card-text{
+                                    .text-bg{
+                                        margin: 10px 0 0 0 !important;
+                                       
+                                    }
+                                }
                                 
                                 flex-wrap: wrap;
                                 .card-img{
@@ -575,6 +582,11 @@ $font-main: 'TT Commons';
                             .pi{
                                 margin-bottom: 0 !important;
                             }
+                            .div{
+                                flex-direction: column !important;
+                                align-items: start !important;
+                                gap: 10px;
+                            }
                            }
                            .actions{
                             .profile-right{
@@ -599,7 +611,7 @@ $font-main: 'TT Commons';
                             .footer-items{
                                 margin-top: 10px;
                                 flex-direction: column !important;
-                                gap: 8px;
+                                gap: 10px;
                                 align-items: flex-start !important;
                                 .ranking_link{
                                     order: 2;

@@ -805,11 +805,15 @@
   }
   .wrapper .main_wrapper .main .location .cards .card {
     flex-wrap: wrap;
+    gap: 10px !important;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left {
     gap: 10px !important;
     width: 100% !important;
     flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-text .text-bg {
+    margin: 10px 0 0 0 !important;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
     width: 100% !important;
@@ -853,6 +857,11 @@
   .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info .pi {
     margin-bottom: 0 !important;
   }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info .div {
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 10px;
+  }
   .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right {
     flex-direction: column;
     width: 100% !important;
@@ -867,7 +876,7 @@
   .wrapper .main_wrapper .main .location .cards .card-right .footer-items {
     margin-top: 10px;
     flex-direction: column !important;
-    gap: 8px;
+    gap: 10px;
     align-items: flex-start !important;
   }
   .wrapper .main_wrapper .main .location .cards .card-right .footer-items .ranking_link {
