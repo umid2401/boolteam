@@ -240,7 +240,7 @@
 }
 @media screen and (max-width: 768px) {
   .main .chat-section {
-    padding: 10px 20px;
+    padding: 10px;
   }
   .main .chat-section .chat-container .chat-list {
     width: 100% !important;
@@ -251,6 +251,9 @@
   }
   .main .chat-section .chat-container.active {
     display: flex !important;
+  }
+  .main .chat-section .chat-container .chat-messages {
+    padding: 10px !important;
   }
   .main .chat-section .chat-container .chat-messages .message {
     max-width: 100% !important;
