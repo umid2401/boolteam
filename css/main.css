@@ -3419,7 +3419,7 @@ body {
 }
 .wrapper .main_wrapper .main .ranking_section .container .ranking {
   width: 65%;
-  padding: 30px !important;
+  padding: 30px;
 }
 .wrapper .main_wrapper .main .ranking_section .container .ranking .slide-tab {
   display: flex;
@@ -3629,23 +3629,23 @@ body {
 }
 .wrapper .main_wrapper .main .ranking_section .container .forum .message .message-content .items .item {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 3px;
 }
 .wrapper .main_wrapper .main .ranking_section .container .forum .message .message-content .items .item a {
-  margin-left: 10px;
   text-decoration: none;
-  color: #0041F2;
-  display: inline-flex;
-  align-items: end !important;
+  display: flex;
+  align-items: center !important;
   font-family: "Commons", sans-serif;
-  gap: 4px;
+  gap: 2px;
   font-weight: 600;
-}
-.wrapper .main_wrapper .main .ranking_section .container .forum .message .message-content .items .item a small {
   font-size: 15px;
 }
-.wrapper .main_wrapper .main .ranking_section .container .forum .message .message-content .items .item a small img {
+.wrapper .main_wrapper .main .ranking_section .container .forum .message .message-content .items .item a span {
+  color: #0041F2;
+  font-size: 15px;
+}
+.wrapper .main_wrapper .main .ranking_section .container .forum .message .message-content .items .item a span img {
   margin-top: 5px !important;
   display: block;
 }
@@ -3923,6 +3923,7 @@ body {
   }
   .wrapper .main_wrapper .hotels .hotel-card .hotel-info .div {
     flex-direction: column !important;
+    padding-bottom: 0 !important;
     align-items: start !important;
   }
   .wrapper .main_wrapper .hotels .hotel-card .hotel-info .div .rating-circle {
@@ -3933,6 +3934,40 @@ body {
   .wrapper .main_wrapper .ranking_section .container .forum .hotel_head {
     flex-direction: column !important;
     align-items: start !important;
+  }
+  .wrapper .main_wrapper .ranking_section .container .forum .message .message-content .items {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  .wrapper .main_wrapper .ranking_section .container .forum .message .message-content .items .item {
+    align-items: start !important;
+    gap: 4px;
+  }
+  .wrapper .main_wrapper .ranking_section .container .forum .message .message-content .items .item a {
+    margin-left: 0;
+    font-family: "TT Commons", sans-serif;
+    text-decoration: none;
+    color: #00195B;
+    font-size: 18px !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+  }
+  .wrapper .main_wrapper .ranking_section .container .forum .message .message-content .items .item a:hover {
+    color: #0f5abb;
+  }
+  .wrapper .main_wrapper .ranking_section .container .ranking {
+    padding: 10px 20px !important;
+  }
+  .wrapper .main_wrapper .ranking_section .container .ranking .slide-tab {
+    flex-direction: column;
+    align-items: end !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .announcements .container {
+    padding: 20px !important;
   }
   .wrapper .main_wrapper .announcements .container .links-container {
     padding: 0px !important;
