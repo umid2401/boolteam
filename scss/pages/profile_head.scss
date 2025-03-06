@@ -148,6 +148,16 @@ $font-main: 'TT Commons';
     .main_wrapper{
         .main{
             .profile_head{
+                padding: 10px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .main_wrapper{
+        .main{
+            .profile_head{
                 .container{
                     .profile-menu{
                         position:  relative !important;
@@ -172,6 +182,24 @@ $font-main: 'TT Commons';
                 
                             &.show {
                                 display: flex !important;
+                            }
+                        }
+                    }
+
+                    .profile_section{
+                        padding: 10px 15px;
+                        flex-direction: column;
+                        gap: 12px;
+                        align-items: start;
+                        @media screen and (max-width:440px) {
+                            .profile-right{
+                                flex-direction: column;
+                                gap: 12px;
+                                button{
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                }
                             }
                         }
                     }

@@ -397,6 +397,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .main_wrapper .main .profile_head {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
   .main_wrapper .main .profile_head .container .profile-menu {
     position: relative !important;
   }
@@ -420,6 +425,23 @@
   }
   .main_wrapper .main .profile_head .container .profile-menu .tabs.show {
     display: flex !important;
+  }
+  .main_wrapper .main .profile_head .container .profile_section {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 440px) {
+  .main_wrapper .main .profile_head .container .profile_section .profile-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .main_wrapper .main .profile_head .container .profile_section .profile-right button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @font-face {
@@ -1593,26 +1615,31 @@
 }
 
 @media screen and (max-width: 1092px) {
-  .wrapper .main_wrapper .main .sub .container .main_friend, .wrapper .main_wrapper .main .friends_section .container .main_friend {
+  .wrapper .main_wrapper .main .sub .container .main_friend,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend {
     padding: 10px 15px !important;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card, .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
     width: calc(50% - 15px);
   }
 }
 @media screen and (max-width: 768px) {
-  .wrapper .main_wrapper .main .location .container .profile-menus, .wrapper .main_wrapper .main .friends_section .container .profile-menus {
+  .wrapper .main_wrapper .main .location .container .profile-menus,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus {
     position: relative !important;
     z-index: 100 !important;
     padding: 10px 15px !important;
     margin-top: 0;
   }
-  .wrapper .main_wrapper .main .location .container .profile-menus .menu-toggle-links, .wrapper .main_wrapper .main .friends_section .container .profile-menus .menu-toggle-links {
+  .wrapper .main_wrapper .main .location .container .profile-menus .menu-toggle-links,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .menu-toggle-links {
     display: block !important;
     position: relative;
     z-index: 1001;
   }
-  .wrapper .main_wrapper .main .location .container .profile-menus .tabs, .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs {
+  .wrapper .main_wrapper .main .location .container .profile-menus .tabs,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs {
     display: none !important;
     flex-direction: column;
     gap: 10px !important;
@@ -1624,10 +1651,12 @@
     padding: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  .wrapper .main_wrapper .main .location .container .profile-menus .tabs.show, .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs.show {
+  .wrapper .main_wrapper .main .location .container .profile-menus .tabs.show,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs.show {
     display: flex !important;
   }
-  .wrapper .main_wrapper .main .location .container .main_friend, .wrapper .main_wrapper .main .friends_section .container .main_friend {
+  .wrapper .main_wrapper .main .location .container .main_friend,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend {
     margin: 15px 0 !important;
   }
   .wrapper .main_wrapper .main .profile-menu {
@@ -1659,25 +1688,31 @@
   .wrapper .main_wrapper .main .sub {
     margin-top: -280px !important;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend, .wrapper .main_wrapper .main .friends_section .container .main_friend {
+  .wrapper .main_wrapper .main .sub .container .main_friend,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend {
     padding: 10px 15px !important;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend .friends_, .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ {
     gap: 15px;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card, .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
     width: 100%;
     padding: 10px 5px;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img, .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img {
     width: 50px;
     height: 50px;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img .badge, .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img .badge {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img .badge,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img .badge {
     width: 20px;
     height: 20px;
   }
-  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info h3, .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info h3 {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info h3,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info h3 {
     font-size: 16px !important;
   }
 }
