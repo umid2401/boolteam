@@ -150,6 +150,9 @@ $font-main: "TT Commons";
                             color: rgba(109, 114, 126, 1);
                             line-height: 20px;
                             cursor: pointer;
+                            @media screen and (max-width: 440px) {
+                                display: none;
+                            }
                         }
                     }
 
@@ -308,6 +311,7 @@ $font-main: "TT Commons";
 
                       .profile-menus{
                           position:  relative !important;
+                          z-index: 100 !important;
                           padding: 10px 15px !important;
                           margin-top: 0;
                           .menu-toggle-links {
