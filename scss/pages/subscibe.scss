@@ -154,6 +154,63 @@ $font-main: "TT Commons";
                     }
 
                 }
+                .profile-menus {
+                    padding: 20px 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    margin-top: 10px;
+                    .menu-toggle-links {
+                       display: none;
+                        font-size: 24px;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        color: #0041F2;
+                    }
+        
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        gap: 25px;
+        
+                        li {
+                            font-family: $font-main;
+                            font-size: 18px;
+                            color: #666;
+                            cursor: pointer;
+                            transition: color 0.3s ease;
+        
+                            &.active {
+                                font-weight: bold;
+                                color: #00195B;
+                                border-bottom: 2px solid #007bff;
+        
+                                &::after {
+                                    content: "";
+                                }
+                            }
+        
+                            &:hover {
+                                color: #0056b3;
+                            }
+                        }
+                    }
+        
+                    .social-icons {
+                        display: flex;
+                        gap: 10px;
+        
+                        a {
+                            display: block;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            background-color: rgba(85, 89, 97, 0.11);
+        
+                        }
+                    }
+                }
                 
 
             }
@@ -222,34 +279,8 @@ $font-main: "TT Commons";
     .wrapper{
         .main_wrapper{
             .main{
-                .location{
-                    
-                  
-                    .profile-menu{
-                        position:  relative !important;
-                        .menu-toggle-links {
-                            display: block !important;
-                        }
-                
-                        .tabs {
-                            display: none !important;
-                            flex-direction: column;
-                            gap: 10px !important;
-                            position: absolute;
-                            top: 50px;
-                            left: 0;
-                            background: white;
-                            width: 100%;
-                            padding: 10px;
-                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                
-                            &.show {
-                                display: flex !important;
-                            }
-                        }
-                    }
-                }
-                .sub{
+               
+                .sub, .friends_section{
                   .container{
                     .main_friend{
                         padding: 10px 15px !important;
@@ -260,6 +291,74 @@ $font-main: "TT Commons";
                         }
                     }
                   }
+                }
+               
+            }
+        }
+    }
+   
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        .main_wrapper{
+            .main{
+                .location, .friends_section{
+                    
+                  .container{
+
+                      .profile-menus{
+                          position:  relative !important;
+                          padding: 10px 15px !important;
+                          margin-top: 0;
+                          .menu-toggle-links {
+                              display: block !important;
+                          }
+                  
+                          .tabs {
+                              display: none !important;
+                              flex-direction: column;
+                              gap: 10px !important;
+                              position: absolute;
+                              top: 50px;
+                              left: 0;
+                              background: white;
+                              width: 100%;
+                              padding: 10px;
+                              box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+                  
+                              &.show {
+                                  display: flex !important;
+                              }
+                          }
+                      }
+                      .main_friend{
+                        margin: 15px 0 !important;
+                      }
+                  }
+                }
+             
+                .profile-menu{
+                    position:  relative !important;
+                    .menu-toggle-links {
+                        display: block !important;
+                    }
+            
+                    .tabs {
+                        display: none !important;
+                        flex-direction: column;
+                        gap: 10px !important;
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                        background: white;
+                        width: 100%;
+                        padding: 10px;
+                        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            
+                        &.show {
+                            display: flex !important;
+                        }
+                    }
                 }
             }
         }
@@ -299,6 +398,9 @@ $font-main: "TT Commons";
                 }
                 .sub{
                     margin-top: -280px !important;
+                }
+                .sub, .friends_section{
+                    
                     .container{
                         .main_friend{
                             padding: 10px 15px !important;
