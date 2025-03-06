@@ -134,8 +134,7 @@ $font-main: "TT Commons";
                                 padding: 8px;
                                 background: transparent;
 
-                                &::placeholder,
-                                {
+                                &::placeholder {
                                 font-size: 17px;
                                 font-weight: 400;
                                 color: rgba(109, 114, 126, 1);
@@ -155,9 +154,179 @@ $font-main: "TT Commons";
                     }
 
                 }
+                
 
+            }
+        }
+        .profile-menu {
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            margin-top: 10px;
+            .menu-toggle-links {
+                display: none;
+                font-size: 24px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: #0041F2;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 25px;
+
+                li {
+                    font-family: $font-main;
+                    font-size: 18px;
+                    color: #666;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+
+                    &.active {
+                        font-weight: bold;
+                        color: #00195B;
+                        border-bottom: 2px solid #007bff;
+
+                        &::after {
+                            content: "";
+                        }
+                    }
+
+                    &:hover {
+                        color: #0056b3;
+                    }
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 10px;
+
+                a {
+                    display: block;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: rgba(85, 89, 97, 0.11);
+
+                }
             }
         }
     }
 }
+}
+@media screen and (max-width: 1092px){
+    .wrapper{
+        .main_wrapper{
+            .main{
+                .location{
+                    
+                  
+                    .profile-menu{
+                        position:  relative !important;
+                        .menu-toggle-links {
+                            display: block !important;
+                        }
+                
+                        .tabs {
+                            display: none !important;
+                            flex-direction: column;
+                            gap: 10px !important;
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            background: white;
+                            width: 100%;
+                            padding: 10px;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+                
+                            &.show {
+                                display: flex !important;
+                            }
+                        }
+                    }
+                }
+                .sub{
+                  .container{
+                    .main_friend{
+                        padding: 10px 15px !important;
+                        .friends_{
+                            .card{
+                                width: calc(100% /2 - 15px);
+                            }
+                        }
+                    }
+                  }
+                }
+            }
+        }
+    }
+   
+}
+@media screen and (max-width: 640px){
+    .wrapper{
+        .main_wrapper{
+            .main{
+                .location{
+                    
+                  
+                    .profile-menu{
+                        position:  relative !important;
+                        .menu-toggle-links {
+                            display: block !important;
+                        }
+                
+                        .tabs {
+                            display: none !important;
+                            flex-direction: column;
+                            gap: 10px !important;
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            background: white;
+                            width: 100%;
+                            padding: 10px;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+                
+                            &.show {
+                                display: flex !important;
+                            }
+                        }
+                    }
+                }
+                .sub{
+                    margin-top: -280px !important;
+                    .container{
+                        .main_friend{
+                            padding: 10px 15px !important;
+                            .friends_{
+                                gap: 15px;
+                                .card{
+                                    width: calc(100%);
+                                    padding: 10px 5px;
+                                    .img{
+                                        width: 50px;
+                                        height: 50px;
+                                        .badge{
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                    .info{
+                                        h3{
+                                            font-size: 16px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                      }
+                }
+            }
+        }
+    }
+   
 }

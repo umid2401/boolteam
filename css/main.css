@@ -1355,7 +1355,132 @@
   line-height: 20px;
   cursor: pointer;
 }
+.wrapper .main_wrapper .main .profile-menu {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.wrapper .main_wrapper .main .profile-menu .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
+}
+.wrapper .main_wrapper .main .profile-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.wrapper .main_wrapper .main .profile-menu ul li {
+  font-family: "TT Commons";
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.wrapper .main_wrapper .main .profile-menu ul li.active {
+  font-weight: bold;
+  color: #00195B;
+  border-bottom: 2px solid #007bff;
+}
+.wrapper .main_wrapper .main .profile-menu ul li.active::after {
+  content: "";
+}
+.wrapper .main_wrapper .main .profile-menu ul li:hover {
+  color: #0056b3;
+}
+.wrapper .main_wrapper .main .profile-menu .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .profile-menu .social-icons a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(85, 89, 97, 0.11);
+}
 
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .profile-menu {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
+    display: block !important;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs.show {
+    display: flex !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .location .profile-menu {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
+    display: block !important;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs.show {
+    display: flex !important;
+  }
+  .wrapper .main_wrapper .main .sub {
+    margin-top: -280px !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ {
+    gap: 15px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img {
+    width: 50px;
+    height: 50px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img .badge {
+    width: 20px;
+    height: 20px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info h3 {
+    font-size: 16px !important;
+  }
+}
 @font-face {
   font-family: "TT Commons";
   src: url("../../assets/fonts/TT Commons Regular.otf") format("opentype");
@@ -2021,6 +2146,9 @@
     flex-direction: column !important;
     gap: 10px !important;
     align-items: start;
+  }
+  .wrapper .main_wrapper .main ._about1 {
+    margin-top: -280px !important;
   }
 }
 @font-face {
