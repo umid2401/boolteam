@@ -6,6 +6,7 @@
 }
 $font-main: "TT Commons";
 .wrapper {
+ 
     .main_wrapper {
         .main {
             .subscribe {
@@ -249,7 +250,7 @@ $font-main: "TT Commons";
                     &.active {
                         font-weight: bold;
                         color: #00195B;
-                        border-bottom: 2px solid #007bff;
+                        // border-bottom: 2px solid #007bff;
 
                         &::after {
                             content: "";
@@ -316,6 +317,8 @@ $font-main: "TT Commons";
                           margin-top: 0;
                           .menu-toggle-links {
                               display: block !important;
+                              position: relative;
+                              z-index: 1001;
                           }
                   
                           .tabs {
@@ -323,6 +326,7 @@ $font-main: "TT Commons";
                               flex-direction: column;
                               gap: 10px !important;
                               position: absolute;
+                              
                               top: 50px;
                               left: 0;
                               background: white;
@@ -342,15 +346,20 @@ $font-main: "TT Commons";
                 }
              
                 .profile-menu{
+                   
+
                     position:  relative !important;
                     .menu-toggle-links {
                         display: block !important;
+                        position: relative !important;
+                        z-index: 1001 !important;
                     }
             
                     .tabs {
                         display: none !important;
                         flex-direction: column;
                         gap: 10px !important;
+                        z-index: 1000 !important;
                         position: absolute;
                         top: 50px;
                         left: 0;
@@ -373,33 +382,7 @@ $font-main: "TT Commons";
     .wrapper{
         .main_wrapper{
             .main{
-                .location{
-                    
-                  
-                    .profile-menu{
-                        position:  relative !important;
-                        .menu-toggle-links {
-                            display: block !important;
-                        }
                 
-                        .tabs {
-                            display: none !important;
-                            flex-direction: column;
-                            gap: 10px !important;
-                            position: absolute;
-                            top: 50px;
-                            left: 0;
-                            background: white;
-                            width: 100%;
-                            padding: 10px;
-                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                
-                            &.show {
-                                display: flex !important;
-                            }
-                        }
-                    }
-                }
                 .sub{
                     margin-top: -280px !important;
                 }

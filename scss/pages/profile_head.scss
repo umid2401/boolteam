@@ -84,46 +84,100 @@ $font-main: 'TT Commons';
                 }
 
                 .profile-menu {
-                    padding: 20px 30px;
-                    border-top: 1px solid #D9D9D9;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    ul {
-                        list-style: none;
-                        display: flex;
-                        gap: 25px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            margin-top: 10px;
+            .menu-toggle-links {
+                display: none;
+                font-size: 24px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: #0041F2;
+            }
 
-                        li {
-                            font-family: $font-main;
-                            font-size: 18px;
-                            color: #666;
-                            cursor: pointer;
-                            transition: color 0.3s ease;
-                            &.active {
-                                font-weight: bold;
-                                color: #00195B;
-                                border-bottom: 2px solid #007bff;
-                            }
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 25px;
 
-                            &:hover {
-                                color: #0056b3;
-                            }
+                li {
+                    font-family: $font-main;
+                    font-size: 18px;
+                    color: #666;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+
+                    &.active {
+                        font-weight: bold;
+                        color: #00195B;
+                        // border-bottom: 2px solid #007bff;
+
+                        &::after {
+                            content: "";
                         }
                     }
-                    .social-icons{
-                        display: flex;
-                        gap: 10px;
-                        a{
-                            display: block;
-                            padding: 5px 10px;
-                            border-radius: 5px;
-                            background-color: rgba(85, 89, 97, 0.11);
-                            
+
+                    &:hover {
+                        color: #0056b3;
+                    }
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 10px;
+
+                a {
+                    display: block;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: rgba(85, 89, 97, 0.11);
+
+                }
+            }
+        }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .main_wrapper{
+        .main{
+            .profile_head{
+                .container{
+                    .profile-menu{
+                        position:  relative !important;
+                        .menu-toggle-links {
+                            display: block !important;
+                            position: relative;
+                            z-index: 1001;
+                        }
+                
+                        .tabs {
+                            display: none !important;
+                            flex-direction: column;
+                            gap: 10px !important;
+                            position: absolute;
+                            z-index: 100;
+                            top: -150px;
+                            left: 0;
+                            background: white;
+                            width: 100%;
+                            padding: 10px;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+                
+                            &.show {
+                                display: flex !important;
+                            }
                         }
                     }
                 }
             }
         }
     }
+    
 }

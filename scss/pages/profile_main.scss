@@ -781,3 +781,59 @@ $font-main: 'TT Commons';
         }
     }
 }
+
+@media screen and (max-width:992px) {
+    .wrapper{
+        .main_wrapper{
+            .main{
+                .location{
+                    .social-layout{
+                        .sidebar{
+                            display: none !important;
+                        }
+                        .content{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .wrapper{
+        .main_wrapper{
+            .main{
+                .location{
+                    .social-layout{
+                     
+                        .content{
+                           .post{
+                            .post-images{
+                                flex-wrap: wrap;
+                                .post-image{
+                                    width: 100% !important;
+                                    height: 200px !important;
+                                }
+                            }
+                            .travel-card{
+                                flex-wrap: wrap;
+                                gap: 10px !important;
+                                &__image-wrapper{
+                                    width: 100% !important;
+                                }
+                                &__content{
+                                    width: 100% !important;
+                                    padding: 0px !important;
+                                }
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
