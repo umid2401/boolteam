@@ -183,19 +183,19 @@
         </div>
         <script src="../js/profile/profile.js"></script>
         <script>
-            const menuButton = document.getElementById("menuButton");
-            const menu = document.getElementById("menu");
-            const menuItems = document.querySelectorAll(".menu .item");
-            menuButton.addEventListener("click", function (event) {
+            const menuButton_ = document.getElementById("menuButton");
+            const menu_ = document.getElementById("menu");
+            const menuItems_ = document.querySelectorAll(".menu .item");
+            menuButton_.addEventListener("click", function (event) {
                 event.stopPropagation();
-                menu.style.display = menu.style.display === "block" ? "none" : "block";
+                menu_.style.display = menu.style.display === "block" ? "none" : "block";
             });
             document.addEventListener("click", function (event) {
-                if (!menu.contains(event.target) && event.target !== menuButton) {
-                    menu.style.display = "none";
+                if (!menu_.contains(event.target) && event.target !== menuButton) {
+                    menu_.style.display = "none";
                 }
             });
-            menuItems.forEach(item => {
+            menuItems_.forEach(item => {
                 item.addEventListener("click", function () {
                     menu.style.display = "none";
                 });

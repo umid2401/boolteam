@@ -17,28 +17,30 @@
         <!-- Sidebar of website -->
         <aside class="sidebar_wrapper">
             <div class="image_links">
-                <a class="image_link" href="#">
+                <a class="image_link" href="https://kun.uz" data-text="Друзья">
                     <img src="../assets/icons/Vector1.svg" alt="Vector">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Сообщения">
                     <img src="../assets/icons/Frame 27.svg" alt="Frame 27">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 29.svg" alt="Frame 29">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 30.svg" alt="Frame 30">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 31.svg" alt="Frame 31">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/Frame 33.svg" alt="Frame 33">
                 </a>
-                <a class="image_link" href="#">
+                <a class="image_link" href="#" data-text="Друзья">
                     <img src="../assets/icons/users-alt 1.svg" alt="Users Alt">
                 </a>
+
             </div>
+
         </aside>
         <!-- Main Wrapper -->
         <div class="main_wrapper">
@@ -46,6 +48,7 @@
                 <div class="header_left">
                     <a href="#">
                         <img src="../assets/icons/blotem.svg" alt="Logo" class="logo">
+
                     </a>
                     <div class="search_box">
                         <input type="text" placeholder="Поиск">
@@ -69,19 +72,39 @@
                         <div class="progress_value"></div>
                     </div>
                     <div class="icons">
-                        <img src="../assets/icons/Vector.svg" width="24" height="24" alt="Settings">
-                        <img src="../assets/icons/sms.svg" width="24" height="24" alt="Notifications">
+                        <img src="../assets/icons/sms.svg" alt="Notifications">
                         <div class="notification_badge">
-                            <img src="../assets/icons/notif.svg" width="24" height="24" alt="Messages">
+                            <img src="../assets/icons/notif.svg" alt="Messages">
                             <div class="badge">
                                 <p>25</p>
                             </div>
                         </div>
+                        <img src="../assets/icons/settingss.svg" alt="Settings">
                     </div>
                     <div class="user_profile">
-                        <span class="user_name">Иван Иванов</span>
-                        <div class="user_img">
-                            <img src="../assets/images/user.png" alt="User Avatar">
+                        <!-- <span class="user_name">Иванов</span> -->
+                        <div class="dropdown">
+                            <div class="dropdown-toggle">
+                                <img src="../assets/images/user.png" alt="User Avatar">
+                            </div>
+                            <div class="dropdown-menu">
+                                <p>Иван Иванов</p>
+                                <ul>
+                                    <li>
+                                        <img src="../assets/images/setting.svg" alt="Error">
+                                        <a href="#"> Настройки</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/help.svg" alt="Error">
+                                        <a href="#"> Помощь</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/layer.svg" alt="Error">
+                                        <a href="#"> Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -141,24 +164,25 @@
                                 </div>
                             </div>
                             </div>
-                        <div class="profile-menu">
-                            <ul class="tabs">
-                                <li class="active">O себе</li>
-                                <li>Фото (5)</li>
-                                <li>Объявления (1)</li>
-                                <li>Посты (25)</li>
-                                <li>Подписчики (5)</li>
-                            </ul>
-                            <div class="social-icons">
-
-                                <a href="">
-                                    <img src="../assets/images/youtube.svg" alt="wk">
-                                </a>
-                                <a href="">
-                                    <img src="../assets/images/wk.svg" alt="wk">
-                                </a>
+                            <div class="profile-menu">
+                                <button class="menu-toggle-links">&#9776;</button>
+                                <ul class="tabs">
+                                    <li class="active">O себе</li>
+                                    <li>Фото (5)</li>
+                                    <li>Объявления (1)</li>
+                                    <li>Посты (25)</li>
+                                    <li>Подписчики (5)</li>
+                                </ul>
+                                <div class="social-icons">
+    
+                                    <a href="">
+                                        <img src="../assets/images/youtube.svg" alt="wk">
+                                    </a>
+                                    <a href="">
+                                        <img src="../assets/images/wk.svg" alt="wk">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
                         <div class="about_profile">
                             <div class="profile_about">
                                 <div class="h2">
@@ -338,7 +362,7 @@
                 </section>
             </main>
         </div>
-
+        <script src="../js/profile/profile.js"></script>
         <script>
             const map = L.map('map').setView([41.2995, 69.2401], 12);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

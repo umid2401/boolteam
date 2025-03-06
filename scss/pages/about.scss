@@ -228,14 +228,24 @@ $font-medium: 'Commons', sans-serif;
                                 }
                             }
                         }
+                        
                     }
                     .profile-menu {
                         padding: 20px 30px;
                         display: flex;
+                        
                         align-items: center;
                         justify-content: space-between;
                         background-color: #fff;
                         margin-top: 10px;
+                        .menu-toggle-links {
+                            display: none;
+                            font-size: 24px;
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            color: #0041F2;
+                        }
 
                         ul {
                             list-style: none;
@@ -605,4 +615,191 @@ $font-medium: 'Commons', sans-serif;
             
     }
 }
+}
+@media screen and (max-width: 1092px){
+
+    .wrapper{
+        .main_wrapper{
+            .main{
+                ._about{
+                    .container{
+                     ._about-container{
+                        padding: 10px !important;
+                     }
+                        .about_profile{
+                            flex-wrap: wrap;
+                            .profile_about{
+                                width: 100% !important;
+                            }
+                            .maps_profile{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+
+    .wrapper{
+        .main_wrapper{
+            .main{
+                ._about{
+                   padding: 10px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        .main_wrapper{
+            .main{
+                ._about{
+                   padding: 10px !important;
+                   .about_friends{
+                    flex-wrap: wrap;
+                    .left_box{
+                        width: 100% !important;
+                        .categories {
+                           margin: 0 !important;
+                           padding: 10px 15px !important;
+                           @media screen and (max-width: 468px) {
+                             flex-wrap: wrap;
+                             gap: 10px;
+                             .category{
+                                width: 100% !important;
+                             }
+                           }
+                        }
+                        .line{
+                            margin: 15px !important;
+                            
+                        }
+                        h2{
+                            margin: 0 !important;
+                            padding: 15px 15px 0 15px;
+                        }
+                        ._link{
+                            margin: 0 !important;
+                            padding: 15px !important;
+                        }
+                    }
+                    .right_box{
+                        width: 100% !important;
+                        .directions-container{
+                            padding: 15px !important;
+                            .directions{
+                                margin: 15px 0 !important;
+                            }
+                        }
+                    }
+                   }
+                   .about_profile{
+                    .profile_about{
+                        padding: 10px 15px !important;
+                    }
+                   }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 640px){
+
+    .wrapper{
+        .main_wrapper{
+            .main{
+                ._about{
+                    .container{
+                     ._about-container{
+                        .profile-card{
+                            position:  relative !important;
+                            .actions{
+                                flex-direction: column;
+                                align-items: start !important;
+                                gap: 10px;
+                                margin-top: 0 !important;
+                                .more-btn{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    width: 45px;
+                                    height: 45px;
+                                }
+                                @media screen and (max-width: 440px){
+                                    .profile-right{
+                                        flex-direction: column !important;
+                                        width: 100% !important;
+
+                                        gap: 10px;
+                                        button{
+                                            width: 100% !important;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+
+                            }
+                            .profile-info{
+                                flex-direction: column;
+                                .profile_detail{
+                                   width: 100% !important;
+                                   @media screen and (max-width: 360px){
+                                    .div{
+                                        gap: 10px;
+                                        flex-direction: column !important;
+                                        align-items: start !important;
+                                    }
+                                   }
+                                }
+                            }
+                        }
+                       
+                     }
+                     .profile-menu{
+                        position:  relative !important;
+                        .menu-toggle-links {
+                            display: block !important;
+                        }
+                
+                        .tabs {
+                            display: none !important;
+                            flex-direction: column;
+                            gap: 10px !important;
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            background: white;
+                            width: 100%;
+                            padding: 10px;
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+                
+                            &.show {
+                                display: flex !important;
+                            }
+                        }
+                    }
+                        .about_profile{
+                            flex-wrap: wrap;
+                            .profile_about{
+                                .h2{
+                                    flex-direction: column !important;
+                                    gap: 10px !important;
+                                    align-items: start;
+                                }
+                            }
+                            .maps_profile{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

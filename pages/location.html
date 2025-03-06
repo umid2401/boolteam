@@ -82,7 +82,7 @@
                         <img src="../assets/icons/settingss.svg" alt="Settings">
                     </div>
                     <div class="user_profile">
-                        <!-- <span class="user_name">Иванов</span> -->
+                       
                         <div class="dropdown">
                             <div class="dropdown-toggle">
                                 <img src="../assets/images/user.png" alt="User Avatar">
@@ -329,21 +329,7 @@
 
         <script src="../js/profile/profile.js"></script>
         <script>
-            const menuToggle = document.querySelector(".menu-toggle-links");
-            const menu = document.querySelector(".tabs");
-
-            
-            menuToggle.addEventListener("click", function (event) {
-                event.stopPropagation();
-                menu.classList.toggle("show");
-            });
-
-            
-            document.addEventListener("click", function (event) {
-                if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                    menu.classList.remove("show");
-                }
-            });
+           
             //
             const map = L.map('map').setView([41.2995, 69.2401], 12);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
