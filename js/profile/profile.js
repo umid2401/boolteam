@@ -30,10 +30,8 @@ document.addEventListener("click", function (event) {
 //toast
 
 const showToast = () => {
-    let toast = document.querySelector(".toast");
     let container = document.querySelector(".toast-container");
     container.style.display = "block";
-    toast.classList.add("show");
     setTimeout(() => {
         toast.classList.remove("show");
         setTimeout(() => container.style.display = "none", 500);
@@ -41,10 +39,34 @@ const showToast = () => {
 };
 setInterval(showToast, 5000);
 document.querySelector(".close-btn").onclick = () => {
-    let toast = document.querySelector(".card");
     let container = document.querySelector(".toast-container");
-    toast.classList.remove("show");
     setTimeout(() => container.style.display = "none", 0);
 };
+//ikonka settings
+const settings = document.querySelector(".settings");
+const icon = document.querySelector(".icons_");
 
+icon.addEventListener("click", (e) => {
+    e.stopPropagation();
+    settings.classList.toggle("show");
+});
 
+document.addEventListener("click", (e) => {
+    if (!settings.contains(e.target) && !icon.contains(e.target)) {
+        settings.classList.remove("show");
+    }
+});
+// 
+const menuBtn = document.querySelector(".menu-btn1");
+const menu_right = document.querySelector(".menu-hidden");
+
+menuBtn.addEventListener("click", () => {
+    menu_right.classList.toggle("show");
+});
+
+// Tashqariga bosganda yopiladi
+document.addEventListener("click", (e) => {
+    if (!menu_right.contains(e.target) && !menuBtn.contains(e.target)) {
+        menu_right.classList.remove("show");
+    }
+});
