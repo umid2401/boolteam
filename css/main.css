@@ -2797,6 +2797,9 @@
   justify-content: space-between;
   width: 100%;
 }
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .menu-toogles {
+  display: none;
+}
 .wrapper .main_wrapper .main .location .container .social-layout .content .tabs .links {
   display: flex;
   gap: 10px;
@@ -2990,6 +2993,13 @@
 .wrapper .main_wrapper .main .location .container .social-layout .content .post .post-footer .hotel-meta .meta_div1 {
   background: transparent;
 }
+@media screen and (max-width: 440px) {
+  .wrapper .main_wrapper .main .location .container .social-layout .content .post .post-footer {
+    flex-direction: column !important;
+    align-items: start;
+    gap: 10px;
+  }
+}
 .wrapper .main_wrapper .main .location .container .social-layout .content .post .travel-card {
   display: flex;
   background: white;
@@ -3084,6 +3094,24 @@
   .wrapper .main_wrapper .main .location .social-layout .content .post .travel-card__content {
     width: 100% !important;
     padding: 0px !important;
+  }
+  .wrapper .main_wrapper .main .location .social-layout .content .tabs {
+    position: relative;
+  }
+  .wrapper .main_wrapper .main .location .social-layout .content .tabs .menu-toogles {
+    cursor: pointer;
+    display: block !important;
+  }
+  .wrapper .main_wrapper .main .location .social-layout .content .tabs .links {
+    z-index: 1008 !important;
+    flex-direction: column;
+    position: absolute;
+    background: #fff;
+    width: 250px;
+    padding: 20px;
+    left: 0;
+    top: 100%;
+    display: none !important;
   }
 }
 * {
@@ -3707,7 +3735,7 @@ body {
   font-family: "TT Commons", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 20px;
   color: #00195B;
 }
@@ -3716,7 +3744,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .wrapper .main_wrapper .header .menu-hidden {
-    width: 80%;
+    width: 70%;
   }
 }
 .wrapper .main_wrapper .main {

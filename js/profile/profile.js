@@ -12,28 +12,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 //menu for profile
-const menuToggle = document.querySelector(".menu-toggle-links");
-const menu = document.querySelector(".tabs");
+document.addEventListener("DOMContentLoaded", () => {
+    let menuToggle = document.querySelector(".menu-toggle-links");
+    let menu = document.querySelector(".tabs");
 
-
-// menuToggle.addEventListener("click", function (event) {
-//     event.stopPropagation();
-//     menu.classList.toggle("show");
-// });
-
-
-document.addEventListener("click", function (event) {
-    if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-        menu.classList.remove("show");
+    function toggleMenu(event) {
+        event.stopPropagation();
+        menu.classList.toggle("show");
     }
+    function updateElements() {
+        menuToggle = document.querySelector(".menu-toggle-links");
+        menu = document.querySelector(".tabs");
+
+        if (menuToggle && menu) {
+            menuToggle.addEventListener("click", toggleMenu);
+        }
+    }
+
+    updateElements(); // Boshlanishda elementlarni yangilash
+    window.addEventListener("resize", updateElements); // Har safar o'lcham o'zgarsa yangilash
 });
+
+
+
+// document.addEventListener("click", function (event) {
+//     if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+//         menu.classList.remove("show");
+//     }
+// });
 //toast
 
 const showToast = () => {
     let container = document.querySelector(".toast-container");
     container.style.display = "block";
     setTimeout(() => {
-        toast.classList.remove("show");
+      
         setTimeout(() => container.style.display = "none", 500);
     }, 3000);
 };

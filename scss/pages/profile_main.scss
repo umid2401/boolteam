@@ -471,7 +471,9 @@ $font-main: 'TT Commons';
                                 align-items: center;
                                 justify-content: space-between;
                                 width: 100%;
-
+                                .menu-toogles{
+                                    display: none;
+                                }
                                 .links {
                                     display: flex;
                                     gap: 10px;
@@ -700,6 +702,11 @@ $font-main: 'TT Commons';
                                             background: transparent;
                                         }
                                     }
+                                    @media screen and (max-width:440px) {
+                                        flex-direction: column !important;
+                                        align-items: start;
+                                        gap: 10px;
+                                    }
                                 }
 
                                 .travel-card {
@@ -828,6 +835,27 @@ $font-main: 'TT Commons';
                                     padding: 0px !important;
                                 }
                             }
+                           }
+                           .tabs{
+                            position: relative;
+                            .menu-toogles{
+                                cursor: pointer;
+                                display: block !important;
+                            }
+                            .links{
+                                z-index: 1008 !important;
+                                flex-direction: column;
+                                position: absolute;
+                                background: #fff;
+                                width: 250px;
+                                padding: 20px;
+                                left: 0;
+                                top: 100%;
+                                display: none !important;
+                               
+
+                            }
+                           
                            }
                         }
                     }

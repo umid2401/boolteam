@@ -709,7 +709,7 @@ body {
                     font-family: $font-primary;
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 19px;
+                    font-size: 15px;
                     line-height: 20px;
                     color: #00195B;
                 }
@@ -717,7 +717,7 @@ body {
                     transform: translateX(0);
                 }
                 @media screen and (max-width:768px) {
-                    width: 80%;
+                    width: 70%;
                 }
                 
             }
