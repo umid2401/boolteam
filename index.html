@@ -15,7 +15,7 @@
         <!-- Sidebar of website -->
         <aside class="sidebar_wrapper">
             <div class="image_links">
-                <a class="menu-btn1 image_link" href="#">
+                <a class="menu-btn1 image_link hide-menu" href="#">
                     <img src="assets/icons/gamburger.svg" alt="Gamburger">
                 </a>
                 <a class="image_link" href="#" data-text="Друзья">
@@ -224,7 +224,7 @@
                         <div class="chat-container">
                             <div class="chat-list">
                                 <ul id="userList" class="user-list">
-    
+
                                 </ul>
                             </div>
                             <div class="chat-window">
@@ -240,30 +240,35 @@
                                             <span>был(а) в сети 10 часов назад</span>
                                         </div>
                                         <div class="right" style="display: flex; align-items: center; gap: 10px;">
-                                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="19" cy="19" r="19" fill="#F6F7F9"/>
-                                                <circle cx="11" cy="19" r="2" fill="#0041F2"/>
-                                                <circle cx="19" cy="19" r="2" fill="#0041F2"/>
-                                                <circle cx="27" cy="19" r="2" fill="#0041F2"/>
-                                                </svg>
-                                                
-                                                
-                                                <svg class="close-modal" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="19" cy="19" r="19" fill="#F6F7F9"/>
-                                                    <g opacity="0.5" clip-path="url(#clip0_33_7596)">
-                                                    <path d="M19.8811 18.9997L22.8722 16.0085C22.9545 15.9262 22.9999 15.8163 23 15.6992C23 15.582 22.9546 15.472 22.8722 15.3898L22.6101 15.1277C22.5277 15.0452 22.4178 15 22.3006 15C22.1835 15 22.0736 15.0452 21.9912 15.1277L19.0001 18.1188L16.0089 15.1277C15.9266 15.0452 15.8167 15 15.6995 15C15.5824 15 15.4725 15.0452 15.3902 15.1277L15.128 15.3898C14.9573 15.5605 14.9573 15.838 15.128 16.0085L18.1192 18.9997L15.128 21.9908C15.0457 22.0733 15.0003 22.1832 15.0003 22.3003C15.0003 22.4174 15.0457 22.5273 15.128 22.6097L15.3902 22.8717C15.4725 22.9542 15.5824 22.9995 15.6994 22.9995C15.8167 22.9995 15.9266 22.9542 16.0088 22.8717L19.0001 19.8807L21.9912 22.8717C22.0736 22.9542 22.1834 22.9995 22.3005 22.9995H22.3006C22.4178 22.9995 22.5276 22.9542 22.61 22.8717L22.8721 22.6097C22.9544 22.5273 22.9998 22.4174 22.9998 22.3003C22.9998 22.1832 22.9544 22.0733 22.8721 21.9909L19.8811 18.9997Z" fill="black"/>
-                                                    </g>
-                                                    <defs>
+                                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="19" cy="19" r="19" fill="#F6F7F9" />
+                                                <circle cx="11" cy="19" r="2" fill="#0041F2" />
+                                                <circle cx="19" cy="19" r="2" fill="#0041F2" />
+                                                <circle cx="27" cy="19" r="2" fill="#0041F2" />
+                                            </svg>
+
+
+                                            <svg class="close-modal" width="38" height="38" viewBox="0 0 38 38"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="19" cy="19" r="19" fill="#F6F7F9" />
+                                                <g opacity="0.5" clip-path="url(#clip0_33_7596)">
+                                                    <path
+                                                        d="M19.8811 18.9997L22.8722 16.0085C22.9545 15.9262 22.9999 15.8163 23 15.6992C23 15.582 22.9546 15.472 22.8722 15.3898L22.6101 15.1277C22.5277 15.0452 22.4178 15 22.3006 15C22.1835 15 22.0736 15.0452 21.9912 15.1277L19.0001 18.1188L16.0089 15.1277C15.9266 15.0452 15.8167 15 15.6995 15C15.5824 15 15.4725 15.0452 15.3902 15.1277L15.128 15.3898C14.9573 15.5605 14.9573 15.838 15.128 16.0085L18.1192 18.9997L15.128 21.9908C15.0457 22.0733 15.0003 22.1832 15.0003 22.3003C15.0003 22.4174 15.0457 22.5273 15.128 22.6097L15.3902 22.8717C15.4725 22.9542 15.5824 22.9995 15.6994 22.9995C15.8167 22.9995 15.9266 22.9542 16.0088 22.8717L19.0001 19.8807L21.9912 22.8717C22.0736 22.9542 22.1834 22.9995 22.3005 22.9995H22.3006C22.4178 22.9995 22.5276 22.9542 22.61 22.8717L22.8721 22.6097C22.9544 22.5273 22.9998 22.4174 22.9998 22.3003C22.9998 22.1832 22.9544 22.0733 22.8721 21.9909L19.8811 18.9997Z"
+                                                        fill="black" />
+                                                </g>
+                                                <defs>
                                                     <clipPath id="clip0_33_7596">
-                                                    <rect width="8" height="8" fill="white" transform="translate(15 15)"/>
+                                                        <rect width="8" height="8" fill="white"
+                                                            transform="translate(15 15)" />
                                                     </clipPath>
-                                                    </defs>
-                                                    </svg>
-                                                    
-                                                    
+                                                </defs>
+                                            </svg>
+
+
                                             <div id="menu" class="menu">
                                                 <div class="triangle">
-    
+
                                                 </div>
                                                 <div class="item">
                                                     <img src="../assets/icons/m_user.svg" alt="User">
@@ -286,13 +291,13 @@
                                             </div>
                                         </div>
                                     </div>
-    
-    
-    
-    
+
+
+
+
                                 </div>
                                 <div class="chat-messages" id="chatMessages">
-    
+
                                 </div>
                                 <div class="chat-input-container">
                                     <form action="">
@@ -307,7 +312,7 @@
                                             <img class="send-btn" src="../assets/icons/send.svg" alt="Send">
                                         </div>
                                     </form>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -531,7 +536,7 @@
                                         </svg>
 
                                     </button>
-                                    <button id="regNext2" class="login-button ">Пропустить</button>
+                                    <button class="login-button ">Пропустить</button>
                                 </div>
                             </form>
                         </div>
@@ -613,25 +618,8 @@
                                 </div>
                             </form>
                         </div>
-
-
-
                     </div>
                 </div>
-
-                <!-- <div id="regStep2" style="display: none;">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Parol">
-                    <button id="regNext2">Keyingi</button>
-                </div>
-                <div id="regStep3" style="display: none;">
-                    <input type="text" placeholder="Telefon raqam">
-                    <button id="regSubmit">Ro'yxatdan o'tish</button>
-                </div>
-                <div id="regSuccess" style="display: none;">
-                    <p>Ro'yxatdan o'tish muvaffaqiyatli yakunlandi!</p>
-                    <button class="">Yopish</button>
-                </div> -->
             </header>
             <main class="main">
                 <section class="hero_section">
@@ -677,127 +665,291 @@
 
                 </section>
                 <section class="announcements">
-                    <div class="container swiper">
-                        <div class="slider-wrapper">
+                    <div class="container ">
+                        <div class="">
                             <div class="slide-tab">
                                 <div class="left">
                                     <h2 class="announcements__title">Объявления</h2>
                                     <div class="announcements__tabs">
-                                        <button class=" tab active">Новое</button>
-                                        <button class=" tab">Популярное</button>
+                                        <button data-tab="slides" class=" tabs active">Новое</button>
+                                        <button data-tab="text" class=" tabs">Популярное</button>
                                     </div>
                                 </div>
                                 <div class="right">
                                     <div class="div prev">
-                                        <img class="" src="assets/icons/right.svg" alt="Right">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17" cy="17" r="17" transform="matrix(-1 0 0 1 34 0)"
+                                                fill="#F3F3F3" />
+                                            <circle cx="17" cy="17" r="17" transform="matrix(-1 0 0 1 34 0)"
+                                                fill="url(#paint0_linear_101_3470)" fill-opacity="0.2" />
+                                            <path d="M18.7578 22.2758L14.0682 17.5861L18.7578 12.8965" stroke="#0041F2"
+                                                stroke-width="3" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_101_3470" x1="-12.8966"
+                                                    y1="6.92789e-08" x2="20.8103" y2="34"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
                                     </div>
                                     <div class="div next">
-                                        <img class="" src="assets/icons/left.svg" alt="Left">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17" cy="17" r="17" fill="#F3F3F3" />
+                                            <circle cx="17" cy="17" r="17" fill="url(#paint0_linear_101_3467)"
+                                                fill-opacity="0.2" />
+                                            <path d="M15.2422 22.2758L19.9318 17.5861L15.2422 12.8965" stroke="#0041F2"
+                                                stroke-width="3" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_101_3467" x1="-12.8966"
+                                                    y1="6.92789e-08" x2="20.8103" y2="34"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-list swiper-wrapper">
-                                <div class="card swiper-slide">
-                                    <div class="card__image">
-                                        <img src="assets/icons/user.svg" alt="Максим">
-                                    </div>
-                                    <div class="card__info">
-                                        <div class="card__item">
-                                            <h3>Максим</h3>
+                            <div class="content">
+                                <div data-tab-content="slides" class="slider-wrapper swiper">
+                                    <div class="card-list swiper-wrapper">
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
                                         </div>
-                                        <small>33 года, Москва</small>
-                                        <div class="profile-badge">
-                                            <div class="avatar">К</div>
-                                            <span class="text">Ищет компанию</span>
+
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user_1.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
                                         </div>
-                                        <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
-                                        <div class="hr"></div>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+
+
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div data-tab-content="text" class="slider-wrapper swiper" style="display: none;">
+                                    <div class="card-list swiper-wrapper">
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/ans_user1.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
+                                        </div>
 
-                                <div class="card swiper-slide">
-                                    <div class="card__image">
-                                        <img src="assets/icons/user_1.svg" alt="Максим">
-                                    </div>
-                                    <div class="card__info">
-                                        <div class="card__item">
-                                            <h3>Максим</h3>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/ans_user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
                                         </div>
-                                        <small>33 года, Москва</small>
-                                        <div class="profile-badge">
-                                            <div class="avatar">К</div>
-                                            <span class="text">Ищет компанию</span>
-                                        </div>
-                                        <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
-                                        <div class="hr"></div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="card__image">
-                                        <img src="assets/icons/user.svg" alt="Максим">
-                                    </div>
-                                    <div class="card__info">
-                                        <div class="card__item">
-                                            <h3>Максим</h3>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/ans_user1.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
 
 
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
                                         </div>
-                                        <small>33 года, Москва</small>
-                                        <div class="profile-badge">
-                                            <div class="avatar">К</div>
-                                            <span class="text">Ищет компанию</span>
-                                        </div>
-                                        <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
-                                        <div class="hr"></div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="card__image">
-                                        <img src="assets/icons/user.svg" alt="Максим">
-                                    </div>
-                                    <div class="card__info">
-                                        <div class="card__item">
-                                            <h3>Максим</h3>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
 
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
                                         </div>
-                                        <small>33 года, Москва</small>
-                                        <div class="profile-badge">
-                                            <div class="avatar">К</div>
-                                            <span class="text">Ищет компанию</span>
-                                        </div>
-                                        <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
-                                        <div class="hr"></div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="card__image">
-                                        <img src="assets/icons/user.svg" alt="Максим">
-                                    </div>
-                                    <div class="card__info">
-                                        <div class="card__item">
-                                            <h3>Максим</h3>
+                                        <div class="card swiper-slide">
+                                            <div class="card__image">
+                                                <img src="assets/icons/user.svg" alt="Максим">
+                                            </div>
+                                            <div class="card__info">
+                                                <div class="card__item">
+                                                    <h3>Максим</h3>
 
+                                                </div>
+                                                <small>33 года, Москва</small>
+                                                <div class="profile-badge">
+                                                    <div class="avatar">К</div>
+                                                    <span class="text">Ищет компанию</span>
+                                                </div>
+                                                <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
+                                                <div class="hr"></div>
+                                            </div>
                                         </div>
-                                        <small>33 года, Москва</small>
-                                        <div class="profile-badge">
-                                            <div class="avatar">К</div>
-                                            <span class="text">Ищет компанию</span>
-                                        </div>
-                                        <p>Прогулки по паркам Москвы, сходить в музей, на выставку и...</p>
-                                        <div class="hr"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="links-container">
-                            <a href="#" class="link"><span>Показать все объявления </span> <img
-                                    src="assets/icons/Vector 3.svg" alt="Frame"></a>
+                            <a href="#" class="link"><span>Показать все объявления </span>
+                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 14.5L8 8L1.5 1.5" stroke="#0041F2" stroke-width="2" />
+                                </svg>
+
+                            </a>
                             <div class="right-links">
                                 <a href="#" class="link"><span> Как подать объявление</span>
-                                    <img src="assets/icons/Frame.svg" alt="Frame">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_101_5619)">
+                                            <path
+                                                d="M20.6821 18.2135C21.5461 17.0372 22 15.6703 22 14.2296C22 11.9233 20.804 9.78222 18.7863 8.44607C18.6002 6.39135 17.6408 4.48582 16.0367 3.01762C14.2629 1.39413 11.9095 0.5 9.41017 0.5C6.91081 0.5 4.5575 1.39413 2.78367 3.01766C0.988608 4.66057 2.86527e-05 6.85103 2.86527e-05 9.18551C2.86527e-05 10.9811 0.57886 12.6834 1.6792 14.14L0.062677 18.1388C-0.0684204 18.4631 0.0100833 18.8345 0.261235 19.0779C0.424946 19.2366 0.640563 19.3203 0.859617 19.3203C0.976621 19.3203 1.09461 19.2964 1.20607 19.2473L5.81665 17.2149C6.39549 17.4361 6.9918 17.6016 7.60187 17.7112C8.22677 18.7389 9.11811 19.6092 10.2017 20.2428C11.4114 20.95 12.8082 21.3279 14.245 21.3388C14.2661 21.3403 14.2871 21.342 14.3086 21.342C15.3019 21.342 16.2644 21.1704 17.1748 20.8315L20.794 22.427C20.9054 22.4761 21.0234 22.5 21.1404 22.5C21.3595 22.5 21.5752 22.4163 21.7388 22.2576C21.99 22.0141 22.0685 21.6427 21.9374 21.3185L20.6821 18.2135ZM18.9015 18.3946L19.5507 20.0006L17.5382 19.1134C17.3206 19.0175 17.073 19.016 16.8543 19.1093C16.0655 19.4459 15.2209 19.6183 14.3434 19.6228C14.3318 19.6223 14.3204 19.6211 14.3086 19.6211C12.615 19.6211 11.015 18.9593 9.89726 17.8584C11.3145 17.7905 12.7037 17.4285 13.9422 16.7996C14.3654 16.5846 14.5342 16.0674 14.3193 15.6442C14.1044 15.221 13.5871 15.0523 13.1639 15.2671C12.0237 15.8462 10.7257 16.1523 9.41017 16.1523C8.26703 16.1523 7.16647 15.93 6.13922 15.4917C5.92055 15.3984 5.67288 15.3998 5.45533 15.4958L2.44933 16.8209L3.46141 14.3173C3.58142 14.0204 3.52647 13.6814 3.31871 13.4377C2.27204 12.2098 1.71878 10.7394 1.71878 9.18551C1.71878 5.34399 5.16912 2.21875 9.41017 2.21875C13.6512 2.21875 17.1016 5.34399 17.1016 9.18551C17.1016 10.4263 16.7368 11.6444 16.0466 12.708C15.7883 13.1062 15.9016 13.6384 16.2998 13.8967C16.6979 14.1551 17.2301 14.0417 17.4885 13.6435C18.101 12.6995 18.5102 11.6573 18.6994 10.5748C19.7061 11.5607 20.2812 12.8592 20.2812 14.2296C20.2812 15.4295 19.8535 16.5656 19.0442 17.515C18.8364 17.7587 18.7815 18.0977 18.9015 18.3946ZM10.2266 13.6054C10.2266 14.0801 9.84183 14.4648 9.3672 14.4648C8.89257 14.4648 8.50782 14.0801 8.50782 13.6054C8.50782 13.1308 8.89257 12.7461 9.3672 12.7461C9.84183 12.7461 10.2266 13.1308 10.2266 13.6054ZM12.6321 7.16667C12.6326 7.17862 12.6329 7.19056 12.6329 7.20264C12.6332 8.4963 11.8645 9.66049 10.6746 10.1684C10.4284 10.2736 10.2693 10.5215 10.2693 10.8001V10.8554C10.2693 11.3301 9.88454 11.7148 9.40991 11.7148C8.93528 11.7148 8.55054 11.3301 8.55054 10.8554V10.8001C8.55054 9.83202 9.1194 8.96362 9.99983 8.58778C10.5478 8.35381 10.9044 7.82182 10.9139 7.22769C10.9137 7.21944 10.9136 7.21115 10.9136 7.20285C10.9136 6.37377 10.239 5.69925 9.40991 5.69925C8.58083 5.69921 7.90626 6.37373 7.90626 7.20281C7.90626 7.67744 7.52152 8.06218 7.04689 8.06218C6.57226 8.06218 6.18752 7.67744 6.18752 7.20281C6.18752 5.42601 7.63307 3.98046 9.40991 3.98046C11.1747 3.98046 12.6127 5.40646 12.6321 7.16667Z"
+                                                fill="#0041F2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_101_5619">
+                                                <rect width="22" height="22" fill="white"
+                                                    transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
                                 </a>
-                                <a href="#" class="link"><span>Добавить свое объявление</span> <img
-                                        src="assets/icons/Group.svg" alt="Frame"> </a>
+                                <a href="#" class="link"><span>Добавить свое объявление</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 1.66667C16.8383 1.66667 18.3333 3.16167 18.3333 5V15C18.3333 16.8383 16.8383 18.3333 15 18.3333H5C3.16167 18.3333 1.66667 16.8383 1.66667 15V5C1.66667 3.16167 3.16167 1.66667 5 1.66667H15ZM15 0H5C2.23833 0 0 2.23833 0 5V15C0 17.7617 2.23833 20 5 20H15C17.7617 20 20 17.7617 20 15V5C20 2.23833 17.7617 0 15 0Z"
+                                            fill="#0041F2" />
+                                        <path
+                                            d="M9.9974 15C9.5374 15 9.16406 14.6275 9.16406 14.1667V5.83333C9.16406 5.37333 9.5374 5 9.9974 5C10.4574 5 10.8307 5.37333 10.8307 5.83333V14.1667C10.8307 14.6275 10.4574 15 9.9974 15Z"
+                                            fill="#0041F2" />
+                                        <path
+                                            d="M5 10.0003C5 9.54033 5.3725 9.16699 5.83333 9.16699H14.1667C14.6267 9.16699 15 9.54033 15 10.0003C15 10.4603 14.6267 10.8337 14.1667 10.8337H5.83333C5.3725 10.8337 5 10.4603 5 10.0003Z"
+                                            fill="#0041F2" />
+                                    </svg>
+
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -810,267 +962,401 @@
                             <h2>Друзья по интересам</h2>
                             <div class="categories">
                                 <div class="category">
-                                    <div class="text_name">
+                                    <div href="#" class="text_name">
                                         <img src="assets/icons/velo.svg" alt="Velo" height="34">
                                         <h3>Активный отдых</h3>
                                     </div>
                                     <div class="tags">
-                                        <div class="tag">Велосипед</div>
-                                        <div class="tag">Спортзал</div>
-                                        <div class="tag">Бассейн</div>
-                                        <div class="tag">Самокат</div>
-                                        <div class="tag">Бег</div>
+                                        <a href="#" class="tag">Велосипед</a>
+                                        <a href="#" class="tag">Спортзал</a>
+                                        <a href="#" class="tag">Бассейн</a>
+                                        <a href="#" class="tag">Самокат</a>
+                                        <a href="#" class="tag">Бег</a>
                                     </div>
                                 </div>
-
+                        
                                 <div class="category">
-                                    <div class="text_name">
+                                    <div href="#" class="text_name">
                                         <img src="assets/icons/ball.svg" alt="Ball" height="34">
                                         <h3>Активный отдых</h3>
                                     </div>
                                     <div class="tags">
-                                        <div class="tag">Велосипед</div>
-                                        <div class="tag">Спортзал</div>
-                                        <div class="tag">Бассейн</div>
-                                        <div class="tag">Самокат</div>
-                                        <button class="show-more">Показать ещё</button>
+                                        <a href="#" class="tag">Велосипед</a>
+                                        <a href="#" class="tag">Спортзал</a>
+                                        <a href="#" class="tag">Бассейн</a>
+                                        <a href="#" class="tag">Самокат</a>
+                                        <a href="#" class="show-more">Показать ещё</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="line"></div>
                             <div class="categories">
                                 <div class="category">
-                                    <div class="text_name">
+                                    <div href="#" class="text_name">
                                         <img src="assets/icons/film.svg" alt="film" height="34">
                                         <h3>Активный отдых</h3>
                                     </div>
                                     <div class="tags">
-                                        <div class="tag">Велосипед</div>
-                                        <div class="tag">Спортзал</div>
-                                        <div class="tag">Бассейн</div>
-                                        <div class="tag">Самокат</div>
-                                        <div class="tag">Бег</div>
+                                        <a href="#" class="tag">Велосипед</a>
+                                        <a href="#" class="tag">Спортзал</a>
+                                        <a href="#" class="tag">Бассейн</a>
+                                        <a href="#" class="tag">Самокат</a>
+                                        <a href="#" class="tag">Бег</a>
                                     </div>
                                 </div>
-
+                        
                                 <div class="category">
-                                    <div class="text_name">
+                                    <div href="#" class="text_name">
                                         <img src="assets/icons/music.svg" alt="music" height="34">
                                         <h3>Активный отдых</h3>
                                     </div>
                                     <div class="tags">
-                                        <div class="tag">Велосипед</div>
-                                        <div class="tag">Спортзал</div>
-                                        <div class="tag">Бассейн</div>
-                                        <div class="tag">Самокат</div>
-                                        <button class="show-more">Показать ещё</button>
+                                        <a href="#" class="tag">Велосипед</a>
+                                        <a href="#" class="tag">Спортзал</a>
+                                        <a href="#" class="tag">Бассейн</a>
+                                        <a href="#" class="tag">Самокат</a>
+                                        <a href="#" class="show-more">Показать ещё</a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="" class="_link">
+                            <a href="#" class="_link">
                                 <span>Показать все интересы</span>
-                                <img src="assets/icons/Vector 3.svg" alt="left" width="15" height="15">
+                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 14.5L8 8L1.5 1.5" stroke="#0041F2" stroke-width="2"/>
+                                    </svg>
+                                    
                             </a>
                         </div>
                         <div class="right_box">
                             <div class="directions-container">
                                 <h2 class="title">Направления</h2>
                                 <div class="directions">
-                                    <div class="direction-item">
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8.svg" alt="Turkey">
                                         <span>Турция</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-1.svg" alt="UAE">
                                         <span>ОАЭ</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-2.svg" alt="Egypt">
                                         <span>Египет</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-6.svg" alt="Abkhazia">
                                         <span>Абхазия</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-4.svg" alt="Turkey">
                                         <span>Турция</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-5.svg" alt="Egypt">
                                         <span>Египет</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-12.svg" alt="Egypt">
                                         <span>Египет</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8.svg" alt="Turkey">
                                         <span>Турция</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-4.svg" alt="Turkey">
                                         <span>Турция</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-5.svg" alt="Egypt">
                                         <span>Египет</span>
-                                    </div>
-                                    <div class="direction-item">
+                                    </a>
+                                    <a href="#" class="direction-item">
                                         <img src="assets/icons/image 8-6.svg" alt="Abkhazia">
                                         <span>Абхазия</span>
-                                    </div>
+                                    </a>
                                 </div>
-                                <a href="" class="_link">
+                                <a href="#" class="_link">
                                     <span>Показать все интересы</span>
-                                    <img src="assets/icons/Vector 3.svg" alt="left" width="15" height="15">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 14.5L7.5 8L1 1.5" stroke="#0041F2" stroke-width="2"/>
+                                        </svg>
+                                        
                                 </a>
                             </div>
                             <div class="help-container">
-                                <div class="div">
+                                <div  class="div">
                                     <h2>Нужна помощь?</h2>
                                     <p>Написать в поддержку</p>
-                                    <div class="hr"></div>
+                                    <div class="hr">
+                                    </div>
                                 </div>
-                                <img src="assets/icons/sms_.svg" style="margin-right: 15px;" width="80" height="80"
-                                    alt="Help Icon">
-                            </div>
-                        </div>
+                            
+                            <img src="assets/icons/sms_.svg" style="margin-right: 15px;" width="80" height="80" alt="Help Icon">
                     </div>
                 </section>
                 <section class="hotels">
                     <div class="container">
                         <div class="hotel_head">
                             <h2 class="title">Отели</h2>
-                            <div class="tabs">
-                                <button class="tab active">Новые</button>
-                                <button class="tab">Популярные</button>
+                            <div class="tabs1">
+                                <button class="tab-hotels active" data-tab="new">Новые</button>
+                                <button class="tab-hotels" data-tab="popular">Популярные</button>
                             </div>
                         </div>
-                        <div class="hotels-list">
-                            <div class="hotel-card">
-                                <div class="hotel-img">
-                                    <img src="assets/icons/image 6.svg" alt="Hotel 1">
-                                </div>
-                                <div class="hotel-info">
-                                    <div class="div">
-                                        <div class="div_style">
-                                            <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
-                                                    alt="star"><small>4</small></h3>
-                                            <p>Турция, Стабуь</p>
+                        <div class="hotels-container">
+                            <div id="new" class="hotels-list">
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+                                        <img src="assets/icons/ans_user.svg" alt="Hotel 1">
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
                                         </div>
-                                        <div class="rating-circle">
-                                            <span>4.2</span>
+    
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <p class="desc">Этот отель с современными номерами расположен на территории
-                                        аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
-                                        свой рейс.</p>
-                                    <div class="hotel-meta">
-                                        <div class="meta_div">
-                                            <img src="assets/icons/comment 1.svg" alt="Cooment">
-                                            <span>2592</span>
+                                </div>
+    
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+    
+                                        <img src="assets/icons/ans_user1.svg" alt="Hotel 2">
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
                                         </div>
-                                        <div class="meta_div">
-                                            <img src="assets/icons/like (1).svg" alt="Like">
-                                            <span>25</span>
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+                                        <img src="assets/icons/user.svg" alt="Hotel 2">
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+                                        <img src="assets/icons/user_1.svg" alt="Hotel 2">
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
+    
+    
+                                        </div>
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="hotel-card">
-                                <div class="hotel-img">
-
-                                    <img src="assets/icons/image 6-1.svg" alt="Hotel 2">
-                                </div>
-                                <div class="hotel-info">
-                                    <div class="div">
-                                        <div class="div_style">
-                                            <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
-                                                    alt="star"><small>4</small></h3>
-                                            <p>Турция, Стабуь</p>
-                                        </div>
-                                        <div class="rating-circle">
-                                            <span>4.2</span>
-                                        </div>
+                            <div id="popular" class="hotels-list" style="display: none;">
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+                                        <img src="assets/icons/image 6.svg" alt="Hotel 1">
                                     </div>
-                                    <p class="desc">Этот отель с современными номерами расположен на территории
-                                        аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
-                                        свой рейс.</p>
-                                    <div class="hotel-meta">
-                                        <div class="meta_div">
-                                            <img src="assets/icons/comment 1.svg" alt="Cooment">
-                                            <span>2592</span>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
                                         </div>
-                                        <div class="meta_div">
-                                            <img src="assets/icons/like (1).svg" alt="Like">
-                                            <span>25</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hotel-card">
-                                <div class="hotel-img">
-
-                                    <img src="assets/icons/image 7-1.svg" alt="Hotel 2">
-                                </div>
-                                <div class="hotel-info">
-                                    <div class="div">
-                                        <div class="div_style">
-                                            <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
-                                                    alt="star"><small>4</small></h3>
-                                            <p>Турция, Стабуь</p>
-                                        </div>
-                                        <div class="rating-circle">
-                                            <span>4.2</span>
-                                        </div>
-                                    </div>
-                                    <p class="desc">Этот отель с современными номерами расположен на территории
-                                        аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
-                                        свой рейс.</p>
-                                    <div class="hotel-meta">
-                                        <div class="meta_div">
-                                            <img src="assets/icons/comment 1.svg" alt="Cooment">
-                                            <span>2592</span>
-                                        </div>
-                                        <div class="meta_div">
-                                            <img src="assets/icons/like (1).svg" alt="Like">
-                                            <span>25</span>
+    
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="hotel-card">
-                                <div class="hotel-img">
-
-                                    <img src="assets/icons/image 7.svg" alt="Hotel 2">
-                                </div>
-                                <div class="hotel-info">
-                                    <div class="div">
-                                        <div class="div_style">
-                                            <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
-                                                    alt="star"><small>4</small></h3>
-                                            <p>Турция, Стабуь</p>
-                                        </div>
-                                        <div class="rating-circle">
-                                            <span>4.2</span>
-                                        </div>
-
-
+    
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+    
+                                        <img src="assets/icons/image 6-1.svg" alt="Hotel 2">
                                     </div>
-                                    <p class="desc">Этот отель с современными номерами расположен на территории
-                                        аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
-                                        свой рейс.</p>
-                                    <div class="hotel-meta">
-                                        <div class="meta_div">
-                                            <img src="assets/icons/comment 1.svg" alt="Cooment">
-                                            <span>2592</span>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
                                         </div>
-                                        <div class="meta_div">
-                                            <img src="assets/icons/like (1).svg" alt="Like">
-                                            <span>25</span>
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+    
+                                        <img src="assets/icons/image 7-1.svg" alt="Hotel 2">
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel-card">
+                                    <div class="hotel-img">
+    
+                                        <img src="assets/icons/image 7.svg" alt="Hotel 2">
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="div">
+                                            <div class="div_style">
+                                                <h3><span>Rixos Downtown Antalya</span> <img src="assets/icons/star.svg"
+                                                        alt="star"><small>4</small></h3>
+                                                <p>Турция, Стабуь</p>
+                                            </div>
+                                            <div class="rating-circle">
+                                                <span>4.2</span>
+                                            </div>
+    
+    
+                                        </div>
+                                        <p class="desc">Этот отель с современными номерами расположен на территории
+                                            аэропорта Стамбула имени Сабихи Гёкчен. Гости могут пройти онлайн-регистрацию на
+                                            свой рейс.</p>
+                                        <div class="hotel-meta">
+                                            <div class="meta_div">
+                                                <img src="assets/icons/comment 1.svg" alt="Cooment">
+                                                <span>2592</span>
+                                            </div>
+                                            <div class="meta_div">
+                                                <img src="assets/icons/like (1).svg" alt="Like">
+                                                <span>25</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1078,7 +1364,10 @@
                         </div>
                         <a href="#" class="view-all">
                             <span>Показать все отели</span>
-                            <img src="assets/icons/Vector 3.svg" alt="left" width="15" height="15">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 14.5L7.5 8L1 1.5" stroke="#0041F2" stroke-width="2"/>
+                                </svg>
+                                
                         </a>
                     </div>
                 </section>
@@ -1097,12 +1386,44 @@
                                 </div>
                                 <div class="right">
                                     <div class="div pre">
-                                        <img class="" src="assets/icons/right.svg" alt="Right">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17" cy="17" r="17" transform="matrix(-1 0 0 1 34 0)"
+                                                fill="#F3F3F3" />
+                                            <circle cx="17" cy="17" r="17" transform="matrix(-1 0 0 1 34 0)"
+                                                fill="url(#paint0_linear_101_3470)" fill-opacity="0.2" />
+                                            <path d="M18.7578 22.2758L14.0682 17.5861L18.7578 12.8965" stroke="#0041F2"
+                                                stroke-width="3" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_101_3470" x1="-12.8966"
+                                                    y1="6.92789e-08" x2="20.8103" y2="34"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
 
                                     </div>
                                     <div class="div nex">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17" cy="17" r="17" fill="#F3F3F3" />
+                                            <circle cx="17" cy="17" r="17" fill="url(#paint0_linear_101_3467)"
+                                                fill-opacity="0.2" />
+                                            <path d="M15.2422 22.2758L19.9318 17.5861L15.2422 12.8965" stroke="#0041F2"
+                                                stroke-width="3" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_101_3467" x1="-12.8966"
+                                                    y1="6.92789e-08" x2="20.8103" y2="34"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
 
-                                        <img class="" src="assets/icons/left.svg" alt="Left">
+
                                     </div>
                                 </div>
                             </div>
@@ -1198,7 +1519,10 @@
                             </div>
                             <a href="" class="ranking_link">
                                 <span>Показать весь рейтинг</span>
-                                <img src="assets/icons/Vector 3.svg" alt="" srcset="">
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 14.5L7.5 8L1 1.5" stroke="#0041F2" stroke-width="2"/>
+                                    </svg>
+                                    
                             </a>
                         </div>
 
@@ -1206,82 +1530,167 @@
 
                             <div class="hotel_head">
                                 <h2 class="title">Отели</h2>
-                                <div class="tabs">
-                                    <button class="tab active">Новые</button>
-                                    <button class="tab">Популярные</button>
+                                <div class="tab-forums">
+                                    <button class="tab-forum active" data-tab="forum-new">Новые</button>
+                                    <button class="tab-forum" data-tab="forum-popular">Популярные</button>
                                 </div>
                             </div>
-                            <div class="message">
-                                <div class="text-img">
-                                    <img src="assets/icons/Ellipse 7.svg" alt="Вика" class="avatar">
-                                    <h4>Вика</h4>
+                            <div class="public-message" id="forum-new">
+                                <div class="message">
+                                    <div class="text-img">
+                                        <img src="assets/icons/Ellipse 7.svg" alt="Вика" class="avatar">
+                                        <h4>Вика</h4>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Не следует забывать, что сложившаяся структура организации требует...</p>
+                                        <div class="items">
+                                            <span>Сегодня, 15:27 </span>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span>Разные темы</span>
+                                                    <img src="assets/icons/Vector 3.svg" alt="left">
+                                                </a>
+                                                <a href="#">
+                                                    <span>Оффтоп</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="message-content">
-                                    <p>Не следует забывать, что сложившаяся структура организации требует...</p>
-                                    <div class="items">
-                                        <span>Сегодня, 15:27 </span>
-                                        <div class="item">
-                                            <a href="#">
-                                                <span>Разные темы</span>
-                                                <img src="assets/icons/Vector 3.svg" alt="left">
-                                            </a>
-                                            <a href="#">
-                                                <span>Оффтоп</span>
-                                            </a>
+                                <div class="message">
+                                    <div class="text-img">
+    
+                                        <img src="assets/icons/Ellipse 7-3.svg" alt="Олеся" class="avatar">
+                                        <h4>Олеся</h4>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Не следует забывать, что сложившаяся структура организации требует...</p>
+                                        <div class="items">
+                                            <span>Сегодня, 15:27 </span>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span>Разные темы</span>
+                                                    <img src="assets/icons/Vector 3.svg" alt="left">
+                                                </a>
+                                                <a href="#">
+                                                    <span>Оффтоп</span>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="text-img">
+                                        <img src="assets/icons/Ellipse 7-3.svg" alt="Олеся" class="avatar">
+                                        <h4>Олеся</h4>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Не следует забывать, что сложившаяся структура организации требует...</p>
+                                        <div class="items">
+                                            <span>Сегодня, 15:27 </span>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span>Разные темы</span>
+                                                    <img src="assets/icons/Vector 3.svg" alt="left">
+                                                </a>
+                                                <a href="#">
+                                                    <span>Оффтоп</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="message">
-                                <div class="text-img">
-
-                                    <img src="assets/icons/Ellipse 7-3.svg" alt="Олеся" class="avatar">
-                                    <h4>Олеся</h4>
-                                </div>
-                                <div class="message-content">
-                                    <p>Не следует забывать, что сложившаяся структура организации требует...</p>
-                                    <div class="items">
-                                        <span>Сегодня, 15:27 </span>
-                                        <div class="item">
-                                            <a href="#">
-                                                <span>Разные темы</span>
-                                                <img src="assets/icons/Vector 3.svg" alt="left">
-                                            </a>
-                                            <a href="#">
-                                                <span>Оффтоп</span>
-                                            </a>
+                            <div class="public-message" style="display: none;" id="forum-popular" >
+                                <div class="message">
+                                    <div class="text-img">
+                                        <img src="assets/icons/Ellipse 7-3.svg" alt="Вика" class="avatar">
+                                        <h4>Вика</h4>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Не следует забывать, что сложившаяся структура организации требует...</p>
+                                        <div class="items">
+                                            <span>Сегодня, 15:27 </span>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span>Разные темы</span>
+                                                    <img src="assets/icons/Vector 3.svg" alt="left">
+                                                </a>
+                                                <a href="#">
+                                                    <span>Оффтоп</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="message">
-                                <div class="text-img">
-
-                                    <img src="assets/icons/Ellipse 7-3.svg" alt="Олеся" class="avatar">
-                                    <h4>Олеся</h4>
+                                <div class="message">
+                                    <div class="text-img">
+                                        <img src="assets/icons/Ellipse 7-2.svg" alt="Олеся" class="avatar">
+                                        <h4>Олеся</h4>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Не следует забывать, что сложившаяся структура организации требует...</p>
+                                        <div class="items">
+                                            <span>Сегодня, 15:27 </span>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span>Разные темы</span>
+                                                    <img src="assets/icons/Vector 3.svg" alt="left">
+                                                </a>
+                                                <a href="#">
+                                                    <span>Оффтоп</span>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                    </div>
                                 </div>
-                                <div class="message-content">
-                                    <p>Не следует забывать, что сложившаяся структура организации требует...</p>
-                                    <div class="items">
-                                        <span>Сегодня, 15:27 </span>
-                                        <div class="item">
-                                            <a href="#">
-                                                <span>Разные темы</span>
-                                                <img src="assets/icons/Vector 3.svg" alt="left">
-                                            </a>
-                                            <a href="#">
-                                                <span>Оффтоп</span>
-                                            </a>
+                                <div class="message">
+                                    <div class="text-img">
+                                        <img src="assets/icons/Ellipse 7-3.svg" alt="Олеся" class="avatar">
+                                        <h4>Олеся</h4>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Не следует забывать, что сложившаяся структура организации требует...</p>
+                                        <div class="items">
+                                            <span>Сегодня, 15:27 </span>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <span>Разные темы</span>
+                                                    <img src="assets/icons/Vector 3.svg" alt="left">
+                                                </a>
+                                                <a href="#">
+                                                    <span>Оффтоп</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
+                           
                             <a href="" class="ranking_link">
                                 <span>Посетить форум</span>
-                                <img src="assets/icons/Vector 3.svg" alt="" srcset="">
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 14.5L7.5 8L1 1.5" stroke="#0041F2" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer">
+                    <div class="container">
+
+                        <div class="left">
+                            <a href="#">2005-2021 © Boltaem</a>
+                        </div>
+                        <div class="right">
+                            <a href="#">
+                                Условия использования
+                            </a>
+                            <a href="#">
+                                Политика конфиденциальности
                             </a>
                         </div>
                     </div>
@@ -1295,6 +1704,7 @@
     <script src="js/slider/ranking_slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/slider/ans_slider.js"> </script>
+    <script src="js/tabs/hoteltab.js"></script>
 
 
 

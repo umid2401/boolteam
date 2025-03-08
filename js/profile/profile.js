@@ -33,15 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", updateElements); // Har safar o'lcham o'zgarsa yangilash
 });
 
-
-
-// document.addEventListener("click", function (event) {
-//     if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-//         menu.classList.remove("show");
-//     }
-// });
 //toast
-
 const showToast = () => {
     let container = document.querySelector(".toast-container");
     container.style.display = "block";
@@ -73,10 +65,18 @@ document.addEventListener("click", (e) => {
 const menuBtn = document.querySelector(".menu-btn1");
 const menu_right = document.querySelector(".menu-hidden");
 
-menuBtn.addEventListener("click", () => {
-    menu_right.classList.toggle("show");
+function toggleMenu() {
+    if (window.innerWidth < 1600) {
+        menu_right.classList.toggle("show");
+    }
+}
+menuBtn.addEventListener("click", toggleMenu);
+// Resize hodisasi
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1600) {
+        menu_right.classList.remove("show"); 
+    }
 });
-
 // Tashqariga bosganda yopiladi
 document.addEventListener("click", (e) => {
     if (!menu_right.contains(e.target) && !menuBtn.contains(e.target)) {
