@@ -12,8 +12,8 @@
 .main .chat-section .chat-container {
   display: flex;
   height: 100vh;
-  width: 100%;
   max-width: 1450px;
+  width: 100%;
   margin: 0 auto;
   background: linear-gradient(0deg, #F6F7F9, #F6F7F9), #F8F8FB;
 }
@@ -24,6 +24,7 @@
   border-right: 1px solid #ddd;
 }
 .main .chat-section .chat-container .chat-list ul {
+  width: 100%;
   list-style: none;
 }
 .main .chat-section .chat-container .chat-list ul li {
@@ -65,8 +66,11 @@
 .main .chat-section .chat-container .chat-list ul li:hover, .main .chat-section .chat-container .chat-list ul li.active {
   background: #e0e0e0;
 }
+.main .chat-section .chat-container .chat-list.hidden {
+  display: none !important;
+}
 .main .chat-section .chat-container .chat-window {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -232,4 +236,46 @@
   font-size: 15px;
   color: #6D727E;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1092px) {
+  .main .chat-section .chat-container .chat-list {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .chat-section {
+    padding: 10px;
+  }
+  .main .chat-section .chat-container .chat-list {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+  .main .chat-section .chat-container .chat-window {
+    display: none;
+  }
+  .main .chat-section .chat-container.active {
+    display: flex !important;
+  }
+  .main .chat-section .chat-container .chat-messages {
+    padding: 10px !important;
+  }
+  .main .chat-section .chat-container .chat-messages .message {
+    max-width: 100% !important;
+    padding: 0px 0 !important;
+  }
+  .main .chat-section .chat-container .chat-messages .message ._div {
+    align-items: center;
+  }
+  .main .chat-section .chat-container .chat-messages .message ._div img {
+    width: 40px;
+    height: 40px;
+  }
+  .main .chat-section .chat-container .chat-messages .message .message-content {
+    padding: 12px 12px !important;
+  }
+  .main .chat-section .chat-container .chat-header {
+    padding: 10px !important;
+    gap: 10px !important;
+  }
 }/*# sourceMappingURL=chat.css.map */

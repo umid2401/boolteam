@@ -182,6 +182,14 @@
   background-color: #fff;
   margin-top: 10px;
 }
+.wrapper .main_wrapper .main .location .container .profile-menu .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
+}
 .wrapper .main_wrapper .main .location .container .profile-menu ul {
   list-style: none;
   display: flex;
@@ -197,7 +205,6 @@
 .wrapper .main_wrapper .main .location .container .profile-menu ul li.active {
   font-weight: bold;
   color: #00195B;
-  border-bottom: 2px solid #007bff;
 }
 .wrapper .main_wrapper .main .location .container .profile-menu ul li.active::after {
   content: "";
@@ -305,7 +312,7 @@
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right p {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   opacity: 0.6;
   line-height: 22px;
@@ -313,10 +320,10 @@
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .item {
   margin: 7px 0;
 }
-.wrapper .main_wrapper .main .location .container .cards .card .card-right .item span, .wrapper .main_wrapper .main .location .container .cards .card .card-right .item small {
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .item small {
   font-size: 18px;
-  font-weight: 500;
-  color: #000000;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .item small {
   margin-left: 5px;
@@ -351,4 +358,145 @@
   padding: 5px 10px;
   border-radius: 15px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location {
+    padding: 10px;
+  }
+  .wrapper .main_wrapper .main .location .location-container {
+    flex-wrap: wrap !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper .main_wrapper .main .location .cards .card {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left {
+    width: 100% !important;
+    border-right: none;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
+    width: 300px !important;
+    height: 240px;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-right {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .location .location-container {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info {
+    flex-direction: column !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right .more-btn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card {
+    flex-wrap: wrap;
+    gap: 10px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left {
+    gap: 10px !important;
+    width: 100% !important;
+    flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-text .text-bg {
+    margin: 10px 0 0 0 !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
+    width: 100% !important;
+    height: 240px;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-text {
+    padding: 0 20px;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-right {
+    padding: 0 20px !important;
+    width: 100% !important;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
+    display: block !important;
+    position: relative;
+    z-index: 1001;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs.show {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info .pi {
+    margin-bottom: 0 !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info .div {
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right {
+    flex-direction: column;
+    width: 100% !important;
+    gap: 0px;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right button {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .main_wrapper .main .location .cards .card-right .footer-items {
+    margin-top: 10px;
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: flex-start !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card-right .footer-items .ranking_link {
+    order: 2;
+  }
 }/*# sourceMappingURL=location.css.map */

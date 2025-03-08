@@ -165,4 +165,219 @@
   color: rgb(109, 114, 126);
   line-height: 20px;
   cursor: pointer;
+}
+@media screen and (max-width: 440px) {
+  .wrapper .main_wrapper .main .sub .container .main_friend .search-container .search-options,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .search-container .search-options {
+    display: none;
+  }
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus .menu-toggle-links,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus ul,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus ul li,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li {
+  font-family: "TT Commons";
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus ul li.active,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li.active {
+  font-weight: bold;
+  color: #00195B;
+  border-bottom: 2px solid #007bff;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus ul li.active::after,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li.active::after {
+  content: "";
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus ul li:hover,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li:hover {
+  color: #0056b3;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus .social-icons,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .sub .container .profile-menus .social-icons a,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .social-icons a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(85, 89, 97, 0.11);
+}
+.wrapper .main_wrapper .main .profile-menu {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.wrapper .main_wrapper .main .profile-menu .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
+}
+.wrapper .main_wrapper .main .profile-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.wrapper .main_wrapper .main .profile-menu ul li {
+  font-family: "TT Commons";
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.wrapper .main_wrapper .main .profile-menu ul li.active {
+  font-weight: bold;
+  color: #00195B;
+}
+.wrapper .main_wrapper .main .profile-menu ul li.active::after {
+  content: "";
+}
+.wrapper .main_wrapper .main .profile-menu ul li:hover {
+  color: #0056b3;
+}
+.wrapper .main_wrapper .main .profile-menu .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .profile-menu .social-icons a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(85, 89, 97, 0.11);
+}
+
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .sub .container .main_friend,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .main_wrapper .main .location .container .profile-menus,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus {
+    position: relative !important;
+    z-index: 100 !important;
+    padding: 10px 15px !important;
+    margin-top: 0;
+  }
+  .wrapper .main_wrapper .main .location .container .profile-menus .menu-toggle-links,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .menu-toggle-links {
+    display: block !important;
+    position: relative;
+    z-index: 1001;
+  }
+  .wrapper .main_wrapper .main .location .container .profile-menus .tabs,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main .location .container .profile-menus .tabs.show,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs.show {
+    display: flex !important;
+  }
+  .wrapper .main_wrapper .main .location .container .main_friend,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend {
+    margin: 15px 0 !important;
+  }
+  .wrapper .main_wrapper .main .profile-menu {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main .profile-menu .menu-toggle-links {
+    display: block !important;
+    position: relative !important;
+    z-index: 1001 !important;
+  }
+  .wrapper .main_wrapper .main .profile-menu .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    z-index: 1000 !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main .profile-menu .tabs.show {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .sub {
+    margin-top: -280px !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ {
+    gap: 15px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img {
+    width: 50px;
+    height: 50px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img .badge,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img .badge {
+    width: 20px;
+    height: 20px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info h3,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info h3 {
+    font-size: 16px !important;
+  }
 }/*# sourceMappingURL=subscibe.css.map */

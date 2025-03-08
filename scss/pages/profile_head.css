@@ -72,10 +72,19 @@
 }
 .main_wrapper .main .profile_head .container .profile-menu {
   padding: 20px 30px;
-  border-top: 1px solid #D9D9D9;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.main_wrapper .main .profile_head .container .profile-menu .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
 }
 .main_wrapper .main .profile_head .container .profile-menu ul {
   list-style: none;
@@ -92,7 +101,9 @@
 .main_wrapper .main .profile_head .container .profile-menu ul li.active {
   font-weight: bold;
   color: #00195B;
-  border-bottom: 2px solid #007bff;
+}
+.main_wrapper .main .profile_head .container .profile-menu ul li.active::after {
+  content: "";
 }
 .main_wrapper .main .profile_head .container .profile-menu ul li:hover {
   color: #0056b3;
@@ -106,4 +117,53 @@
   padding: 5px 10px;
   border-radius: 5px;
   background-color: rgba(85, 89, 97, 0.11);
+}
+
+@media screen and (max-width: 768px) {
+  .main_wrapper .main .profile_head {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_wrapper .main .profile_head .container .profile-menu {
+    position: relative !important;
+  }
+  .main_wrapper .main .profile_head .container .profile-menu .menu-toggle-links {
+    display: block !important;
+    position: relative;
+    z-index: 1001;
+  }
+  .main_wrapper .main .profile_head .container .profile-menu .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    z-index: 100;
+    top: -150px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .main_wrapper .main .profile_head .container .profile-menu .tabs.show {
+    display: flex !important;
+  }
+  .main_wrapper .main .profile_head .container .profile_section {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 440px) {
+  .main_wrapper .main .profile_head .container .profile_section .profile-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .main_wrapper .main .profile_head .container .profile_section .profile-right button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=profile_head.css.map */

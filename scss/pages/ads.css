@@ -158,4 +158,13 @@
   align-items: center;
   gap: 3px;
   padding-top: 30px;
+}
+
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .location-container .ads {
+    width: 100% !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .ads .swiper-wrapper {
+    padding-top: 0px !important;
+  }
 }/*# sourceMappingURL=ads.css.map */

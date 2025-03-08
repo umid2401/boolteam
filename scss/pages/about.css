@@ -200,6 +200,14 @@
   background-color: #fff;
   margin-top: 10px;
 }
+.wrapper .main_wrapper .main ._about .container .profile-menu .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
+}
 .wrapper .main_wrapper .main ._about .container .profile-menu ul {
   list-style: none;
   display: flex;
@@ -215,7 +223,6 @@
 .wrapper .main_wrapper .main ._about .container .profile-menu ul li.active {
   font-weight: bold;
   color: #00195B;
-  border-bottom: 2px solid #007bff;
 }
 .wrapper .main_wrapper .main ._about .container .profile-menu ul li.active::after {
   content: "";
@@ -509,5 +516,156 @@
 @media (min-width: 1250px) and (max-width: 1400px) {
   .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category {
     width: 43%;
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container {
+    padding: 10px !important;
+  }
+  .wrapper .main_wrapper .main ._about .container .about_profile {
+    flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main ._about .container .about_profile .profile_about {
+    width: 100% !important;
+  }
+  .wrapper .main_wrapper .main ._about .container .about_profile .maps_profile {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper .main_wrapper .main ._about {
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .main_wrapper .main ._about {
+    padding: 10px !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends {
+    flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .left_box {
+    width: 100% !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .left_box .categories {
+    margin: 0 !important;
+    padding: 10px 15px !important;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 468px) {
+  .wrapper .main_wrapper .main ._about .about_friends .left_box .categories {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .left_box .categories .category {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .main_wrapper .main ._about .about_friends .left_box .line {
+    margin: 15px !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .left_box h2 {
+    margin: 0 !important;
+    padding: 15px 15px 0 15px;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .left_box ._link {
+    margin: 0 !important;
+    padding: 15px !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .right_box {
+    width: 100% !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .right_box .directions-container {
+    padding: 15px !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_friends .right_box .directions-container .directions {
+    margin: 15px 0 !important;
+  }
+  .wrapper .main_wrapper .main ._about .about_profile .profile_about {
+    padding: 10px 15px !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 10px;
+    margin-top: 0 !important;
+  }
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .more-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 440px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right button {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .profile-info {
+    flex-direction: column;
+  }
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .profile-info .profile_detail {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 360px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .profile-info .profile_detail .div {
+    gap: 10px;
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main ._about .container .profile-menu {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main ._about .container .profile-menu .menu-toggle-links {
+    display: block !important;
+    position: relative;
+    z-index: 1001;
+  }
+  .wrapper .main_wrapper .main ._about .container .profile-menu .tabs {
+    display: none !important;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main ._about .container .profile-menu .tabs.show {
+    display: flex !important;
+  }
+  .wrapper .main_wrapper .main ._about .container .about_profile {
+    flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main ._about .container .about_profile .profile_about .h2 {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: start;
+  }
+  .wrapper .main_wrapper .main ._about1 {
+    margin-top: -280px !important;
   }
 }/*# sourceMappingURL=about.css.map */
