@@ -652,7 +652,6 @@
   outline: none;
   border: none;
   border-radius: 8px;
-  overflow: hidden;
 }
 .wrapper .main_wrapper .main .location .container .profile-menu .menu-toggle-links {
   display: none;
@@ -662,12 +661,12 @@
   cursor: pointer;
   color: #0041F2;
 }
-.wrapper .main_wrapper .main .location .container .profile-menu ul {
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs {
   list-style: none;
   display: flex;
   gap: 25px;
 }
-.wrapper .main_wrapper .main .location .container .profile-menu ul li {
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li {
   font-family: "TT Commons";
   font-size: 18px;
   color: #666;
@@ -676,15 +675,15 @@
   display: block;
   position: relative;
 }
-.wrapper .main_wrapper .main .location .container .profile-menu ul li a {
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a {
   text-decoration: none;
   color: #00195B;
 }
-.wrapper .main_wrapper .main .location .container .profile-menu ul li a.active {
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a.active {
   font-weight: bold;
   color: #00195B;
 }
-.wrapper .main_wrapper .main .location .container .profile-menu ul li a.active::after {
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a.active::after {
   content: "";
   position: absolute;
   width: 100% !important;
@@ -693,12 +692,12 @@
   bottom: calc(-100% - 3px);
   background-color: #0041F2;
 }
-@media screen and (max-width: 768px) {
-  .wrapper .main_wrapper .main .location .container .profile-menu ul li a.active::after {
+@media screen and (max-width: 840px) {
+  .wrapper .main_wrapper .main .location .container .profile-menu .tabs li a.active::after {
     display: none;
   }
 }
-.wrapper .main_wrapper .main .location .container .profile-menu ul li a:hover {
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a:hover {
   color: #0056b3;
 }
 .wrapper .main_wrapper .main .location .container .profile-menu .social-icons {
@@ -931,8 +930,9 @@
 }
 @media screen and (max-width: 840px) {
   .wrapper .main_wrapper .main .location .profile-menu {
-    position: relative !important;
     padding: 10px 15px !important;
+    position: relative !important;
+    display: none;
   }
   .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
     display: block !important;
@@ -940,8 +940,8 @@
     z-index: 1001;
   }
   .wrapper .main_wrapper .main .location .profile-menu .tabs {
-    display: none !important;
     padding: 10px 15px !important;
+    display: none;
     flex-direction: column;
     gap: 10px !important;
     position: absolute;
@@ -1824,28 +1824,34 @@
   .wrapper .main_wrapper .main .friends_section .container .main_friend {
     margin: 15px 0 !important;
   }
-  .wrapper .main_wrapper .main .profile-menu {
+}
+@media screen and (max-width: 840px) {
+  .wrapper .main_wrapper .main .location .profile-menu {
+    padding: 20px 15px !important;
     position: relative !important;
+    display: none;
   }
-  .wrapper .main_wrapper .main .profile-menu .menu-toggle-links {
+  .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
     display: block !important;
-    position: relative !important;
-    z-index: 1001 !important;
+    position: relative;
+    z-index: 1001;
   }
-  .wrapper .main_wrapper .main .profile-menu .tabs {
+  .wrapper .main_wrapper .main .location .profile-menu .tabs {
     display: none !important;
+    padding: 20px 15px !important;
+    display: none;
     flex-direction: column;
     gap: 10px !important;
-    z-index: 1000 !important;
     position: absolute;
     top: 50px;
     left: 0;
     background: white;
+    z-index: 1009 !important;
     width: 100%;
     padding: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  .wrapper .main_wrapper .main .profile-menu .tabs.show {
+  .wrapper .main_wrapper .main .location .profile-menu .tabs.show {
     display: flex !important;
   }
 }
@@ -2084,6 +2090,7 @@
   margin-top: 10px;
   outline: none;
   border: none;
+  border-radius: 8px;
 }
 .wrapper .main_wrapper .main ._about .container .profile-menu .menu-toggle-links {
   display: none;
@@ -2093,12 +2100,12 @@
   cursor: pointer;
   color: #0041F2;
 }
-.wrapper .main_wrapper .main ._about .container .profile-menu ul {
+.wrapper .main_wrapper .main ._about .container .profile-menu .tabs {
   list-style: none;
   display: flex;
   gap: 25px;
 }
-.wrapper .main_wrapper .main ._about .container .profile-menu ul li {
+.wrapper .main_wrapper .main ._about .container .profile-menu .tabs li {
   font-family: "TT Commons";
   font-size: 18px;
   color: #666;
@@ -2107,29 +2114,29 @@
   display: block;
   position: relative;
 }
-.wrapper .main_wrapper .main ._about .container .profile-menu ul li a {
+.wrapper .main_wrapper .main ._about .container .profile-menu .tabs li a {
   text-decoration: none;
   color: #00195B;
 }
-.wrapper .main_wrapper .main ._about .container .profile-menu ul li a.active {
+.wrapper .main_wrapper .main ._about .container .profile-menu .tabs li a.active {
   font-weight: bold;
   color: #00195B;
 }
-.wrapper .main_wrapper .main ._about .container .profile-menu ul li a.active::after {
+.wrapper .main_wrapper .main ._about .container .profile-menu .tabs li a.active::after {
   content: "";
   position: absolute;
   width: 100% !important;
   height: 2px;
   left: 0;
-  bottom: calc(-100% - 2px);
+  bottom: calc(-100% - 3px);
   background-color: #0041F2;
 }
-@media screen and (max-width: 768px) {
-  .wrapper .main_wrapper .main ._about .container .profile-menu ul li a.active::after {
+@media screen and (max-width: 840px) {
+  .wrapper .main_wrapper .main ._about .container .profile-menu .tabs li a.active::after {
     display: none;
   }
 }
-.wrapper .main_wrapper .main ._about .container .profile-menu ul li a:hover {
+.wrapper .main_wrapper .main ._about .container .profile-menu .tabs li a:hover {
   color: #0056b3;
 }
 .wrapper .main_wrapper .main ._about .container .profile-menu .social-icons {
@@ -2457,12 +2464,12 @@
     z-index: 1001;
   }
   .main_wrapper .main ._about .container .profile-menu .tabs {
+    padding: 10px 15px !important;
     display: none !important;
     flex-direction: column;
     gap: 10px !important;
     position: absolute;
-    z-index: 100;
-    top: -150px;
+    top: 50px;
     left: 0;
     background: white;
     width: 100%;

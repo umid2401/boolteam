@@ -191,7 +191,7 @@
                         outline: none;
                         border: none;
                         border-radius: 8px;
-                        overflow: hidden;
+                        
                         .menu-toggle-links {
                             display: none;
                             font-size: 24px;
@@ -200,7 +200,7 @@
                             cursor: pointer;
                             color: #0041F2;
                         }
-                         ul {
+                         .tabs {
                             list-style: none;
                             display: flex;
                             gap: 25px;
@@ -226,7 +226,7 @@
                                             left: 0;
                                             bottom: calc(-100% - 3px);
                                             background-color: #0041F2;
-                                             @media screen and (max-width:768px) {
+                                             @media screen and (max-width:840px) {
                                                 display: none;
                                             }
                                         }
@@ -495,27 +495,32 @@
         .main_wrapper {
             .main {
                 .location {
-                     .profile-menu {
-                        position: relative !important;
-                        padding: 10px 15px !important;
-                         .menu-toggle-links {
+                   
+                    .profile-menu{
+                       padding: 10px 15px !important;
+                        position:  relative !important;
+                        display: none;
+                        .menu-toggle-links {
                             display: block !important;
                             position: relative;
                             z-index: 1001;
                         }
-                         .tabs {
-                            display: none !important;
-                            padding: 10px 15px !important;
+                
+                        .tabs {
+                              padding: 10px 15px !important;
+                            display: none;
                             flex-direction: column;
                             gap: 10px !important;
                             position: absolute;
                             top: 50px;
                             left: 0;
                             background: white;
+                           
                             width: 100%;
                             padding: 10px;
                             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                             &.show {
+                
+                            &.show {
                                 display: flex !important;
                             }
                         }

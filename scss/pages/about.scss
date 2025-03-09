@@ -239,7 +239,8 @@ $font-medium: 'Commons', sans-serif;
                         margin-top: 10px;
                         outline: none;
                         border: none;
-
+                        border-radius: 8px;
+                        
                         .menu-toggle-links {
                             display: none;
                             font-size: 24px;
@@ -248,13 +249,11 @@ $font-medium: 'Commons', sans-serif;
                             cursor: pointer;
                             color: #0041F2;
                         }
-
-                        ul {
+                         .tabs {
                             list-style: none;
                             display: flex;
                             gap: 25px;
-
-                            li {
+                             li {
                                 font-family: $font-main;
                                 font-size: 18px;
                                 color: #666;
@@ -262,54 +261,40 @@ $font-medium: 'Commons', sans-serif;
                                 transition: color 0.3s ease;
                                 display: block;
                                 position: relative;
-
-                                a {
+                                 a {
                                     text-decoration: none;
                                     color: #00195B;
-
-
-                                    &.active {
+                                     &.active {
                                         font-weight: bold;
                                         color: #00195B;
-
-                                        &::after {
+                                         &::after {
                                             content: "";
                                             position: absolute;
                                             width: 100% !important;
                                             height: 2px;
                                             left: 0;
-                                            bottom: calc(-100% - 2px);
+                                            bottom: calc(-100% - 3px);
                                             background-color: #0041F2;
-
-                                            @media screen and (max-width:768px) {
+                                             @media screen and (max-width:840px) {
                                                 display: none;
                                             }
                                         }
-
-                                    }
-
-                                    &:hover {
+                                     }
+                                     &:hover {
                                         color: #0056b3;
                                     }
                                 }
-
-
-
-
-                            }
+                             }
                         }
-
-                        .social-icons {
+                         .social-icons {
                             display: flex;
                             gap: 10px;
-
-                            a {
+                             a {
                                 display: block;
                                 padding: 5px 10px;
                                 border-radius: 5px;
                                 background-color: rgba(85, 89, 97, 0.11);
-
-                            }
+                             }
                         }
                     }
                     .about_profile{
@@ -662,8 +647,8 @@ $font-medium: 'Commons', sans-serif;
         .main{
             ._about{
                 .container{
-                    .profile-menu{
-                        padding: 10px 15px !important;
+                   .profile-menu{
+                    padding: 10px 15px !important;
                         position:  relative !important;
                         .menu-toggle-links {
                             display: block !important;
@@ -672,12 +657,12 @@ $font-medium: 'Commons', sans-serif;
                         }
                 
                         .tabs {
+                            padding: 10px 15px !important;
                             display: none !important;
                             flex-direction: column;
                             gap: 10px !important;
                             position: absolute;
-                            z-index: 100;
-                            top: -150px;
+                            top: 50px;
                             left: 0;
                             background: white;
                             width: 100%;
