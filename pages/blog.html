@@ -702,11 +702,21 @@
                         <div class="profile-menu">
                             <button class="menu-toggle-links">&#9776;</button>
                             <ul class="tabs">
-                                <li class="active">O себе</li>
-                                <li>Фото (5)</li>
-                                <li>Объявления (1)</li>
-                                <li>Посты (25)</li>
-                                <li>Подписчики (5)</li>
+                                <li>
+                                    <a href="#">O себе</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фото (5)</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="#">Объявления (1)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Посты (25)</a>
+                                </li>
+                                <li>
+                                    <a href="">Подписчики (5)</a>
+                                </li>
                             </ul>
                             <div class="social-icons">
 
@@ -766,8 +776,10 @@
                                     <div class="footer-items">
                                         <a href="#" class="ranking_link">
                                             <span>Посетить форум</span>
-                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15"
-                                                srcset="">
+                                            <svg width="17" height="12" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 9L5 5L1 1" stroke="#0041F2" stroke-width="2"/>
+                                                </svg>
+                                                
                                         </a>
                                         <div class="hotel-meta">
                                             <div class="meta_div">
@@ -829,8 +841,10 @@
                                     <div class="footer-items">
                                         <a href="#" class="ranking_link">
                                             <span>Посетить форум</span>
-                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15"
-                                                srcset="">
+                                            <svg width="17" height="12" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 9L5 5L1 1" stroke="#0041F2" stroke-width="2"/>
+                                                </svg>
+                                                
                                         </a>
                                         <div class="hotel-meta">
                                             <div class="meta_div">
@@ -848,6 +862,12 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="loaders">
+                    <div class="loader-container">
+                        <div class="loader"></div>
+                        <div class="text">Загрузка, пожалуйста подождите...</div>
+                      </div>
                 </section>
             </main>
         </div>
@@ -883,7 +903,7 @@
                             slidesPerView: 3
                         },
                         1024: {
-                            slidesPerView: 4
+                            slidesPerView: 3
                         }
                     }
                 });

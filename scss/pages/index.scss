@@ -45,6 +45,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #DDE2EE !important;
 }
 .container {
     @include container();
@@ -99,7 +100,7 @@ body {
                     font-family: $font-gilroy;
                     font-size: 14px;
                     opacity: 0;
-                    z-index: 2;
+                    z-index: 87 !important;
                     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, -10px 50%);
                     padding-left: 16px;
                 }
@@ -1320,8 +1321,8 @@ body {
             }
         }
         .main {
-            height: 100%;
-            background: #DDE2EE;
+        
+            
             .hero_section {
                 padding: 40px;
                 display: flex;
@@ -1455,7 +1456,6 @@ body {
                                 margin-top: 30px;
                                 .card {
                                     overflow: hidden;
-                                    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                                     transition: transform 0.3s ease;
                                     margin: 0 auto;
                                     background: #F6F7F9;
@@ -1709,6 +1709,7 @@ body {
                     }
                 }
             }
+
             .friends {
                 padding: 0 40px 0px 40px;
                 margin: 30px 0 0px 0;
@@ -1892,6 +1893,7 @@ body {
                     }
                 }
             }
+            
             .hotels {
                 padding: 0px 40px 0px 40px;
                 .container {
@@ -2667,7 +2669,12 @@ body {
                             @media screen and (max-width:500px) {
                                 align-items: start;
                             }
+                            .right{
+                                gap: 10px !important;
+                              
+                            }
                         }
+                       
                         .swiper-wrapper {
                             margin-top: 20px !important;
                     }
@@ -2943,11 +2950,22 @@ body {
                 }
             }
             .announcements {
+          
                 .container {
                     padding: 20px !important;
                     .links-container {
                         padding: 0px !important;
                         margin-top: 20px !important;
+                    }
+                    .slide-tab{
+                       position: relative;
+                        .right{
+                            display: flex;
+                            gap: 10px !important;
+                            position: absolute;
+                            right: 0;
+                           
+                        }
                     }
                 }
             }

@@ -534,7 +534,7 @@
                                         </svg>
 
                                     </button>
-                                    <button  class="login-button ">Пропустить</button>
+                                    <button class="login-button ">Пропустить</button>
                                 </div>
                             </form>
                         </div>
@@ -656,7 +656,14 @@
                                             <span>Написать</span>
                                         </button>
                                         <div class="more-btn">
-                                            <img src="../assets/images/dotss.svg" alt="">
+                                            <svg width="28" height="28" viewBox="0 0 46 46" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="46" height="46" rx="12" fill="#EFF1F3" />
+                                                <path
+                                                    d="M22.8594 24.8159C23.9884 24.8159 24.9034 23.9006 24.9034 22.7719C24.9034 21.6429 23.9884 20.7278 22.8594 20.7278C21.7304 20.7278 20.8154 21.6429 20.8154 22.7719C20.8154 23.9006 21.7304 24.8159 22.8594 24.8159ZM29.9469 24.8159C31.0759 24.8159 31.991 23.9006 31.991 22.7719C31.991 21.6429 31.0759 20.7278 29.9469 20.7278C28.8179 20.7278 27.9029 21.6429 27.9029 22.7719C27.9029 23.9006 28.8179 24.8159 29.9469 24.8159ZM15.7719 24.8159C16.9009 24.8159 17.8159 23.9006 17.8159 22.7719C17.8159 21.6429 16.9009 20.7278 15.7719 20.7278C14.6432 20.7278 13.7278 21.6429 13.7278 22.7719C13.7278 23.9006 14.6432 24.8159 15.7719 24.8159Z"
+                                                    fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                            </svg>
+
 
                                         </div>
 
@@ -668,16 +675,25 @@
 
                                 <div id="map" class="map"></div>
                             </div>
-
                         </div>
                         <div class="profile-menu">
                             <button class="menu-toggle-links">&#9776;</button>
                             <ul class="tabs">
-                                <li class="active">O себе</li>
-                                <li>Фото (5)</li>
-                                <li>Объявления (1)</li>
-                                <li>Посты (25)</li>
-                                <li>Подписчики (5)</li>
+                                <li>
+                                    <a href="#">O себе</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фото (5)</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="#">Объявления (1)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Посты (25)</a>
+                                </li>
+                                <li>
+                                    <a href="">Подписчики (5)</a>
+                                </li>
                             </ul>
                             <div class="social-icons">
 
@@ -737,8 +753,10 @@
                                     <div class="footer-items">
                                         <a href="#" class="ranking_link">
                                             <span>Посетить форум</span>
-                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15"
-                                                srcset="">
+                                            <svg width="17" height="12" viewBox="0 0 7 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 9L5 5L1 1" stroke="#0041F2" stroke-width="2" />
+                                        </svg>
                                         </a>
                                         <div class="hotel-meta">
                                             <div class="meta_div">
@@ -800,8 +818,12 @@
                                     <div class="footer-items">
                                         <a href="#" class="ranking_link">
                                             <span>Посетить форум</span>
-                                            <img src="../assets/icons/Vector 3.svg" alt="" width="15" height="15"
-                                                srcset="">
+                                            
+                                            <svg width="17" height="12" viewBox="0 0 7 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 9L5 5L1 1" stroke="#0041F2" stroke-width="2" />
+                                        </svg>
+
                                         </a>
                                         <div class="hotel-meta">
                                             <div class="meta_div">
@@ -824,20 +846,20 @@
         </div>
     </div>
 
-        <script src="../js/profile/profile.js"></script>
-        <script src="../js/popup/popup.js"></script>
-        <script src="../js/chat/chat.js"></script>
-        <script>
-           
-            //
-            const map = L.map('map').setView([41.2995, 69.2401], 12);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-            L.marker([41.2995, 69.2401]).addTo(map)
-                .bindPopup('Toshkent, O‘zbekiston')
-                .openPopup();
-        </script>
+    <script src="../js/profile/profile.js"></script>
+    <script src="../js/popup/popup.js"></script>
+    <script src="../js/chat/chat.js"></script>
+    <script>
+
+        //
+        const map = L.map('map').setView([41.2995, 69.2401], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([41.2995, 69.2401]).addTo(map)
+            .bindPopup('Toshkent, O‘zbekiston')
+            .openPopup();
+    </script>
 </body>
 
 </html>

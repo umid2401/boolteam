@@ -532,7 +532,7 @@
                                         </svg>
 
                                     </button>
-                                    <button  class="login-button ">Пропустить</button>
+                                    <button class="login-button ">Пропустить</button>
                                 </div>
                             </form>
                         </div>
@@ -604,183 +604,528 @@
                 </div>
             </header>
             <main class="main">
-               
+
                 <section class="location friends_section">
                     <div class="container">
                         <div class="profile-menus">
-                            <button class="menu-toggle-links">&#9776;</button>
-                            <ul class="tabs">
-                                <li class="active">Друзья (25)</li>
-                                <li>Друзья онлайн (5)   </li>
-                                <li>Заявки в друзья (3)</li>
+                            <ul class="tab-friends">
+                                <li data-tab="all" class="active">Друзья (25)</li>
+                                <li data-tab="online">Друзья онлайн (5) </li>
+                                <li data-tab="requests">Заявки в друзья (3)</li>
                             </ul>
                         </div>
-                     <div class="main_friend">
-                      
-                          
-                        <div class="friends_">
-                            <div class="card">
-                               
-                               <div class="img">
-                                <img src="../assets/images/sub_photo_friend1.svg" alt="User Avatar" class="avatar">
-                                <div class="badge">
-                                    9
-                                </div>
-                               </div>
-                                <div class="info">
-                                    <div class="info-item">
-                                        <h3>Иван Петров</h3>
-                                    <p class="status online">сейчас в сети</p>
-                                    </div>
-                                    <div class="btn-group">
-                                        
-                                        <div class="menu-button">
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <div class="card">
-                                <div class="img">
-                                    <img src="../assets/images/sub_photo_friend2.svg" alt="User Avatar" class="avatar">
-                                    <div class="badge">
-                                        9
-                                    </div>
-                                   </div>
-                                   <div class="info">
-                                    <div class="info-item">
-                                        <h3>Иван Петров</h3>
-                                    <p class="status online">сейчас в сети</p>
-                                    </div>
-                                    <div class="btn-group">
-                                        
-                                        <div class="menu-button">
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                    
-                            <div class="card">
-                                <div class="img">
-                                    <img src="../assets/images/sub_photo_friend3.svg" alt="User Avatar" class="avatar">
-                                    <div class="badge">
-                                        9
-                                    </div>
-                                   </div>
-                                   <div class="info">
-                                    <div class="info-item">
-                                        <h3>Иван Петров</h3>
-                                    <p class="status online">сейчас в сети</p>
-                                    </div>
-                                    <div class="btn-group">
-                                        
-                                        <div class="menu-button">
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <div class="card">
-                                <div class="img">
-                                    <img src="../assets/images/sub_photo_friend4.svg" alt="User Avatar" class="avatar">
-                                    <div class="badge">
-                                        9
-                                    </div>
-                                   </div>
-                                   <div class="info">
-                                    <div class="info-item">
-                                        <h3>Иван Петров</h3>
-                                    <p class="status online">сейчас в сети</p>
-                                    </div>
-                                    <div class="btn-group"> 
-                                        <div class="menu-button">
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <div class="card">
-                                <div class="img">
-                                    <img src="../assets/images/sub_photo_friend5.svg" alt="User Avatar" class="avatar">
-                                    <div class="badge">
-                                        9
-                                    </div>
-                                   </div>
-                                   <div class="info">
-                                    <div class="info-item">
-                                        <h3>Иван Петров</h3>
-                                    <p class="status online">сейчас в сети</p>
-                                    </div>
-                                    <div class="btn-group">
-                                        <div class="menu-button">
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                            <div class="dots"></div>
-                                        </div>
-                                    </div>
-                                 
-                                </div>
-                           </div>
-                        </div>
-                     </div>
-                          
+                        <div class="main_friend">
 
-                      
+
+                            <div id="all" class="friends_  active">
+                                <a href="https://kun.uz" class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend1.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend2.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend3.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend4.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend5.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="online" class="friends_">
+                                <a href="https://kun.uz" class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend1.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend2.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </a>
+
+                               
+                            </div>
+                            <div id="requests" class="friends_">
+                                <a href="https://kun.uz" class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend1.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend2.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </a>
+
+                                <a class="card card1">
+                                    <div class="img">
+                                        <img src="../assets/images/sub_photo_friend3.svg" alt="User Avatar"
+                                            class="avatar">
+                                        <div class="badge">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="info-btn">
+                                        <div class="inf">
+                                            <div class="info-item">
+                                                <h3>Иван Петров</h3>
+                                                <p class="status online">сейчас в сети</p>
+                                            </div>
+                                            <div class="">
+
+                                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40.25" height="40.25" rx="12" fill="white" />
+                                                    <path
+                                                        d="M20.1407 22.272C21.2697 22.272 22.1847 21.3566 22.1847 20.2279C22.1847 19.0989 21.2697 18.1839 20.1407 18.1839C19.0117 18.1839 18.0966 19.0989 18.0966 20.2279C18.0966 21.3566 19.0116 22.272 20.1407 22.272ZM27.2282 22.272C28.3572 22.272 29.2722 21.3566 29.2722 20.2279C29.2722 19.0989 28.3572 18.1839 27.2282 18.1839C26.0992 18.1839 25.1841 19.0989 25.1841 20.2279C25.1841 21.3566 26.0991 22.272 27.2282 22.272ZM13.0531 22.272C14.1822 22.272 15.0972 21.3566 15.0972 20.2279C15.0972 19.0989 14.1821 18.1839 13.0531 18.1839C11.9244 18.1839 11.0091 19.0989 11.0091 20.2279C11.0091 21.3567 11.9244 22.272 13.0531 22.272Z"
+                                                        fill="#0041F2" stroke="#0041F2" stroke-width="0.544322" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn">
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1454 0L5.01224 6.61751L1.99556 3.39821L0 5.26816L4.8736 10.4691L14 2.0103L12.1454 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span>
+                                                    Принять
+                                                </span>
+
+                                            </button>
+                                            <button class="btn">
+                                                Отклонить
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                               
+                            </div>
+                        </div>
+
+
+
                 </section>
             </main>
         </div>
     </div>
-        <script src="../js/profile/profile.js"></script>
-        <script src="../js/popup/popup.js"></script>
-        <script src="../js/chat/chat.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const swiper = new Swiper('.ads', {
-                    loop: true,
-                    grabCursor: true,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                        dynamicBullets: true
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        0: {
-                            slidesPerView: 1,
-                            spaceBetween: 10,
-                        },
-                        768: {
-                            slidesPerView: 2
-                        },
-                        1024: {
-                            slidesPerView: 3
-                        }
-                    }
-                });
+    <script src="../js/profile/profile.js"></script>
+    <script src="../js/popup/popup.js"></script>
+    <script src="../js/chat/chat.js"></script>
+    <script>
+      const tabLinks = document.querySelectorAll('.tab-friends li');
+        const tabContent = document.querySelectorAll('.friends_');
+         tabLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                 // Barcha tablarni o'chiring
+                tabLinks.forEach(l => l.classList.remove('active'));
+                tabContent.forEach(c => c.classList.remove('active'));
+                 // Tanlangan tabni yoqing
+                link.classList.add('active');
+                const tabId = link.dataset.tab;
+                document.getElementById(tabId).classList.add('active');
             });
-        </script>
+        });
+    </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

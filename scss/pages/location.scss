@@ -4,33 +4,32 @@
     font-weight: normal;
     font-style: normal;
 }
-
-$font-main: 'TT Commons';
-
-.wrapper {
+ $font-main: 'TT Commons';
+ .wrapper {
     .main_wrapper {
         .main {
             .location {
                 padding: 40px;
-                .container {
+                 .container {
                     border: none;
-                    .location-container {
+                     .location-container {
                         background-color: #fff;
                         padding: 20px 30px;
                         display: flex;
                         align-items: stretch;
                         justify-content: space-between;
                         gap: 25px;
+                        border-radius: 8px;
+                        overflow: hidden;
                         .profile-card {
                             width: 45%;
-                            .profile-info {
+                             .profile-info {
                                 display: flex;
                                 align-items: start;
                                 gap: 20px;
-                                .profile-img {
+                                 .profile-img {
                                     position: relative;
-
-                                    &::after {
+                                     &::after {
                                         content: "9";
                                         color: #fff;
                                         display: flex;
@@ -45,50 +44,43 @@ $font-main: 'TT Commons';
                                         left: 5px;
                                     }
                                 }
-                                .profile_detail {
+                                 .profile_detail {
                                     flex-grow: 1;
                                     margin-bottom: 15px;
-
-                                    .div {
+                                     .div {
                                         width: 100%;
                                         margin-bottom: 7px;
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
                                         font-family: $font-main;
-
-                                        &:nth-of-type(2) {
+                                         &:nth-of-type(2) {
                                             align-items: start;
                                             margin-top: 5px;
                                         }
-
-                                        .name {
+                                         .name {
                                             display: flex;
                                             align-items: center;
                                             gap: 5px;
-
-                                            span {
+                                             span {
                                                 color: #0041F2;
                                                 font-family: $font-main;
                                                 font-size: 17px;
                                                 font-weight: 600;
                                             }
                                         }
-
-                                        span {
+                                         span {
                                             color: #555961;
                                             font-size: 14px;
                                             font-family: $font-main;
                                             font-weight: 500;
                                         }
-
-                                        .name1 {
+                                         .name1 {
                                             h3 {
                                                 font-size: 22px;
                                                 color: #00195B;
                                             }
-
-                                            span {
+                                             span {
                                                 font-family: $font-main;
                                                 font-size: 16px;
                                                 color: #000000;
@@ -97,42 +89,34 @@ $font-main: 'TT Commons';
                                                 display: block;
                                             }
                                         }
-
-                                        a {
+                                         a {
                                             text-decoration: none;
                                             display: flex;
                                             align-items: center;
                                             gap: 5px;
                                             font-family: $font-main;
-
-                                            img {
+                                             img {
                                                 width: 17px;
                                             }
-
-                                            span {
+                                             span {
                                                 color: #0041F2;
                                                 font-size: 20px;
                                                 font-weight: 500;
-
-                                            }
-
-                                        }
+                                             }
+                                         }
                                     }
                                 }
-
-                                p {
+                                 p {
                                     font-family: $font-main;
                                     font-size: 17px;
                                     color: #132030;
                                     opacity: 0.8;
                                     margin-top: 10px;
-
-                                    span {
+                                     span {
                                         color: rgba(19, 32, 48, 0.7);
                                     }
                                 }
-
-                                .pi {
+                                 .pi {
                                     color: rgba(0, 0, 0, 1);
                                     font-style: normal;
                                     font-weight: 400;
@@ -143,25 +127,21 @@ $font-main: 'TT Commons';
                                     margin: 20px 0;
                                 }
                             }
-
-                            .actions {
+                             .actions {
                                 display: flex;
                                 align-items: end;
                                 justify-content: space-between;
-
-                                .profile-left {
+                                 .profile-left {
                                     display: flex;
                                     align-items: center;
                                     gap: 10px;
                                 }
-
-                                .profile-right {
+                                 .profile-right {
                                     display: flex;
                                     justify-content: end;
                                     gap: 20px;
                                     flex-grow: 1;
-
-                                    button {
+                                     button {
                                         display: flex;
                                         align-items: center;
                                         font-size: 16px;
@@ -176,8 +156,7 @@ $font-main: 'TT Commons';
                                         font-weight: 600;
                                         font-family: $font-main;
                                     }
-
-                                    .more-btn {
+                                     .more-btn {
                                         display: flex;
                                         padding: 8px 10px;
                                         background: #f1f3f5;
@@ -187,33 +166,32 @@ $font-main: 'TT Commons';
                                         gap: 3px;
                                         border: none;
                                         cursor: pointer;
-
-                                    }
-
-                                }
+                                     }
+                                 }
                             }
                         }
-                        .maps {
+                         .maps {
                             flex-grow: 1;
                             height: 300px;
                             border-radius: 10px;
-
-                            .leaflet-container {
+                            z-index: 5 !important;
+                             .leaflet-container {
                                 height: 300px !important;
                                 width: 100% !important;
                             }
                         }
-                       
-
-                    }
-
-                    .profile-menu {
+                     }
+                     .profile-menu {
                         padding: 20px 30px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         background-color: #fff;
                         margin-top: 10px;
+                        outline: none;
+                        border: none;
+                        border-radius: 8px;
+                        overflow: hidden;
                         .menu-toggle-links {
                             display: none;
                             font-size: 24px;
@@ -222,79 +200,87 @@ $font-main: 'TT Commons';
                             cursor: pointer;
                             color: #0041F2;
                         }
-
-                        ul {
+                         ul {
                             list-style: none;
                             display: flex;
                             gap: 25px;
-
-                            li {
+                             li {
                                 font-family: $font-main;
                                 font-size: 18px;
                                 color: #666;
                                 cursor: pointer;
                                 transition: color 0.3s ease;
-
-                                &.active {
-                                    font-weight: bold;
+                                display: block;
+                                position: relative;
+                                 a {
+                                    text-decoration: none;
                                     color: #00195B;
-                                    // border-bottom: 2px solid #007bff;
-
-                                    &::after {
-                                        content: "";
+                                     &.active {
+                                        font-weight: bold;
+                                        color: #00195B;
+                                         &::after {
+                                            content: "";
+                                            position: absolute;
+                                            width: 100% !important;
+                                            height: 2px;
+                                            left: 0;
+                                            bottom: calc(-100% - 3px);
+                                            background-color: #0041F2;
+                                             @media screen and (max-width:768px) {
+                                                display: none;
+                                            }
+                                        }
+                                     }
+                                     &:hover {
+                                        color: #0056b3;
                                     }
                                 }
-
-                                &:hover {
-                                    color: #0056b3;
-                                }
-                            }
+                             }
                         }
-
-                        .social-icons {
+                         .social-icons {
                             display: flex;
                             gap: 10px;
-
-                            a {
+                             a {
                                 display: block;
                                 padding: 5px 10px;
                                 border-radius: 5px;
                                 background-color: rgba(85, 89, 97, 0.11);
-
-                            }
+                             }
                         }
                     }
-                    .cards{
-                        .card{
+                     .cards {
+                        .card {
                             display: flex;
                             align-items: center;
                             background-color: #fff;
                             border-radius: 8px;
                             margin: 20px 0;
                             overflow: hidden;
+                            text-decoration: none;
                             border: 1px solid #D9D9D9;
-                            .card-left{
+                             .card-left {
                                 width: 45%;
                                 display: flex;
                                 align-items: center;
                                 gap: 25px;
                                 border-right: 1px solid #D9D9D9;
-                                .card-img{
+                                 .card-img {
                                     width: 240px;
                                     height: 240px;
-                                    img{
+                                     img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
                                     }
                                 }
-                                .card-text{
+                                 .card-text {
                                     font-family: $font-main !important;
-                                    .text{
-                                        .div{
+                                     .text {
+                                        .div {
                                             display: flex;
                                             align-items: center;
-                                            h3, small{
+                                             h3,
+                                            small {
                                                 font-size: 20px;
                                                 color: black;
                                                 font-weight: 600;
@@ -303,14 +289,14 @@ $font-main: 'TT Commons';
                                                 gap: 3px;
                                             }
                                         }
-                                        span{
+                                         span {
                                             font-size: 17px;
                                             font-weight: 400;
                                             display: block;
                                             margin-top: 10px;
                                         }
                                     }
-                                    .text-bg{
+                                     .text-bg {
                                         font-family: $font-main;
                                         padding: 7px 10px;
                                         border-radius: 5px;
@@ -319,7 +305,7 @@ $font-main: 'TT Commons';
                                         align-items: center;
                                         background-color: rgba(0, 65, 242, 0.07);
                                         margin: 20px 0;
-                                        .profile{
+                                         .profile {
                                             width: 30px;
                                             height: 30px;
                                             border-radius: 50%;
@@ -331,75 +317,77 @@ $font-main: 'TT Commons';
                                             align-items: center;
                                             justify-content: center;
                                         }
-                                        p{
+                                         p {
                                             font-size: 15px;
                                             font-weight: 400;
                                             color: rgba(83, 86, 94, 1);
                                         }
                                     }
-                                    .text-footer{
+                                     .text-footer {
                                         margin-top: 12px;
                                         display: block;
-                                        p, span{
+                                         p,
+                                        span {
                                             font-size: 15px;
                                             font-weight: 400;
                                             color: rgba(0, 0, 0, 1);
                                         }
                                     }
                                 }
-
-                            }
-                            .card-right{
+                             }
+                             .card-right {
                                 width: calc(55%);
                                 padding: 0 30px;
                                 font-family: $font-main;
-                                p{
+                                 p {
                                     font-size: 17px;
                                     font-weight: 500;
-                                    color:#000000;
+                                    color: #000000;
                                     opacity: 0.6;
                                     line-height: 22px;
-
-                                }
-                                .item{
+                                 }
+                                 .item {
                                     margin: 7px 0;
-                                     small{
+                                     small {
                                         font-size: 18px;
                                         color: rgba(0, 0, 0, 1);
                                         font-weight: 600;
-                                        
-                                    }
-                                    small{
+                                        /* На машине */
+                                         font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        line-height: 21px;
+                                        /* identical to box height */
+                                         color: #000000;
+                                     }
+                                     small {
                                         margin-left: 5px;
                                     }
                                 }
-                                .footer-items{
+                                 .footer-items {
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-between;
-
-                                    .ranking_link{
-                                        display: inline-flex;
+                                     .ranking_link {
+                                        display: flex;
                                         text-decoration: none;
                                         align-items: center;
                                         gap: 3px;
                                         color: #00195B;
                                         font-weight: 600;
                                         font-size: 17px;
-                                        span{
+                                         span {
                                             margin: 0;
+                                            transform: translateY(-2px);
                                         }
-                                       
-                                    }
-                                    .hotel-meta {
+                                     }
+                                     .hotel-meta {
                                         display: flex;
                                         align-items: center;
-                                       
-                                        gap: 10px;
-    
-                                        .meta_div {
-                                           display: flex;
-                                           align-items: center;
+                                         gap: 10px;
+                                         .meta_div {
+                                            display: flex;
+                                            align-items: center;
                                             gap: 5px;
                                             background-color: rgba(0, 65, 242, 0.09);
                                             padding: 5px 10px;
@@ -413,143 +401,111 @@ $font-main: 'TT Commons';
                     }
                 }
             }
+            .loaders{
+               display: flex;
+                align-items: center;
+                justify-content: center;
+                 padding-bottom: 40px;
+                .loader-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    gap: 10px;
+                    .loader {
+                        width: 36px;
+                        height: 36px;
+                        border: 4px solid #0041F2;
+                        border-bottom-color: #FFFFFF;
+                        border-radius: 50%;
+                        display: block;
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                        animation: rotation 1s linear infinite;
+                         @keyframes rotation {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                            } 
+                    }
+                    .text{
+                        font-size: 17px;
+                        color: #A0A4AE;
+                        font-family: $font-main;
+                     }
+                }
+             }
         }
     }
 }
-
-@media screen and (max-width: 1092px){
-    .wrapper{
-        .main_wrapper{
-            .main{
-                .location{
+ @media screen and (max-width: 1092px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                .location {
                     padding: 10px;
-                    .location-container{
+                     .location-container {
                         flex-wrap: wrap !important;
-                        .profile-card{
+                         .profile-card {
                             width: 100% !important;
                         }
-                        
-                    }
+                     }
                 }
             }
         }
     }
-   
-}
-@media screen and (max-width: 992px){
-    .wrapper{
-        .main_wrapper{
-            .main{
-                .location{
-                  
-                  .cards{
-                    .card{
-                       flex-wrap: wrap;
-                       gap: 20px;
-                       padding-bottom: 20px;
-                        .card-left{
-                            width: 100% !important;
-                            border-right: none;
-                            .card-img{
-                                width: 300px !important;
-                                height: 240px;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
-                            }
-
-                        }
-                        .card-right{
-                            width: 100% !important;
-
-                        }
-                    }
-                  }
-                }
-            }
-        }
-    }
-   
-}
-@media screen and (max-width: 640px){
-    .wrapper{
-        .main_wrapper{
-            .main{
-                .location{
-                    
-                    .location-container{
-                     padding: 10px 15px !important;
-                        .profile-card{
-                            position: relative !important;
-                           .profile-info{
-                            flex-direction: column !important;
-                            
-                           }
-                           .actions{
-                            flex-direction: column;
-                            align-items: start !important;
-                            gap: 10px;
-                            .profile-right{
-                                .more-btn{
-                                    position: absolute !important;
-                                    top: 0 !important;
-                                    right: 0 !important;
-                                    width: 40px !important;
-                                    height: 40px !important;
-                                }
-                            }
-                           }
-                        }
-                        
-                    }
-                    .cards{
-                        .card{
-                           flex-wrap: wrap;
-                           gap: 10px !important;
-                           .card-left{
-                                gap: 10px !important;
+ }
+ @media screen and (max-width: 992px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                .location {
+                     .cards {
+                        .card {
+                            flex-wrap: wrap;
+                            gap: 20px;
+                            padding-bottom: 20px;
+                             .card-left {
                                 width: 100% !important;
-                                .card-text{
-                                    .text-bg{
-                                        margin: 10px 0 0 0 !important;
-                                       
-                                    }
-                                }
-                                
-                                flex-wrap: wrap;
-                                .card-img{
-                                    width: 100% !important;
+                                border-right: none;
+                                 .card-img {
+                                    width: 300px !important;
                                     height: 240px;
-                                    img{
+                                     img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
                                     }
                                 }
-                                .card-text{
-                                    padding: 0 20px;
-                                }
-    
-                            }
-                            .card-right{
-                                padding: 0 20px !important;
+                             }
+                             .card-right {
                                 width: 100% !important;
-    
-                            }
+                             }
                         }
-                      }
-                    .profile-menu{
-                        position:  relative !important;
-                        .menu-toggle-links {
+                    }
+                }
+            }
+        }
+    }
+ }
+ @media screen and (max-width: 840px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                .location {
+                     .profile-menu {
+                        position: relative !important;
+                        padding: 10px 15px !important;
+                         .menu-toggle-links {
                             display: block !important;
                             position: relative;
                             z-index: 1001;
                         }
-                
-                        .tabs {
+                         .tabs {
                             display: none !important;
+                            padding: 10px 15px !important;
                             flex-direction: column;
                             gap: 10px !important;
                             position: absolute;
@@ -559,8 +515,7 @@ $font-main: 'TT Commons';
                             width: 100%;
                             padding: 10px;
                             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                
-                            &.show {
+                             &.show {
                                 display: flex !important;
                             }
                         }
@@ -569,53 +524,112 @@ $font-main: 'TT Commons';
             }
         }
     }
-   
-}
-
-
-@media screen and (max-width: 440px){
-    .wrapper{
-        .main_wrapper{
-            .main{
-                .location{
-                    .location-container{
-                        .profile-card{ 
-                           .profile-info{
-                            .pi{
-                                margin-bottom: 0 !important;
-                            }
-                            .div{
+ }
+ @media screen and (max-width: 640px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                .location {
+                     .location-container {
+                        padding: 10px 15px !important;
+                         .profile-card {
+                            position: relative !important;
+                             .profile-info {
                                 flex-direction: column !important;
+                             }
+                             .actions {
+                                flex-direction: column;
                                 align-items: start !important;
                                 gap: 10px;
-                            }
-                           }
-                           .actions{
-                            .profile-right{
-                                flex-direction: column;
-                                width: 100% !important;
-                                gap: 0px;
-                                button{
-                                    width: 100% !important;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    
+                                 .profile-right {
+                                    .more-btn {
+                                        position: absolute !important;
+                                        top: 0 !important;
+                                        right: 0 !important;
+                                        width: 40px !important;
+                                        height: 40px !important;
+                                    }
                                 }
-
                             }
-                           }
                         }
-                        
+                     }
+                     .cards {
+                        .card {
+                            flex-wrap: wrap;
+                            gap: 10px !important;
+                             .card-left {
+                                gap: 10px !important;
+                                width: 100% !important;
+                                 .card-text {
+                                    .text-bg {
+                                        margin: 10px 0 0 0 !important;
+                                     }
+                                }
+                                 flex-wrap: wrap;
+                                 .card-img {
+                                    width: 100% !important;
+                                    height: 240px;
+                                     img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                                 .card-text {
+                                    padding: 0 20px;
+                                }
+                             }
+                             .card-right {
+                                padding: 0 20px !important;
+                                width: 100% !important;
+                             }
+                        }
                     }
-                    .cards{
-                        .card-right{
-                            .footer-items{
+                 }
+            }
+        }
+    }
+ }
+ @media screen and (max-width: 440px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                .location {
+                    .location-container {
+                        .profile-card {
+                            .profile-info {
+                                .pi {
+                                    margin-bottom: 0 !important;
+                                }
+                                 .div {
+                                    flex-direction: column !important;
+                                    align-items: start !important;
+                                    gap: 10px;
+                                }
+                            }
+                             .actions {
+                                .profile-right {
+                                    flex-direction: column;
+                                    width: 100% !important;
+                                    gap: 0px;
+                                     button {
+                                        width: 100% !important;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                     }
+                                 }
+                            }
+                        }
+                     }
+                     .cards {
+                        .card-right {
+                            .footer-items {
                                 margin-top: 10px;
                                 flex-direction: column !important;
                                 gap: 10px;
                                 align-items: flex-start !important;
-                                .ranking_link{
+                                 .ranking_link {
                                     order: 2;
                                 }
                             }
@@ -625,5 +639,4 @@ $font-main: 'TT Commons';
             }
         }
     }
-   
-}
+ }

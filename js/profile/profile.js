@@ -17,21 +17,36 @@ document.addEventListener("DOMContentLoaded", () => {
     let menu = document.querySelector(".tabs");
 
     function toggleMenu(event) {
-        event.stopPropagation();
-        menu.classList.toggle("show");
+      event.stopPropagation();
+      menu.classList.toggle("show");
     }
+
+    function closeMenu() {
+      if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+      }
+    }
+
     function updateElements() {
-        menuToggle = document.querySelector(".menu-toggle-links");
-        menu = document.querySelector(".tabs");
+      menuToggle = document.querySelector(".menu-toggle-links");
+      menu = document.querySelector(".tabs");
 
-        if (menuToggle && menu) {
-            menuToggle.addEventListener("click", toggleMenu);
-        }
+      if (menuToggle && menu) {
+        menuToggle.addEventListener("click", toggleMenu);
+        const menuLinks = menu.querySelectorAll("a");
+        menuLinks.forEach(link => link.addEventListener("click", closeMenu));
+      }
     }
 
-    updateElements(); // Boshlanishda elementlarni yangilash
-    window.addEventListener("resize", updateElements); // Har safar o'lcham o'zgarsa yangilash
-});
+    updateElements();
+    window.addEventListener("resize", updateElements);
+
+    document.addEventListener("click", (event) => {
+      if (menu.classList.contains("show") && !menu.contains(event.target)) {
+        closeMenu();
+      }
+    });
+  });
 
 //toast
 const showToast = () => {

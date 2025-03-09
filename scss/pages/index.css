@@ -2603,10 +2603,14 @@ body {
 }
 @media screen and (max-width: 768px) and (max-width: 500px) {
   .wrapper .main_wrapper .main .announcements .container .slide-tab {
-    align-items: start;
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
+  .wrapper .main_wrapper .main .announcements .container .slide-tab .right {
+    gap: 10px !important;
+    display: none !important;
+  }
   .wrapper .main_wrapper .main .announcements .container .swiper-wrapper {
     margin-top: 20px !important;
   }

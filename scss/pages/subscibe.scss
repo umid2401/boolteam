@@ -4,12 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
-$font-main: "TT Commons";
-
-.wrapper {
-
-    .main_wrapper {
+ $font-main: "TT Commons";
+ .wrapper {
+     .main_wrapper {
         .main {
             .subscribe {
                 width: 100%;
@@ -18,30 +15,29 @@ $font-main: "TT Commons";
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-
-            .sub {
+             .sub {
                 position: relative;
                 bottom: 0px;
                 margin-top: -200px;
             }
-
-            .sub,
+             .sub,
             .friends_section {
                 .container {
                     .main_friend {
                         background-color: #fff;
                         padding: 20px 30px;
                         margin: 25px 0;
-
-                        .friends_ {
-                            display: flex;
+                        overflow: hidden;
+                        border-radius: 8px;
+                         .friends_ {
+                            display: none;
                             align-items: center;
                             justify-content: flex-start;
                             gap: 15px;
                             flex-wrap: wrap;
-
-                            .card {
+                             .card {
                                 display: flex;
+                                cursor: pointer;
                                 align-items: center;
                                 gap: 10px;
                                 width: calc(100% /3 - 15px);
@@ -49,20 +45,18 @@ $font-main: "TT Commons";
                                 padding: 10px;
                                 border-radius: 6px;
                                 background-color: rgba(127, 134, 151, 0.03);
-
+                                text-decoration: none;
                                 .img {
-                                    width: 70px;
-                                    height: 70px;
+                                    width: 65px;
+                                    height: 65px;
                                     border-radius: 50%;
                                     position: relative;
-
-                                    img {
+                                     img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
                                     }
-
-                                    .badge {
+                                     .badge {
                                         position: absolute;
                                         bottom: 0;
                                         width: 25px;
@@ -75,31 +69,26 @@ $font-main: "TT Commons";
                                         border-radius: 50%;
                                     }
                                 }
-
-                                .info {
-                                    flex-grow: 1;
+                                 .info {
+                                    width: calc(100% - 75px);
                                     display: flex;
                                     justify-content: space-between;
-
-                                    h3 {
+                                     h3 {
                                         line-height: 22px;
                                         font-size: 22px;
                                         font-weight: 500;
                                         color: rgba(0, 25, 91, 1);
                                     }
-
-                                    p {
+                                     p {
                                         font-size: 15px;
                                         font-weight: 400;
                                         color: rgba(85, 89, 97, 1);
                                     }
-
-                                    .btn-group {
+                                     .btn-group {
                                         display: flex;
                                         align-items: center;
                                         gap: 10px;
-
-                                        .sms {
+                                         .sms {
                                             width: 35px !important;
                                             height: 35px !important;
                                             background-color: rgba(0, 65, 242, 1);
@@ -108,9 +97,11 @@ $font-main: "TT Commons";
                                             display: flex;
                                             align-items: center;
                                             justify-content: center;
+                                            &:last-child{
+                                                background-color: #fff;
+                                            }
                                         }
-
-                                        .menu-button {
+                                         .menu-button {
                                             width: 35px !important;
                                             height: 35px !important;
                                             display: flex;
@@ -122,8 +113,7 @@ $font-main: "TT Commons";
                                             border: none;
                                             border-radius: 12px;
                                             cursor: pointer;
-
-                                            .dots {
+                                             .dots {
                                                 width: 5px;
                                                 height: 5px;
                                                 background-color: rgba(0, 65, 242, 1);
@@ -132,9 +122,77 @@ $font-main: "TT Commons";
                                         }
                                     }
                                 }
+                                .info-btn{
+                                    width: calc(100% - 75px);
+                                    .inf{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        h3 {
+                                            line-height: 22px;
+                                            font-size: 22px;
+                                            font-weight: 500;
+                                            color: rgba(0, 25, 91, 1);
+                                        }
+                                         p {
+                                            font-size: 15px;
+                                            font-weight: 400;
+                                            color: rgba(85, 89, 97, 1);
+                                        }
+                                    }
+                                    .btn-group{
+                                        display: flex;
+                                        margin-top: 20px;
+                                        gap: 15px;
+                                        .btn{
+                                            border-radius: 12px;
+                                            padding: 8px 12px;
+                                            background: #0041F2;
+                                            color: #fff;
+                                            font-family: $font-main;
+                                            border: none;
+                                            outline: none;
+                                            font-size: 17px;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 8px;
+                                            cursor: pointer;
+                                            &:last-child{
+                                                background-color: #BFC4D2;
+                                            }
+                                         }
+                                       
+                                    }
+                                 }
+                                   @media screen and (max-width:420px) {
+                                   position: relative;
+                                   height: 130px;
+                                     .info-btn{
+                                        
+                                         .btn-group{
+                                          gap: 5px;
+                                          position: absolute;
+                                         left: 10px;
+                                          .btn{
+                                            padding: 5px 10px;
+                                        }
+                                         }
+                                        
+                                     }
+                                        
+                                    }
+                            }
+                            .card1{
+                                align-items: start;
+                                padding: 20px 10px;
+                             }
+                            &.active{
+                                display: flex !important;
                             }
                         }
-
+                        .friends_sub{
+                        display: flex;
+                            }
                         .search-container {
                             margin-bottom: 25px;
                             display: flex;
@@ -143,111 +201,98 @@ $font-main: "TT Commons";
                             border-radius: 8px;
                             padding: 8px;
                             background: #fff;
-
-                            .search-input {
+                             .search-input {
                                 flex-grow: 1;
                                 border: none;
                                 outline: none;
                                 padding: 8px;
                                 background: transparent;
-
-                                &::placeholder {
+                                 &::placeholder {
                                     font-size: 17px;
                                     font-weight: 400;
                                     color: rgba(109, 114, 126, 1);
                                     line-height: 20px;
                                     font-family: $font-main;
-
-                                }
+                                 }
                             }
-
-                            .search-options {
+                             .search-options {
                                 font-size: 17px;
                                 font-weight: 400;
                                 color: rgba(109, 114, 126, 1);
                                 line-height: 20px;
                                 cursor: pointer;
-
-                                @media screen and (max-width: 440px) {
+                                 @media screen and (max-width: 440px) {
                                     display: none;
                                 }
                             }
                         }
-
-                    }
-
-                    .profile-menus {
+                     }
+                     .profile-menus {
                         padding: 20px 30px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         background-color: #fff;
                         margin-top: 10px;
-
-                        .menu-toggle-links {
-                            display: none;
-                            font-size: 24px;
-                            background: none;
-                            border: none;
-                            cursor: pointer;
-                            color: #0041F2;
-                        }
-
-                        ul {
+                        border-radius: 8px;
+                        overflow: hidden;
+                         .tab-friends {
                             list-style: none;
                             display: flex;
                             gap: 25px;
-
                             li {
                                 font-family: $font-main;
                                 font-size: 18px;
                                 color: #666;
                                 cursor: pointer;
                                 transition: color 0.3s ease;
-
-                                &.active {
-                                    font-weight: bold;
-                                    color: #00195B;
-                                    border-bottom: 2px solid #007bff;
-
-                                    &::after {
+                                 &.active {
+                                     color: #0056b3;
+                                    border-bottom: 2px solid  #0056b3;;
+                                     &::after {
                                         content: "";
                                     }
                                 }
-
-                                &:hover {
+                                 &:hover {
                                     color: #0056b3;
                                 }
                             }
-                        }
-
-                        .social-icons {
+                         }
+                         .social-icons {
                             display: flex;
                             gap: 10px;
-
-                            a {
+                             a {
                                 display: block;
                                 padding: 5px 10px;
                                 border-radius: 5px;
                                 background-color: rgba(85, 89, 97, 0.11);
-
-                            }
+                             }
                         }
+                         @media screen and (max-width:640px) {
+                                gap: 10px;
+                                 width: 100%;
+                                flex-wrap: wrap;
+                                padding: 20px 15px;
+                                .tab-friends{
+                                flex-wrap: wrap;
+                                justify-content: space-between !important;
+                                gap: 10px;
+                                    li{
+                                    text-align: center;
+                                    }
+                                }
+                            }
                     }
-
-
-                }
+                 }
             }
-
-            .profile-menu {
+             .profile-menu {
                 padding: 20px 30px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 background-color: #fff;
                 margin-top: 10px;
-
-                .menu-toggle-links {
+                 .menu-toggle-links {
                     display: none;
                     font-size: 24px;
                     background: none;
@@ -255,64 +300,53 @@ $font-main: "TT Commons";
                     cursor: pointer;
                     color: #0041F2;
                 }
-
-                ul {
+                 ul {
                     list-style: none;
                     display: flex;
                     gap: 25px;
-
-                    li {
+                     li {
                         font-family: $font-main;
                         font-size: 18px;
                         color: #666;
                         cursor: pointer;
                         transition: color 0.3s ease;
-
-                        &.active {
+                         &.active {
                             font-weight: bold;
                             color: #00195B;
                             // border-bottom: 2px solid #007bff;
-
-                            &::after {
+                             &::after {
                                 content: "";
                             }
                         }
-
-                        &:hover {
+                         &:hover {
                             color: #0056b3;
                         }
                     }
                 }
-
-                .social-icons {
+                 .social-icons {
                     display: flex;
                     gap: 10px;
-
-                    a {
+                     a {
                         display: block;
                         padding: 5px 10px;
                         border-radius: 5px;
                         background-color: rgba(85, 89, 97, 0.11);
-
-                    }
+                     }
                 }
             }
         }
     }
 }
-
-@media screen and (max-width: 1092px) {
+ @media screen and (max-width: 1092px) {
     .wrapper {
         .main_wrapper {
             .main {
-
-                .sub,
+                 .sub,
                 .friends_section {
                     .container {
                         .main_friend {
                             padding: 10px 15px !important;
-
-                            .friends_ {
+                             .friends_ {
                                 .card {
                                     width: calc(100% /2 - 15px);
                                 }
@@ -320,65 +354,30 @@ $font-main: "TT Commons";
                         }
                     }
                 }
-
-            }
+             }
         }
     }
-
-}
-
-@media screen and (max-width: 768px) {
+ }
+ @media screen and (max-width: 768px) {
     .wrapper {
         .main_wrapper {
             .main {
                 .location,
                 .friends_section {
                     .container {
-                        .profile-menus {
-                            position: relative !important;
-                            z-index: 100 !important;
-                            padding: 10px 15px !important;
-                            margin-top: 0;
-
-                            .menu-toggle-links {
-                                display: block !important;
-                                position: relative;
-                                z-index: 1001;
-                            }
-
-                            .tabs {
-                                display: none !important;
-                                flex-direction: column;
-                                gap: 10px !important;
-                                position: absolute;
-
-                                top: 50px;
-                                left: 0;
-                                background: white;
-                                width: 100%;
-                                padding: 10px;
-                                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-
-                                &.show {
-                                    display: flex !important;
-                                }
-                            }
-                        }
-                        .main_friend {
+                         .main_friend {
                             margin: 15px 0 !important;
                         }
                     }
                 }
                 .profile-menu {
                     position: relative !important;
-
-                    .menu-toggle-links {
+                     .menu-toggle-links {
                         display: block !important;
                         position: relative !important;
                         z-index: 1001 !important;
                     }
-
-                    .tabs {
+                     .tabs {
                         display: none !important;
                         flex-direction: column;
                         gap: 10px !important;
@@ -390,8 +389,7 @@ $font-main: "TT Commons";
                         width: 100%;
                         padding: 10px;
                         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-
-                        &.show {
+                         &.show {
                             display: flex !important;
                         }
                     }
@@ -399,43 +397,33 @@ $font-main: "TT Commons";
             }
         }
     }
-
-}
-
-@media screen and (max-width: 640px) {
+ }
+ @media screen and (max-width: 640px) {
     .wrapper {
         .main_wrapper {
             .main {
-
-                .sub {
+                 .sub {
                     margin-top: -280px !important;
                 }
-
-                .sub,
+                 .sub,
                 .friends_section {
-
-                    .container {
+                     .container {
                         .main_friend {
                             padding: 10px 15px !important;
-
-                            .friends_ {
+                             .friends_ {
                                 gap: 15px;
-
-                                .card {
+                                 .card {
                                     width: calc(100%);
                                     padding: 10px 5px;
-
-                                    .img {
+                                     .img {
                                         width: 50px;
                                         height: 50px;
-
-                                        .badge {
+                                         .badge {
                                             width: 20px;
                                             height: 20px;
                                         }
                                     }
-
-                                    .info {
+                                     .info {
                                         h3 {
                                             font-size: 16px !important;
                                         }
@@ -448,5 +436,4 @@ $font-main: "TT Commons";
             }
         }
     }
-
-}
+ }

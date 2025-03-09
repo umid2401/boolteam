@@ -84,62 +84,83 @@ $font-main: 'TT Commons';
                 }
 
                 .profile-menu {
-            padding: 20px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #fff;
-            margin-top: 10px;
-            .menu-toggle-links {
-                display: none;
-                font-size: 24px;
-                background: none;
-                border: none;
-                cursor: pointer;
-                color: #0041F2;
-            }
+                    padding: 20px 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    margin-top: 10px;
+                    outline: none;
+                    border: none;
+                    .menu-toggle-links {
+                        display: none;
+                        font-size: 24px;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        color: #0041F2;
+                    }
+                   
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        gap: 25px;
 
-            ul {
-                list-style: none;
-                display: flex;
-                gap: 25px;
+                        li {
+                            font-family: $font-main;
+                            font-size: 18px;
+                            color: #666;
+                            cursor: pointer;
+                            transition: color 0.3s ease;
+                            display: block;
+                            position: relative;
+                            
+                            a{
+                                text-decoration: none;
+                                color: #00195B;
+                              
+                               
+                                &.active {
+                                    font-weight: bold;
+                                      color: #00195B;
+                                      &::after {
+                                          content: "";
+                                          position: absolute;
+                                          width: 100% !important;
+                                          height: 2px;
+                                          left: 0;
+                                          bottom: calc(-100% - 3px);
+                                          background-color: #0041F2;
+                                          @media screen and (max-width: 840px) {
+                                          display: none;
+                                          }
+                                      }
+                                     
+                                  }
+                                  &:hover {
+                                    color: #0056b3;
+                                }
+                            }
+                           
+                           
 
-                li {
-                    font-family: $font-main;
-                    font-size: 18px;
-                    color: #666;
-                    cursor: pointer;
-                    transition: color 0.3s ease;
-
-                    &.active {
-                        font-weight: bold;
-                        color: #00195B;
-                        // border-bottom: 2px solid #007bff;
-
-                        &::after {
-                            content: "";
+                            
                         }
                     }
 
-                    &:hover {
-                        color: #0056b3;
+                    .social-icons {
+                        display: flex;
+                        gap: 10px;
+
+                        a {
+                            display: block;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            background-color: rgba(85, 89, 97, 0.11);
+
+                        }
                     }
                 }
-            }
-
-            .social-icons {
-                display: flex;
-                gap: 10px;
-
-                a {
-                    display: block;
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    background-color: rgba(85, 89, 97, 0.11);
-
-                }
-            }
-        }
             }
         }
     }
@@ -154,7 +175,7 @@ $font-main: 'TT Commons';
     }
     
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:840px) {
     .main_wrapper{
         .main{
             .profile_head{
