@@ -8,6 +8,8 @@
   padding: 20px 30px;
   background-color: white;
   margin: 25px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .wrapper .main_wrapper .main .location .container .images .card-images {
   display: flex;
@@ -78,6 +80,8 @@
   padding: 20px 30px;
   background-color: white;
   margin: 25px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .wrapper .main_wrapper .main .location .container .gallery .photos {
   display: flex;

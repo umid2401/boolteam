@@ -4,9 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.main_wrapper .main {
-  height: 100vh;
-}
 .main_wrapper .main .profile_head {
   padding: 40px;
 }
@@ -77,6 +74,8 @@
   justify-content: space-between;
   background-color: #fff;
   margin-top: 10px;
+  outline: none;
+  border: none;
 }
 .main_wrapper .main .profile_head .container .profile-menu .menu-toggle-links {
   display: none;
@@ -97,15 +96,32 @@
   color: #666;
   cursor: pointer;
   transition: color 0.3s ease;
+  display: block;
+  position: relative;
 }
-.main_wrapper .main .profile_head .container .profile-menu ul li.active {
+.main_wrapper .main .profile_head .container .profile-menu ul li a {
+  text-decoration: none;
+  color: #00195B;
+}
+.main_wrapper .main .profile_head .container .profile-menu ul li a.active {
   font-weight: bold;
   color: #00195B;
 }
-.main_wrapper .main .profile_head .container .profile-menu ul li.active::after {
+.main_wrapper .main .profile_head .container .profile-menu ul li a.active::after {
   content: "";
+  position: absolute;
+  width: 100% !important;
+  height: 2px;
+  left: 0;
+  bottom: calc(-100% - 3px);
+  background-color: #0041F2;
 }
-.main_wrapper .main .profile_head .container .profile-menu ul li:hover {
+@media screen and (max-width: 840px) {
+  .main_wrapper .main .profile_head .container .profile-menu ul li a.active::after {
+    display: none;
+  }
+}
+.main_wrapper .main .profile_head .container .profile-menu ul li a:hover {
   color: #0056b3;
 }
 .main_wrapper .main .profile_head .container .profile-menu .social-icons {
@@ -124,7 +140,7 @@
     padding: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .main_wrapper .main .profile_head .container .profile-menu {
     position: relative !important;
   }
@@ -156,7 +172,7 @@
     align-items: start;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 440px) {
+@media screen and (max-width: 840px) and (max-width: 440px) {
   .main_wrapper .main .profile_head .container .profile_section .profile-right {
     flex-direction: column;
     gap: 12px;

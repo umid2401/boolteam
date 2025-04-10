@@ -21,10 +21,12 @@
   background-color: #fff;
   padding: 20px 30px;
   margin: 25px 0;
+  overflow: hidden;
+  border-radius: 8px;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
@@ -33,6 +35,7 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
   display: flex;
+  cursor: pointer;
   align-items: center;
   gap: 10px;
   width: calc(33.3333333333% - 15px);
@@ -40,11 +43,12 @@
   padding: 10px;
   border-radius: 6px;
   background-color: rgba(127, 134, 151, 0.03);
+  text-decoration: none;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   position: relative;
 }
@@ -70,7 +74,7 @@
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info {
-  flex-grow: 1;
+  width: calc(100% - 75px);
   display: flex;
   justify-content: space-between;
 }
@@ -104,6 +108,10 @@
   align-items: center;
   justify-content: center;
 }
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child {
+  background-color: #fff;
+}
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button {
   width: 35px !important;
@@ -124,6 +132,84 @@
   height: 5px;
   background-color: rgb(0, 65, 242);
   border-radius: 50%;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn {
+  width: calc(100% - 75px);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf h3,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf h3 {
+  line-height: 22px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(0, 25, 91);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf p,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(85, 89, 97);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn {
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: #0041F2;
+  color: #fff;
+  font-family: "TT Commons";
+  border: none;
+  outline: none;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child {
+  background-color: #BFC4D2;
+}
+@media screen and (max-width: 420px) {
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card {
+    position: relative;
+    height: 130px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group {
+    gap: 5px;
+    position: absolute;
+    left: 10px;
+  }
+  .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn,
+  .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card1,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card1 {
+  align-items: start;
+  padding: 20px 10px;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_.active,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_.active {
+  display: flex !important;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_sub,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_sub {
+  display: flex;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .search-container,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .search-container {
@@ -180,42 +266,34 @@
   justify-content: space-between;
   background-color: #fff;
   margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.wrapper .main_wrapper .main .sub .container .profile-menus .menu-toggle-links,
-.wrapper .main_wrapper .main .friends_section .container .profile-menus .menu-toggle-links {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #0041F2;
-}
-.wrapper .main_wrapper .main .sub .container .profile-menus ul,
-.wrapper .main_wrapper .main .friends_section .container .profile-menus ul {
+.wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends {
   list-style: none;
   display: flex;
   gap: 25px;
 }
-.wrapper .main_wrapper .main .sub .container .profile-menus ul li,
-.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li {
+.wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends li,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends li {
   font-family: "TT Commons";
   font-size: 18px;
   color: #666;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.wrapper .main_wrapper .main .sub .container .profile-menus ul li.active,
-.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li.active {
-  font-weight: bold;
-  color: #00195B;
-  border-bottom: 2px solid #007bff;
+.wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends li.active,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends li.active {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
 }
-.wrapper .main_wrapper .main .sub .container .profile-menus ul li.active::after,
-.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li.active::after {
+.wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends li.active::after,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends li.active::after {
   content: "";
 }
-.wrapper .main_wrapper .main .sub .container .profile-menus ul li:hover,
-.wrapper .main_wrapper .main .friends_section .container .profile-menus ul li:hover {
+.wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends li:hover,
+.wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends li:hover {
   color: #0056b3;
 }
 .wrapper .main_wrapper .main .sub .container .profile-menus .social-icons,
@@ -229,6 +307,25 @@
   padding: 5px 10px;
   border-radius: 5px;
   background-color: rgba(85, 89, 97, 0.11);
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .sub .container .profile-menus,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus {
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+  }
+  .wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main .sub .container .profile-menus .tab-friends li,
+  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tab-friends li {
+    text-align: center;
+  }
 }
 .wrapper .main_wrapper .main .profile-menu {
   padding: 20px 30px;
@@ -290,62 +387,38 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .wrapper .main_wrapper .main .location .container .profile-menus,
-  .wrapper .main_wrapper .main .friends_section .container .profile-menus {
-    position: relative !important;
-    z-index: 100 !important;
-    padding: 10px 15px !important;
-    margin-top: 0;
-  }
-  .wrapper .main_wrapper .main .location .container .profile-menus .menu-toggle-links,
-  .wrapper .main_wrapper .main .friends_section .container .profile-menus .menu-toggle-links {
-    display: block !important;
-    position: relative;
-    z-index: 1001;
-  }
-  .wrapper .main_wrapper .main .location .container .profile-menus .tabs,
-  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs {
-    display: none !important;
-    flex-direction: column;
-    gap: 10px !important;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background: white;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  .wrapper .main_wrapper .main .location .container .profile-menus .tabs.show,
-  .wrapper .main_wrapper .main .friends_section .container .profile-menus .tabs.show {
-    display: flex !important;
-  }
   .wrapper .main_wrapper .main .location .container .main_friend,
   .wrapper .main_wrapper .main .friends_section .container .main_friend {
     margin: 15px 0 !important;
   }
-  .wrapper .main_wrapper .main .profile-menu {
+}
+@media screen and (max-width: 840px) {
+  .wrapper .main_wrapper .main .location .profile-menu {
+    padding: 20px 15px !important;
     position: relative !important;
+    display: none;
   }
-  .wrapper .main_wrapper .main .profile-menu .menu-toggle-links {
+  .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
     display: block !important;
-    position: relative !important;
-    z-index: 1001 !important;
+    position: relative;
+    z-index: 1001;
   }
-  .wrapper .main_wrapper .main .profile-menu .tabs {
+  .wrapper .main_wrapper .main .location .profile-menu .tabs {
     display: none !important;
+    padding: 20px 15px !important;
+    display: none;
     flex-direction: column;
     gap: 10px !important;
-    z-index: 1000 !important;
     position: absolute;
     top: 50px;
     left: 0;
     background: white;
+    z-index: 1009 !important;
     width: 100%;
     padding: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  .wrapper .main_wrapper .main .profile-menu .tabs.show {
+  .wrapper .main_wrapper .main .location .profile-menu .tabs.show {
     display: flex !important;
   }
 }

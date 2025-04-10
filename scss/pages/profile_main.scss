@@ -5,8 +5,7 @@
     font-style: normal;
 }
 $font-main: 'TT Commons';
-
-.wrapper {
+ .wrapper {
     .main_wrapper {
         .main {
             .location {
@@ -14,31 +13,24 @@ $font-main: 'TT Commons';
                     .location-container {
                         display: flex;
                         align-items: center;
-
-                        .swiper,
+                         .swiper,
                         .forum {
                             border-radius: 8px;
-
-                        }
-
-                        .swiper {
+                         }
+                         .swiper {
                             background-color: #fff;
                         }
-
-                        .ads {
+                         .ads {
                             width: 55%;
-
-                            .slide-tab {
+                             .slide-tab {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-
-                                .left {
+                                 .left {
                                     display: flex;
                                     align-items: center;
                                     gap: 20px;
-
-                                    h2 {
+                                     h2 {
                                         font-family: $font-main;
                                         font-size: 28px;
                                         font-weight: 900;
@@ -46,8 +38,7 @@ $font-main: 'TT Commons';
                                         align-items: center;
                                         gap: 5px;
                                     }
-
-                                    .announcements__tabs {
+                                     .announcements__tabs {
                                         .tab {
                                             font-family: $font-main;
                                             font-size: 17px;
@@ -59,22 +50,18 @@ $font-main: 'TT Commons';
                                             border-radius: 5px;
                                             cursor: pointer;
                                         }
-
-                                        .active {
-
-                                            border: none;
+                                         .active {
+                                             border: none;
                                             background-color: #0041F2;
                                             color: white;
                                         }
                                     }
                                 }
-
-                                .right {
+                                 .right {
                                     display: flex;
                                     gap: 20px;
                                     align-items: center;
-
-                                    .div {
+                                     .div {
                                         width: 28px;
                                         height: 28px;
                                         border-radius: 50%;
@@ -86,43 +73,35 @@ $font-main: 'TT Commons';
                                     }
                                 }
                             }
-
-                            .swiper-wrapper {
+                             .swiper-wrapper {
                                 padding: 30px 0 0 0;
                                 height: auto !important;
-
-                                .card {
+                                 .card {
                                     background: #DDE2EE;
                                     border-radius: 10px;
                                     overflow: hidden;
                                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                                     transition: transform 0.3s ease;
                                     margin: 0 auto;
-
-                                    &:hover {
+                                     &:hover {
                                         transform: translateY(-5px);
                                     }
-
-                                    .card__image {
+                                     .card__image {
                                         width: 100%;
                                         height: 300px;
-
-                                        img {
+                                         img {
                                             width: 100%;
                                             height: 100%;
                                             object-fit: cover;
                                         }
                                     }
-
-                                    .card__info {
+                                     .card__info {
                                         padding: 0px 20px 0 20px;
                                         display: block;
-
-                                        .card__item {
+                                         .card__item {
                                             position: relative;
                                             display: block;
-
-                                            h3 {
+                                             h3 {
                                                 padding-top: 20px;
                                                 font-size: 21px;
                                                 align-items: center;
@@ -131,8 +110,7 @@ $font-main: 'TT Commons';
                                                 color: #00195B;
                                                 line-height: 25px;
                                             }
-
-                                            .card__score {
+                                             .card__score {
                                                 width: 30px;
                                                 height: 30px;
                                                 display: grid;
@@ -143,32 +121,28 @@ $font-main: 'TT Commons';
                                                 position: absolute;
                                                 top: -10%;
                                             }
-
-                                            .__img {
+                                             .__img {
                                                 position: absolute;
                                                 top: -10%;
                                                 right: 0;
                                                 width: 55px;
                                                 height: 55px;
                                             }
-
-                                            .card__status {
+                                             .card__status {
                                                 color: #05974E;
                                                 font-family: $font-main;
                                                 font-size: 14px;
                                                 font-weight: 500;
                                                 margin-bottom: 20px;
                                             }
-
-                                            .card__age {
+                                             .card__age {
                                                 font-family: $font-main;
                                                 font-size: 14px;
                                                 font-weight: 500;
                                                 color: rgba(19, 32, 48, 0.5);
                                                 line-height: 20px;
                                             }
-
-                                            .gold {
+                                             .gold {
                                                 display: block;
                                                 color: #132030;
                                                 font-family: $font-main;
@@ -178,15 +152,12 @@ $font-main: 'TT Commons';
                                                 line-height: 24px;
                                                 color: #132030;
                                                 opacity: 0.6;
-
-                                            }
+                                             }
                                         }
-
-                                    }
+                                     }
                                 }
                             }
-
-                            .ranking_link {
+                             .ranking_link {
                                 text-decoration: none;
                                 display: flex;
                                 align-items: center;
@@ -207,40 +178,34 @@ $font-main: 'TT Commons';
                                 padding: 20px 30px;
                                 background-color: #fff;
                                 border-radius: 8px;
-
-                                h3 {
+                                 h3 {
                                     font-size: 20px;
                                     color: rgba(0, 19, 70, 1);
                                     line-height: 19px;
                                     font-weight: 600;
                                     margin-bottom: 20px;
                                 }
-
-                                .friends-list {
+                                 .friends-list {
                                     display: grid;
                                     gap: 10px;
-
-                                    .card {
+                                     .card {
                                         display: flex;
                                         align-items: center;
                                         gap: 10px;
                                         border-radius: 6px;
                                         background-color: transparent;
                                         cursor: pointer;
-
-                                        .img {
+                                         .img {
                                             width: 50px;
                                             height: 50px;
                                             border-radius: 50%;
                                             position: relative;
-
-                                            img {
+                                             img {
                                                 width: 100%;
                                                 height: 100%;
                                                 object-fit: cover;
                                             }
-
-                                            .badge {
+                                             .badge {
                                                 position: absolute;
                                                 bottom: 0;
                                                 width: 20px;
@@ -253,31 +218,26 @@ $font-main: 'TT Commons';
                                                 border-radius: 50%;
                                             }
                                         }
-
-                                        .info {
+                                         .info {
                                             flex-grow: 1;
                                             display: flex;
                                             justify-content: space-between;
-
-                                            h3 {
+                                             h3 {
                                                 line-height: 19px;
                                                 font-size: 19px;
                                                 font-weight: 500;
                                                 color: rgba(0, 25, 91, 1);
                                                 margin-bottom: 5px;
                                             }
-
-                                            p {
+                                             p {
                                                 font-size: 14px;
                                                 font-weight: 400;
                                                 color: rgba(85, 89, 97, 1);
                                             }
-
-                                        }
+                                         }
                                     }
                                 }
-
-                                .view-all {
+                                 .view-all {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
@@ -296,21 +256,17 @@ $font-main: 'TT Commons';
                                 margin-top: 25px;
                                 background-color: #fff;
                                 border-radius: 8px;
-
-                                .album {
+                                 .album {
                                     width: 100%;
-
-                                    .slide-tab {
+                                     .slide-tab {
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
-
-                                        .left {
+                                         .left {
                                             display: flex;
                                             align-items: center;
                                             gap: 20px;
-
-                                            h2 {
+                                             h2 {
                                                 font-family: $font-main;
                                                 font-size: 28px;
                                                 font-weight: 900;
@@ -318,16 +274,12 @@ $font-main: 'TT Commons';
                                                 align-items: center;
                                                 gap: 5px;
                                             }
-
-
-                                        }
-
-                                        .right {
+                                         }
+                                         .right {
                                             display: flex;
                                             gap: 20px;
                                             align-items: center;
-
-                                            .div {
+                                             .div {
                                                 display: block;
                                                 width: 28px;
                                                 height: 28px;
@@ -340,27 +292,22 @@ $font-main: 'TT Commons';
                                             }
                                         }
                                     }
-
-                                    .photo,
+                                     .photo,
                                     .photo-1 {
                                         width: 100%;
-
-                                        .swiper-button-next,
+                                         .swiper-button-next,
                                         .swiper-button-prev {
                                             display: none !important;
                                         }
-
-                                        .slide-tab {
+                                         .slide-tab {
                                             display: flex;
                                             align-items: center;
                                             justify-content: space-between;
-
-                                            .left {
+                                             .left {
                                                 display: flex;
                                                 align-items: center;
                                                 gap: 20px;
-
-                                                h2 {
+                                                 h2 {
                                                     font-family: $font-main;
                                                     font-size: 28px;
                                                     font-weight: 900;
@@ -368,8 +315,7 @@ $font-main: 'TT Commons';
                                                     align-items: center;
                                                     gap: 5px;
                                                 }
-
-                                                .announcements__tabs {
+                                                 .announcements__tabs {
                                                     .tab {
                                                         font-family: $font-main;
                                                         font-size: 17px;
@@ -381,22 +327,18 @@ $font-main: 'TT Commons';
                                                         border-radius: 5px;
                                                         cursor: pointer;
                                                     }
-
-                                                    .active {
-
-                                                        border: none;
+                                                     .active {
+                                                         border: none;
                                                         background-color: #0041F2;
                                                         color: white;
                                                     }
                                                 }
                                             }
-
-                                            .right {
+                                             .right {
                                                 display: flex;
                                                 gap: 20px;
                                                 align-items: center;
-
-                                                .div {
+                                                 .div {
                                                     width: 28px;
                                                     height: 28px;
                                                     border-radius: 50%;
@@ -408,44 +350,32 @@ $font-main: 'TT Commons';
                                                 }
                                             }
                                         }
-
-                                        .swiper-wrapper {
+                                         .swiper-wrapper {
                                             margin-top: 20px;
                                             height: auto !important;
-
-                                            .card {
+                                             .card {
                                                 background: #DDE2EE;
                                                 border-radius: 10px;
                                                 overflow: hidden;
                                                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                                                 transition: transform 0.3s ease;
                                                 margin: 0 auto;
-
-                                                &:hover {
+                                                 &:hover {
                                                     transform: translateY(-5px);
                                                 }
-
-                                                .card__image {
+                                                 .card__image {
                                                     width: 100%;
                                                     height: 300px;
-
-                                                    img {
+                                                     img {
                                                         width: 100%;
                                                         height: 100%;
                                                         object-fit: cover;
                                                     }
                                                 }
-
-
-                                            }
-
-
-                                        }
-
-
-                                    }
-
-                                    .view-all {
+                                             }
+                                         }
+                                     }
+                                     .view-all {
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
@@ -477,22 +407,28 @@ $font-main: 'TT Commons';
                                 .links {
                                     display: flex;
                                     gap: 10px;
-
-                                    a {
+                                     a {
                                         font-size: 16px;
                                         text-decoration: none;
                                         font-weight: 500;
                                         font-size: 16px;
                                         opacity: 0.5;
                                         color: rgba(0, 25, 91, 1);
+                                           border-radius: 10px;
+                                           display: flex;
+                                           align-items: center;
+                                           justify-content: center;
+                                        &.active{
+                                           color: #0041F2;
+                                           opacity: 1;
+                                        
+                                        }
                                     }
                                 }
-
-                                .dropdown {
+                                 .dropdown {
                                     position: relative;
                                     display: inline-block;
-
-                                    .dropdown-btn {
+                                     .dropdown-btn {
                                         background: none;
                                         border: none;
                                         font-size: 16px;
@@ -504,10 +440,8 @@ $font-main: 'TT Commons';
                                         font-family: $font-main;
                                         display: flex;
                                         gap: 5px;
-
-                                    }
-
-                                    .dropdown-menu {
+                                     }
+                                     .dropdown-menu {
                                         position: absolute;
                                         top: 100%;
                                         left: 0;
@@ -519,266 +453,236 @@ $font-main: 'TT Commons';
                                         margin: 5px 0;
                                         width: 150px;
                                         display: none;
-
-                                        li {
+                                         li {
                                             font-family: $font-main;
-
-                                            border-bottom: 1px solid #eee;
-
-                                            &:last-child {
+                                             border-bottom: 1px solid #eee;
+                                             &:last-child {
                                                 border-bottom: none;
                                             }
-
-                                            a {
+                                             a {
                                                 display: block;
                                                 padding: 10px;
                                                 text-decoration: none;
-
-                                                font-size: 17px;
+                                                 font-size: 17px;
                                                 font-family: $font-main;
                                                 color: rgba(109, 114, 126, 1);
-
-                                                &:hover {
+                                                 &:hover {
                                                     background: #f5f5f5;
                                                 }
                                             }
                                         }
                                     }
-
-                                    &.active .dropdown-menu {
+                                     &.active .dropdown-menu {
                                         display: block;
                                     }
                                 }
-
-                            }
-                            .post {
-                                background-color: #fff;
-                                margin-top: 25px;
-                                padding: 20px;
-
-                                .post-header {
-                                    margin-bottom: 20px;
-
-                                    .card {
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 10px;
-                                        justify-content: space-between;
-
-                                        border-radius: 6px;
-
-                                        .img {
-                                            width: 60px;
-                                            height: 60px;
-                                            border-radius: 50%;
-                                            position: relative;
-
-                                            img {
-                                                width: 100%;
-                                                height: 100%;
-                                                object-fit: cover;
-                                            }
-
-                                            .badge {
-                                                position: absolute;
-                                                bottom: 0;
-                                                width: 25px;
-                                                height: 25px;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                color: #fff;
-                                                background-color: blue;
-                                                border-radius: 50%;
-                                            }
-                                        }
-
-                                        .info {
-                                            flex-grow: 1;
+                             }
+                            .tab-content{
+                                display: none;
+                                .post {
+                                    background-color: #fff;
+                                    margin-top: 25px;
+                                    padding: 20px;
+                                     .post-header {
+                                        margin-bottom: 20px;
+                                         .card {
                                             display: flex;
+                                            align-items: center;
+                                            gap: 10px;
                                             justify-content: space-between;
-
-                                            h3 {
-                                                line-height: 22px;
-                                                font-size: 22px;
-                                                font-weight: 500;
-                                                color: rgba(0, 25, 91, 1);
-                                            }
-
-                                            p {
-                                                font-size: 15px;
-                                                font-weight: 400;
-                                                color: rgba(85, 89, 97, 1);
-                                            }
-
-                                            .btn-group {
-                                                display: flex;
-                                                align-items: center;
-                                                gap: 10px;
-
-                                                .sms {
-                                                    width: 35px !important;
-                                                    height: 35px !important;
-                                                    background-color: rgba(0, 65, 242, 1);
-                                                    border-radius: 8px;
-                                                    cursor: pointer;
-                                                    display: flex;
-                                                    align-items: center;
-                                                    justify-content: center;
+                                             border-radius: 6px;
+                                             .img {
+                                                width: 60px;
+                                                height: 60px;
+                                                border-radius: 50%;
+                                                position: relative;
+                                                 img {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: cover;
                                                 }
-
-                                                .menu-button {
-                                                    width: 35px !important;
-                                                    height: 35px !important;
+                                                 .badge {
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    width: 25px;
+                                                    height: 25px;
                                                     display: flex;
-                                                    border-radius: 50%;
-                                                    align-items: center;
                                                     justify-content: center;
-
-                                                    color: blue;
-                                                    gap: 3px;
-                                                    background-color: rgba(127, 134, 151, 0.03);
-                                                    border: none;
-                                                    padding: 5px;
-                                                    cursor: pointer;
-
-                                                    .dots {
-                                                        width: 5px;
-                                                        height: 5px;
+                                                    align-items: center;
+                                                    color: #fff;
+                                                    background-color: blue;
+                                                    border-radius: 50%;
+                                                }
+                                            }
+                                             .info {
+                                                flex-grow: 1;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                 h3 {
+                                                    line-height: 22px;
+                                                    font-size: 22px;
+                                                    font-weight: 500;
+                                                    color: rgba(0, 25, 91, 1);
+                                                }
+                                                 p {
+                                                    font-size: 15px;
+                                                    font-weight: 400;
+                                                    color: rgba(85, 89, 97, 1);
+                                                }
+                                                 .btn-group {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    gap: 10px;
+                                                     .sms {
+                                                        width: 35px !important;
+                                                        height: 35px !important;
                                                         background-color: rgba(0, 65, 242, 1);
+                                                        border-radius: 8px;
+                                                        cursor: pointer;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                    }
+                                                     .menu-button {
+                                                        width: 35px !important;
+                                                        height: 35px !important;
+                                                        display: flex;
                                                         border-radius: 50%;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                         color: blue;
+                                                        gap: 3px;
+                                                        background-color: rgba(127, 134, 151, 0.03);
+                                                        border: none;
+                                                        padding: 5px;
+                                                        cursor: pointer;
+                                                         .dots {
+                                                            width: 5px;
+                                                            height: 5px;
+                                                            background-color: rgba(0, 65, 242, 1);
+                                                            border-radius: 50%;
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
-                                }
-
-                                .post-images {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    gap: 15px;
-                                    margin-bottom: 20px;
-
-                                    .post-image {
-                                        width: calc(100% /3 - 15px);
-                                        border-radius: 8px;
-                                        height: 280px;
-                                        overflow: hidden;
-
-                                        img {
+                                     .post-images {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        gap: 15px;
+                                        margin-bottom: 20px;
+                                         .post-image {
+                                            width: calc(100% /3 - 15px);
+                                            border-radius: 8px;
+                                            height: 280px;
+                                            overflow: hidden;
+                                             img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                     }
+                                     .post-footer {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        margin-top: 25px;
+                                         .hotel-meta {
+                                            display: flex;
+                                            align-items: center;
+                                             gap: 10px;
+                                             .meta_div {
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 5px;
+                                                background-color: rgba(0, 65, 242, 0.09);
+                                                padding: 5px 10px;
+                                                border-radius: 15px;
+                                                cursor: pointer;
+                                            }
+                                             .meta_div1 {
+                                                background: transparent;
+                                            }
+                                        }
+                                        @media screen and (max-width:440px) {
+                                            flex-direction: column !important;
+                                            align-items: start;
+                                            gap: 10px;
+                                        }
+                                    }
+                                     .travel-card {
+                                        display: flex;
+                                        background: white;
+                                        gap: 25px;
+                                         &__image-wrapper {
+                                            width: 45%;
+                                            height: 270px;
+                                            border-radius: 15px;
+                                            overflow: hidden;
+                                        }
+                                        &__image {
                                             width: 100%;
                                             height: 100%;
                                             object-fit: cover;
                                         }
-                                    }
-
-                                }
-
-                                .post-footer {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    margin-top: 25px;
-
-                                    .hotel-meta {
-                                        display: flex;
-                                        align-items: center;
-
-                                        gap: 10px;
-
-                                        .meta_div {
+                                        &__content {
+                                            padding: 15px;
+                                            width: calc(55% - 25px);
+                                        }
+                                        &__title {
+                                            font-size: 20px;
+                                            font-weight: 6 00;
+                                            line-height: 23px;
+                                            margin-bottom: 10px;
+                                        }
+                                        &__tags {
                                             display: flex;
-                                            align-items: center;
                                             gap: 5px;
-                                            background-color: rgba(0, 65, 242, 0.09);
-                                            padding: 5px 10px;
+                                            margin-bottom: 20px;
+                                        }
+                                         .tag {
+                                            background: #f0f0f0;
+                                            color: rgba(83, 86, 94, 1);
+                                            font-size: 14px;
+                                            padding: 8px 12px;
                                             border-radius: 15px;
+                                            font-weight: 400;
                                             cursor: pointer;
                                         }
-
-                                        .meta_div1 {
-                                            background: transparent;
+                                         &__text {
+                                            font-size: 16px;
+                                            color: #666;
+                                            line-height: 20px;
+                                            margin-bottom: 10px;
                                         }
-                                    }
-                                    @media screen and (max-width:440px) {
-                                        flex-direction: column !important;
-                                        align-items: start;
-                                        gap: 10px;
+                                         &__link {
+                                            font-size: 14px;
+                                            color: #007bff;
+                                            font-weight: bold;
+                                            text-decoration: none;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        .ranking_link {
+                                            text-decoration: none;
+                                            margin-top: 10px;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 3px;
+                                            font-size: 17px;
+                                            font-weight: 600;
+                                            img{
+                                                vertical-align: middle;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .travel-card {
-                                    display: flex;
-                                    background: white;
-                                    gap: 25px;
-                                    
-                                    &__image-wrapper {
-                                        width: 45%;
-                                        height: 270px;
-                                        border-radius: 15px;
-                                        overflow: hidden;
-                                    }
-                                    &__image {
-                                        width: 100%;
-                                        height: 100%;
-                                        object-fit: cover;
-                                    }
-                                    &__content {
-                                        padding: 15px;
-                                        width: calc(55% - 25px);
-                                    }
-                                    &__title {
-                                        font-size: 20px;
-                                        font-weight: 6 00;
-                                        line-height: 23px;
-                                        margin-bottom: 10px;
-                                    }
-                                    &__tags {
-                                        display: flex;
-                                        gap: 5px;
-                                        margin-bottom: 20px;
-                                    }
-
-                                    .tag {
-                                        background: #f0f0f0;
-                                        color: rgba(83, 86, 94, 1);
-                                        font-size: 14px;
-                                        padding: 8px 12px;
-                                        border-radius: 15px;
-                                        font-weight: 400;
-                                        cursor: pointer;
-                                    }
-
-                                    &__text {
-                                        font-size: 16px;
-                                        color: #666;
-                                        line-height: 20px;
-                                        margin-bottom: 10px;
-                                    }
-
-                                    &__link {
-                                        font-size: 14px;
-                                        color: #007bff;
-                                        font-weight: bold;
-                                        text-decoration: none;
-                                        &:hover {
-                                            text-decoration: underline;
-                                        }
-                                    }
-                                    .ranking_link {
-                                        text-decoration: none;
-                                        margin-top: 10px;
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 3px;
-                                        font-size: 17px;
-                                        font-weight: 600;
-                                        img{
-                                            vertical-align: middle;
-                                        }
-                                    }
+                                &.active{
+                                    display: block;
                                 }
                             }
                         }
@@ -788,8 +692,7 @@ $font-main: 'TT Commons';
         }
     }
 }
-
-@media screen and (max-width:992px) {
+ @media screen and (max-width:992px) {
     .wrapper{
         .main_wrapper{
             .main{
@@ -806,16 +709,14 @@ $font-main: 'TT Commons';
             }
         }
     }
-    
-}
+ }
 @media screen and (max-width:768px) {
     .wrapper{
         .main_wrapper{
             .main{
                 .location{
                     .social-layout{
-                     
-                        .content{
+                         .content{
                            .post{
                             .post-images{
                                 flex-wrap: wrap;
@@ -852,16 +753,12 @@ $font-main: 'TT Commons';
                                 left: 0;
                                 top: 100%;
                                 display: none !important;
-                               
-
+                             }
                             }
-                           
-                           }
                         }
                     }
                 }
             }
         }
     }
-    
-}
+ }
