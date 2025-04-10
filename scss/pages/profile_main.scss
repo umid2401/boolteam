@@ -13,15 +13,89 @@ $font-main: 'TT Commons';
                     .location-container {
                         display: flex;
                         align-items: center;
-                         .swiper,
+                        position: relative !important;
+                        .swiper,
                         .forum {
                             border-radius: 8px;
-                         }
-                         .swiper {
+                        }
+                        .swiper {
                             background-color: #fff;
+                            position: static !important;
+                            
+                            .swiper-button-prev{
+                                position: absolute !important;
+                                left: 46%;
+                                @media screen and (max-width:1092px) {
+                                    left: 0;
+                                    top: 70%;
+                                }
+                                @media screen and (max-width:1092px) {
+                                    left: 10px;
+                                    top: 80%;
+                                }
+                                top: 50%;
+                                background-color: #F3F3F3 !important;
+                                border-radius: 50%;
+                                width: 32px !important;
+                                height: 32px !important;
+                                &::after{
+                                    display: none !important;
+                                }
+                                display: flex !important;
+                                align-items: center !important;
+                                justify-content: center !important;
+                                svg{
+                                    width:  100% !important;
+                                    object-fit: contain !important;
+                                    height: 14px !important;
+                                    margin-right: 3px;
+                                    
+                                }
+                                
+                            }
+                            .swiper-button-next{
+                                position: absolute !important;
+                                right: 12px ;
+                                top: 50% ;
+                                width: 32px !important;
+                                height: 32px !important;
+                                background-color: #F3F3F3;
+                                border-radius: 50%;
+                                @media screen and (max-width:1092px) {
+                                    right: 0;
+                                    top: 70%;
+                                }
+                                @media screen and (max-width:640px) {
+                                    right: 10px;
+                                    top: 80%;
+                                }
+                                &::after{
+                                    display: none !important;
+                                }
+                                display: flex !important;
+                                align-items: center !important;
+                                justify-content: center !important;
+                                svg{
+                                    width:  100% !important;
+                                    object-fit: contain !important;
+                                    height: 14px !important;
+                                    margin-left: 3px;
+                                    
+                                }
+                               
+
+                            }
+                            
                         }
                          .ads {
-                            width: 55%;
+                            width: 48%;
+                            @media screen and (max-width:1092px) {
+                                 width: 95%;
+                            }
+                            @media screen and (max-width:1092px) {
+                                width: 0%;
+                           }
+                          
                              .slide-tab {
                                 display: flex;
                                 align-items: center;

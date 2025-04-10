@@ -4,12 +4,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../../assets/fonts/Gilroy-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'TT Commons';
     src: url('../../assets/fonts/TT\ Commons\ Regular.otf') format('opentype');
@@ -23,14 +25,17 @@
     font-weight: normal;
     font-style: normal;
 }
-@mixin flex_one{
+
+@mixin flex_one {
     display: flex;
     align-items: center;
 }
+
 $font-primary: 'TT Commons', sans-serif;
 $font-main: "TT Commons";
 $font-gilroy: "Gilroy", sans-serif;
 $font-medium: 'Commons', sans-serif;
+
 .wrapper {
     .main_wrapper {
         .main {
@@ -41,27 +46,33 @@ $font-medium: 'Commons', sans-serif;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+
             ._about1 {
                 position: relative;
                 bottom: 0px;
                 margin-top: -200px;
             }
-            ._about{
+
+            ._about {
                 padding: 40px;
-                .container{
-                    ._about-container{
+
+                .container {
+                    ._about-container {
                         background-color: #fff;
                         padding: 40px 30px;
                         display: flex;
                         align-items: stretch;
                         justify-content: space-between;
-                       
+
                         .profile-card {
                             width: 100%;
+                            position: relative;
+
                             .profile-info {
                                 display: flex;
                                 align-items: start;
                                 gap: 20px;
+
                                 .profile-img {
                                     position: relative;
 
@@ -80,6 +91,7 @@ $font-medium: 'Commons', sans-serif;
                                         left: 5px;
                                     }
                                 }
+
                                 .profile_detail {
                                     flex-grow: 1;
                                     margin-bottom: 15px;
@@ -181,9 +193,10 @@ $font-medium: 'Commons', sans-serif;
 
                             .actions {
                                 display: flex;
-                                align-items: end;
+                                justify-content: start;
                                 margin-top: 100px;
-                                justify-content: space-between;
+                                gap: 70px;
+
                                 .profile-left {
                                     display: flex;
                                     align-items: center;
@@ -192,7 +205,7 @@ $font-medium: 'Commons', sans-serif;
 
                                 .profile-right {
                                     display: flex;
-                                    justify-content: end;
+                                    // justify-content: space-between;
                                     gap: 20px;
                                     flex-grow: 1;
 
@@ -222,14 +235,21 @@ $font-medium: 'Commons', sans-serif;
                                         gap: 3px;
                                         border: none;
                                         cursor: pointer;
+                                        position: absolute;
+                                        // top: 0;
+                                        right: 0;
+                                        
+                                        width: 45px;
+                                        height: 45px;
 
                                     }
 
                                 }
                             }
                         }
-                        
+
                     }
+
                     .profile-menu {
                         padding: 20px 30px;
                         display: flex;
@@ -240,7 +260,7 @@ $font-medium: 'Commons', sans-serif;
                         outline: none;
                         border: none;
                         border-radius: 8px;
-                        
+
                         .menu-toggle-links {
                             display: none;
                             font-size: 24px;
@@ -249,11 +269,13 @@ $font-medium: 'Commons', sans-serif;
                             cursor: pointer;
                             color: #0041F2;
                         }
-                         .tabs {
+
+                        .tabs {
                             list-style: none;
                             display: flex;
                             gap: 25px;
-                             li {
+
+                            li {
                                 font-family: $font-main;
                                 font-size: 18px;
                                 color: #666;
@@ -261,13 +283,16 @@ $font-medium: 'Commons', sans-serif;
                                 transition: color 0.3s ease;
                                 display: block;
                                 position: relative;
-                                 a {
+
+                                a {
                                     text-decoration: none;
                                     color: #00195B;
-                                     &.active {
+
+                                    &.active {
                                         font-weight: bold;
                                         color: #00195B;
-                                         &::after {
+
+                                        &::after {
                                             content: "";
                                             position: absolute;
                                             width: 100% !important;
@@ -275,60 +300,71 @@ $font-medium: 'Commons', sans-serif;
                                             left: 0;
                                             bottom: calc(-100% - 3px);
                                             background-color: #0041F2;
-                                             @media screen and (max-width:840px) {
+
+                                            @media screen and (max-width:840px) {
                                                 display: none;
                                             }
                                         }
-                                     }
-                                     &:hover {
+                                    }
+
+                                    &:hover {
                                         color: #0056b3;
                                     }
                                 }
-                             }
+                            }
                         }
-                         .social-icons {
+
+                        .social-icons {
                             display: flex;
                             gap: 10px;
-                             a {
+
+                            a {
                                 display: block;
                                 padding: 5px 10px;
                                 border-radius: 5px;
                                 background-color: rgba(85, 89, 97, 0.11);
-                             }
+                            }
                         }
                     }
-                    .about_profile{
+
+                    .about_profile {
                         display: flex;
-                       
+
                         gap: 25px;
                         margin: 25px 0;
                         align-items: stretch;
                         font-family: $font-main !important;
-                        .profile_about{
+
+                        .profile_about {
                             width: 65%;
                             padding: 20px 30px;
                             background-color: #fff;
                             border-radius: 8px;
+
                             .h2 {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                ._div{
+
+                                ._div {
                                     display: flex;
                                     align-items: center;
                                     gap: 10px;
-                                    span{
+
+                                    span {
                                         font-size: 18px;
                                         font-weight: 700;
                                         color: rgba(0, 65, 242, 1);
                                         line-height: 20px;
                                     }
-                                    ._div1{
-                                       
+
+                                    ._div1 {
+
                                         display: flex;
                                         align-items: center;
                                         gap: 10px;
-                                        p{
+
+                                        p {
                                             font-size: 15px;
                                             color: rgba(0, 25, 91, 1);
                                             line-height: 16px;
@@ -336,17 +372,19 @@ $font-medium: 'Commons', sans-serif;
                                         }
                                     }
                                 }
-                               
+
                             }
-                            .description{
+
+                            .description {
                                 margin: 15px 0;
                                 font-size: 16px;
                                 font-weight: 500;
                                 color: rgba(0, 0, 0, 0.7);
                                 line-height: 20px;
                             }
-                            .info{
-                                p{  
+
+                            .info {
+                                p {
                                     margin: 15px 0;
                                     display: flex;
                                     justify-content: flex-start;
@@ -354,36 +392,41 @@ $font-medium: 'Commons', sans-serif;
                                     font-weight: 500;
                                     color: rgba(0, 0, 0, 0.7);
                                     line-height: 20px;
-                                    span{
+
+                                    span {
                                         flex: 1;
 
                                     }
-                                    
-                                    .strong{
+
+                                    .strong {
                                         flex: 2;
                                         font-weight: 600;
                                         margin-left: 10px;
-                                    color: rgba(0, 0, 0, 1);
+                                        color: rgba(0, 0, 0, 1);
                                     }
-                                    .str{
+
+                                    .str {
                                         flex: 2;
                                     }
-                                    .strong1{
+
+                                    .strong1 {
                                         flex: 2;
                                         font-weight: 600;
-                                        
+
                                         color: rgba(0, 65, 242, 1);
                                     }
-                                    .strong2{
-                                        
+
+                                    .strong2 {
+
                                         font-weight: 600;
-                                      
+
                                         color: rgba(0, 65, 242, 1);
                                     }
 
                                 }
                             }
-                            .hr{
+
+                            .hr {
                                 width: 100%;
                                 height: 1px;
                                 background-color: rgba(217, 217, 217, 0.5);
@@ -391,8 +434,9 @@ $font-medium: 'Commons', sans-serif;
                             }
 
                         }
+
                         .maps_profile {
-                           width: 35%;
+                            width: 35%;
                             height: auto;
                             padding: 20px 0 0 0;
                             border-radius: 10px;
@@ -400,72 +444,85 @@ $font-medium: 'Commons', sans-serif;
                             border-radius: 8px;
                             overflow: hidden;
 
-                            .head{
+                            .head {
                                 padding: 0 20px 20px 20px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                button{
+
+                                button {
                                     border: none;
                                     background: transparent;
                                     cursor: pointer;
                                 }
                             }
-    
+
                             .leaflet-container {
                                 height: 400px !important;
                                 width: 100% !important;
                             }
                         }
                     }
-                    .about_friends { 
+
+                    .about_friends {
                         display: flex;
                         gap: 25px;
                         display: flex;
                         align-items: stretch;
+
                         .left_box {
                             width: 65%;
+
                             .categories {
                                 @include flex_one();
                                 align-items: start !important;
                                 width: 90%;
                             }
+
                             h2 {
                                 font-family: $font-gilroy;
                                 font-size: 28px;
                                 font-weight: 700;
                                 text-align: left;
                             }
+
                             .categories,
                             h2,
                             .line,
                             ._link {
                                 margin: 30px 40px;
                             }
+
                             .categories {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
                                 padding-bottom: 20px;
                                 flex-wrap: nowrap;
+
                                 .category {
                                     width: 47%;
+
                                     .text_name {
                                         @include flex_one();
                                         gap: 10px;
                                         margin: 0 0 15px 0;
+
                                         h3 {
                                             font-family: $font-gilroy;
                                             font-size: 18px;
                                             font-weight: 700;
                                         }
                                     }
+
                                     .tags {
                                         @include flex_one();
                                         width: 100%;
                                         gap: 10px;
                                         flex-wrap: wrap;
-                                        .tag, .show-more {
+
+                                        .tag,
+                                        .show-more {
                                             background-color: #F0F0F2;
                                             padding: 10px 15px;
                                             text-align: center;
@@ -476,9 +533,11 @@ $font-medium: 'Commons', sans-serif;
                                             text-decoration: none;
                                             color: rgba(32, 33, 46, 0.8);
                                         }
-                                        .show-more{
+
+                                        .show-more {
                                             color: rgba(0, 25, 91, 1);
                                         }
+
                                         button {
                                             background-color: rgba(0, 65, 242, 0.13);
                                             border: none;
@@ -494,10 +553,12 @@ $font-medium: 'Commons', sans-serif;
                                     }
                                 }
                             }
+
                             .line {
                                 background-color: #D9D9D9;
                                 height: 2px;
                             }
+
                             ._link {
                                 @include flex_one();
                                 text-decoration: none;
@@ -506,31 +567,42 @@ $font-medium: 'Commons', sans-serif;
                                 font-weight: 900;
                                 color: #00195B;
                                 font-size: 17px;
+                                transition: color 0.3s ease;
+
+                                &:hover {
+                                    color: #0f5abb;
+                                }
                             }
                         }
+
                         .right_box {
                             width: calc(35% - 25px);
                         }
+
                         .left_box {
                             border-radius: 8px;
                             background-color: #fff;
                         }
+
                         .right_box {
                             .directions-container {
                                 border-radius: 8px;
                                 background-color: #fff;
                                 padding: 30px 40px 40px 40px;
+
                                 h2 {
                                     font-family: $font-gilroy;
                                     font-size: 28px;
                                     font-weight: 700;
                                     text-align: left;
                                 }
+
                                 .directions {
                                     @include flex_one();
                                     flex-wrap: wrap;
                                     gap: 10px;
                                     margin: 30px 0;
+
                                     .direction-item {
                                         @include flex_one();
                                         gap: 5px;
@@ -545,16 +617,23 @@ $font-medium: 'Commons', sans-serif;
                                         text-decoration: none;
                                     }
                                 }
+
                                 ._link {
                                     @include flex_one();
                                     text-decoration: none;
-                                    gap: 7px;
+                                    gap: 5px;
                                     font-family: $font-primary;
                                     font-weight: 900;
                                     color: #00195B;
                                     font-size: 17px;
+                                    transition: color 0.3s ease;
+
+                                    &:hover {
+                                        color: #0f5abb;
+                                    }
                                 }
                             }
+
                             .help-container {
                                 border-radius: 8px;
                                 margin-top: 20px;
@@ -562,7 +641,8 @@ $font-medium: 'Commons', sans-serif;
                                 background-color: #0041F2;
                                 display: flex;
                                 justify-content: space-between;
-                                .div{
+
+                                .div {
                                     h2 {
                                         font-family: $font-gilroy;
                                         color: #fff;
@@ -570,13 +650,15 @@ $font-medium: 'Commons', sans-serif;
                                         font-weight: bold;
                                         margin: 0 0 20px 0;
                                     }
+
                                     p {
                                         font-family: $font-gilroy;
                                         color: #fff;
                                         font-size: 17px;
                                         font-weight: 700;
                                         margin: 30px 0 0 0;
-                                    } 
+                                    }
+
                                     .hr {
                                         background-color: #4089FF;
                                         width: 100%;
@@ -586,6 +668,7 @@ $font-medium: 'Commons', sans-serif;
                                 }
                             }
                         }
+
                         @media (min-width: 1250px) and (max-width: 1400px) {
                             .left_box {
                                 .categories {
@@ -595,32 +678,36 @@ $font-medium: 'Commons', sans-serif;
                                 }
                             }
                         }
-    
-    
+
+
                     }
                 }
             }
-            
-            
+
+
+        }
     }
 }
-}
-@media screen and (max-width: 1092px){
 
-    .wrapper{
-        .main_wrapper{
-            .main{
-                ._about{
-                    .container{
-                     ._about-container{
-                        padding: 10px !important;
-                     }
-                        .about_profile{
+@media screen and (max-width: 1092px) {
+
+    .wrapper {
+        .main_wrapper {
+            .main {
+                ._about {
+                    .container {
+                        ._about-container {
+                            padding: 10px !important;
+                        }
+
+                        .about_profile {
                             flex-wrap: wrap;
-                            .profile_about{
+
+                            .profile_about {
                                 width: 100% !important;
                             }
-                            .maps_profile{
+
+                            .maps_profile {
                                 width: 100% !important;
                             }
                         }
@@ -630,32 +717,35 @@ $font-medium: 'Commons', sans-serif;
         }
     }
 }
-@media screen and (max-width: 992px){
 
-    .wrapper{
-        .main_wrapper{
-            .main{
-                ._about{
-                   padding: 10px !important;
+@media screen and (max-width: 992px) {
+
+    .wrapper {
+        .main_wrapper {
+            .main {
+                ._about {
+                    padding: 10px !important;
                 }
             }
         }
     }
 }
+
 @media screen and (max-width:840px) {
-    .main_wrapper{
-        .main{
-            ._about{
-                .container{
-                   .profile-menu{
-                    padding: 10px 15px !important;
-                        position:  relative !important;
+    .main_wrapper {
+        .main {
+            ._about {
+                .container {
+                    .profile-menu {
+                        padding: 10px 15px !important;
+                        position: relative !important;
+
                         .menu-toggle-links {
                             display: block !important;
                             position: relative;
                             z-index: 1001;
                         }
-                
+
                         .tabs {
                             padding: 10px 15px !important;
                             display: none !important;
@@ -668,197 +758,229 @@ $font-medium: 'Commons', sans-serif;
                             width: 100%;
                             padding: 10px;
                             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                
+
                             &.show {
                                 display: flex !important;
                             }
                         }
                     }
 
-                   
+
                 }
             }
         }
     }
-    
+
 }
-@media screen and (max-width: 768px){
-    .wrapper{
-        .main_wrapper{
-            .main{
-                ._about{
-                   padding: 10px !important;
-                   .about_friends{
-                    flex-wrap: wrap;
-                    .left_box{
-                        width: 100% !important;
-                        .categories {
-                           margin: 0 !important;
-                           padding: 10px 15px !important;
-                           @media screen and (max-width: 468px) {
-                             flex-wrap: wrap;
-                             gap: 10px;
-                             .category{
-                                width: 100% !important;
-                             }
-                           }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                ._about {
+                    padding: 10px !important;
+
+                    .about_friends {
+                        flex-wrap: wrap;
+
+                        .left_box {
+                            width: 100% !important;
+
+                            .categories {
+                                margin: 0 !important;
+                                padding: 10px 15px !important;
+
+                                @media screen and (max-width: 468px) {
+                                    flex-wrap: wrap;
+                                    gap: 10px;
+
+                                    .category {
+                                        width: 100% !important;
+                                    }
+                                }
+                            }
+
+                            .line {
+                                margin: 15px !important;
+
+                            }
+
+                            h2 {
+                                margin: 0 !important;
+                                padding: 15px 15px 0 15px;
+                            }
+
+                            ._link {
+                                margin: 0 !important;
+                                padding: 15px !important;
+                            }
                         }
-                        .line{
-                            margin: 15px !important;
-                            
-                        }
-                        h2{
-                            margin: 0 !important;
-                            padding: 15px 15px 0 15px;
-                        }
-                        ._link{
-                            margin: 0 !important;
-                            padding: 15px !important;
-                        }
-                    }
-                    .right_box{
-                        width: 100% !important;
-                        .directions-container{
-                            padding: 15px !important;
-                            .directions{
-                                margin: 15px 0 !important;
+
+                        .right_box {
+                            width: 100% !important;
+
+                            .directions-container {
+                                padding: 15px !important;
+
+                                .directions {
+                                    margin: 15px 0 !important;
+                                }
                             }
                         }
                     }
-                   }
-                   .about_profile{
-                    .profile_about{
-                        padding: 10px 15px !important;
+
+                    .about_profile {
+                        .profile_about {
+                            padding: 10px 15px !important;
+                        }
                     }
-                   }
                 }
             }
         }
     }
 
 }
-@media screen and (max-width: 640px){
-    .wrapper{
-        .main_wrapper{
-            .main{
-                ._about{
-                    .container{
-                     ._about-container{
-                        .profile-card{
-                            position:  relative !important;
-                            .actions{
-                                flex-direction: column;
-                                align-items: start !important;
-                                gap: 10px;
-                                margin-top: 0 !important;
-                                .more-btn{
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                    width: 45px;
-                                    height: 45px;
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                ._about {
+                    .container {
+                        ._about-container {
+                            .profile-card {
+                                position: relative;
+
+                                .actions {
+                                    flex-direction: column;
+                                    align-items: start;
+                                    gap: 10px;
+                                    margin-top: 0 !important;
+
+                                    .more-btn {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        width: 45px;
+                                        height: 45px;
+                                    }
+
+                                    @media screen and (max-width: 440px) {
+                                        .profile-right {
+                                            flex-direction: column !important;
+                                            width: 100% !important;
+
+                                            gap: 10px;
+
+                                            button {
+                                                width: 100% !important;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+
                                 }
-                                @media screen and (max-width: 440px){
-                                    .profile-right{
-                                        flex-direction: column !important;
+
+                                .profile-info {
+                                    flex-direction: column;
+
+                                    .profile_detail {
                                         width: 100% !important;
 
-                                        gap: 10px;
-                                        button{
-                                            width: 100% !important;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
+                                        @media screen and (max-width: 360px) {
+                                            .div {
+                                                gap: 10px;
+                                                flex-direction: column !important;
+                                                align-items: start !important;
+                                            }
                                         }
                                     }
                                 }
-
                             }
-                            .profile-info{
+
+                        }
+
+                        .profile-menu {
+                            position: relative !important;
+
+                            .menu-toggle-links {
+                                display: block !important;
+                                position: relative;
+                                z-index: 1001;
+                            }
+
+                            .tabs {
+                                display: none !important;
                                 flex-direction: column;
-                                .profile_detail{
-                                   width: 100% !important;
-                                   @media screen and (max-width: 360px){
-                                    .div{
-                                        gap: 10px;
-                                        flex-direction: column !important;
-                                        align-items: start !important;
-                                    }
-                                   }
+                                gap: 10px !important;
+                                position: absolute;
+                                top: 50px;
+                                left: 0;
+                                background: white;
+                                width: 100%;
+                                padding: 10px;
+                                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+                                &.show {
+                                    display: flex !important;
                                 }
                             }
                         }
-                       
-                     }
-                     .profile-menu{
-                        position:  relative !important;
-                        .menu-toggle-links {
-                            display: block !important;
-                            position: relative;
-                            z-index: 1001;
-                        }
-                
-                        .tabs {
-                            display: none !important;
-                            flex-direction: column;
-                            gap: 10px !important;
-                            position: absolute;
-                            top: 50px;
-                            left: 0;
-                            background: white;
-                            width: 100%;
-                            padding: 10px;
-                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                
-                            &.show {
-                                display: flex !important;
-                            }
-                        }
-                    }
-                        .about_profile{
+
+                        .about_profile {
                             flex-wrap: wrap;
-                            .profile_about{
-                                .h2{
+
+                            .profile_about {
+                                .h2 {
                                     flex-direction: column !important;
                                     gap: 10px !important;
                                     align-items: start;
                                 }
                             }
                         }
-                        .about_friends{
-                            
-                                .left_box {
-                                    h2 {
-                                        margin: 0 !important;
-                                        padding: 20px 20px 10px 20px !important;
-                                    }
-                                    .line {
-                                        margin: 10px 20px !important;
-                                    }
-                                    .categories {
-                                        flex-wrap: wrap !important;
-                                        gap: 20px;
-                                        margin: 0 !important;
-                                        padding: 10px 20px;
-                                        .category {
-                                            width: 100% !important;
-                                        }
-                                    }
-                                    ._link {
-                                        margin: 0 !important;
-                                        padding: 0px 20px 20px 20px !important;
+
+                        .about_friends {
+
+                            .left_box {
+                                h2 {
+                                    margin: 0 !important;
+                                    padding: 20px 20px 10px 20px !important;
+                                }
+
+                                .line {
+                                    margin: 10px 20px !important;
+                                }
+
+                                .categories {
+                                    flex-wrap: wrap !important;
+                                    gap: 20px;
+                                    margin: 0 !important;
+                                    padding: 10px 20px;
+
+                                    .category {
+                                        width: 100% !important;
                                     }
                                 }
-                                .right_box {
-                                    .directions-container {
-                                        padding: 20px !important;
-                                    }
+
+                                ._link {
+                                    margin: 0 !important;
+                                    padding: 0px 20px 20px 20px !important;
                                 }
-                            
+                            }
+
+                            .right_box {
+                                .directions-container {
+                                    padding: 20px !important;
+                                }
+                            }
+
                         }
                     }
                 }
-                ._about1{
+
+                ._about1 {
                     margin-top: -280px !important;
                 }
             }

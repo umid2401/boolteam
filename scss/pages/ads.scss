@@ -24,7 +24,13 @@ $font-main: 'TT Commons';
                                 background-color: #fff;
                             }
                             .ads {
-                                width: 55%;
+                                width: 48%;
+                                @media screen and (max-width:1092px) {
+                                    width: 85% !important;
+                               }
+                               @media screen and (max-width:640px) {
+                           
+                           }
                                 .slide-tab {
                                     display: flex;
                                     align-items: center;
