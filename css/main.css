@@ -5243,9 +5243,6 @@ body {
   display: flex;
   align-items: center;
 }
-.wrapper .main_wrapper .main .announcements .container .links-container a span {
-  margin-top: -3px;
-}
 .wrapper .main_wrapper .main .announcements .container .links-container .link {
   font-family: "TT Commons", sans-serif;
   text-decoration: none;
