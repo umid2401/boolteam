@@ -343,6 +343,10 @@
   cursor: pointer;
   font-weight: bold;
   font-family: "TT Commons";
+  transition: background-color 0.3s ease;
+}
+.main_wrapper .main .profile_head .container .profile_section .profile-right button:hover {
+  background-color: rgb(0, 30.7541322314, 114.5);
 }
 .main_wrapper .main .profile_head .container .profile-menu {
   padding: 20px 30px;
@@ -617,6 +621,10 @@
   cursor: pointer;
   font-weight: 600;
   font-family: "TT Commons";
+  transition: background-color 0.3s ease;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right button:hover {
+  background-color: rgb(0, 30.7541322314, 114.5);
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right .more-btn {
   display: flex;
@@ -628,6 +636,10 @@
   gap: 3px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right .more-btn:hover {
+  background-color: rgb(211.25, 217.5, 223.75);
 }
 .wrapper .main_wrapper .main .location .container .location-container .maps {
   flex-grow: 1;
@@ -709,123 +721,141 @@
 }
 .wrapper .main_wrapper .main .location .container .cards .card {
   display: flex;
-  align-items: center;
+  align-items: start;
   background-color: #fff;
   border-radius: 8px;
   margin: 20px 0;
   overflow: hidden;
   text-decoration: none;
   border: 1px solid #D9D9D9;
+  height: 220px;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .main_wrapper .main .location .container .cards .card {
+    height: auto;
+  }
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-left {
   width: 45%;
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 25px;
   border-right: 1px solid #D9D9D9;
+  height: 100%;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-left .card-img {
   width: 240px;
-  height: 240px;
+  height: 100%;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-left .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text {
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header {
+  height: 100%;
+  box-sizing: border-box;
   font-family: "TT Commons" !important;
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text .div {
+  color: #000000;
+  padding: 20px 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: justify;
 }
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text .div h3,
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text .div small {
-  font-size: 20px;
-  color: black;
-  font-weight: 600;
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header h1 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags {
   display: flex;
-  align-items: center;
-  gap: 3px;
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text span {
-  font-size: 17px;
-  font-weight: 400;
-  display: block;
-  margin-top: 10px;
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text-bg {
-  font-family: "TT Commons";
-  padding: 7px 10px;
-  border-radius: 5px;
-  display: inline-flex;
+  flex-wrap: wrap;
   gap: 10px;
-  align-items: center;
-  background-color: rgba(0, 65, 242, 0.07);
-  margin: 20px 0;
 }
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text-bg .profile {
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags .tag {
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9em;
+  padding: 6px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags .tag .tag-left {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   background-color: #0041F2;
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: "TT Commons";
+  font-size: 16px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags .tag:hover {
+  background-color: #e0e0e0;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .published-date {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text-bg p {
-  font-size: 15px;
-  font-weight: 400;
-  color: rgb(83, 86, 94);
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text-footer {
-  margin-top: 12px;
-  display: block;
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text-footer p,
-.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-text .text-footer span {
-  font-size: 15px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 7px;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right {
   width: 55%;
-  padding: 0 30px;
+  padding: 20px 30px;
   font-family: "TT Commons";
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right p {
   font-size: 17px;
   font-weight: 500;
   color: #000000;
   opacity: 0.6;
-  line-height: 22px;
+  line-height: 1.25rem;
 }
-.wrapper .main_wrapper .main .location .container .cards .card .card-right .item {
-  margin: 7px 0;
-}
-.wrapper .main_wrapper .main .location .container .cards .card .card-right .item small {
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  /* На машине */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block {
   color: #000000;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "TT Commons";
 }
-.wrapper .main_wrapper .main .location .container .cards .card .card-right .item small {
-  margin-left: 5px;
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row:last-child {
+  margin-bottom: 0;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row .label {
+  color: #777;
+  font-weight: bold;
+  width: 80px;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 0.95em;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row .value {
+  color: #222;
+  font-size: 1em;
+  font-weight: 500;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link {
   display: flex;
@@ -835,24 +865,92 @@
   color: #00195B;
   font-weight: 600;
   font-size: 17px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link span {
   margin: 0;
   transform: translateY(-2px);
 }
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link:hover {
+  color: #0f5abb;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link:hover svg {
+  transform: translateX(3px);
+}
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 10px;
 }
 .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .meta_div {
   display: flex;
   align-items: center;
   gap: 5px;
-  background-color: rgba(0, 65, 242, 0.09);
+  background-color: #fff;
   padding: 5px 10px;
   border-radius: 15px;
   cursor: pointer;
+  position: relative;
+  transition: 5s ease all;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .meta_div {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+  background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button {
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup {
+  position: absolute;
+  left: -50%;
+  bottom: 40px;
+  z-index: 3500 !important;
+  /* Boshlang'ich holatda biroz pastda */
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup .emoji {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup .emoji:hover {
+  transform: scale(1.2);
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Yakuniy holat */
 }
 .wrapper .main_wrapper .main .loaders {
   display: flex;
@@ -906,15 +1004,14 @@
   .wrapper .main_wrapper .main .location .cards .card {
     flex-wrap: wrap;
     gap: 20px;
-    padding-bottom: 20px;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left {
     width: 100% !important;
     border-right: none;
+    height: 180px !important;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
     width: 300px !important;
-    height: 240px;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left .card-img img {
     width: 100%;
@@ -923,6 +1020,7 @@
   }
   .wrapper .main_wrapper .main .location .cards .card .card-right {
     width: 100% !important;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -982,25 +1080,23 @@
   .wrapper .main_wrapper .main .location .cards .card .card-left {
     gap: 10px !important;
     width: 100% !important;
-    flex-wrap: wrap;
-  }
-  .wrapper .main_wrapper .main .location .cards .card .card-left .card-text .text-bg {
-    margin: 10px 0 0 0 !important;
+    height: auto !important;
+    flex-direction: column;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
     width: 100% !important;
-    height: 240px;
+    height: 200px !important;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-left .card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .wrapper .main_wrapper .main .location .cards .card .card-left .card-text {
-    padding: 0 20px;
+  .wrapper .main_wrapper .main .location .cards .card .card-left .post-header {
+    gap: 20px;
   }
   .wrapper .main_wrapper .main .location .cards .card .card-right {
-    padding: 0 20px !important;
+    padding: 10px 10px !important;
     width: 100% !important;
   }
 }
@@ -1227,7 +1323,7 @@
   gap: 20px;
 }
 .wrapper .main_wrapper .main .location .container .images .card-images .card {
-  width: 16%;
+  width: 20%;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -1272,6 +1368,7 @@
   bottom: 40px;
   gap: 10px;
   transition: 0.5s ease all;
+  position: absolute;
 }
 .wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .meta_div {
   display: flex;
@@ -1281,6 +1378,61 @@
   padding: 5px 10px;
   border-radius: 15px;
   cursor: pointer;
+  position: relative;
+  transition: 5s ease all;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .meta_div {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+  background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button {
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup {
+  position: absolute;
+  left: 40%;
+  bottom: 40px;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup .emoji {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup .emoji:hover {
+  transform: scale(1.2);
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Yakuniy holat */
 }
 .wrapper .main_wrapper .main .location .container .images .card-images .card:hover .hotel-meta {
   display: flex;
@@ -1322,19 +1474,74 @@
   display: none;
   align-items: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   gap: 10px;
   transition: 0.5s ease all;
+  position: absolute;
 }
 .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div {
   display: flex;
   align-items: center;
-  z-index: 3;
   gap: 5px;
   background-color: #fff;
   padding: 5px 10px;
   border-radius: 15px;
   cursor: pointer;
+  position: relative;
+  transition: 5s ease all;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div:hover, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+  background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button {
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup::before, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup .emoji, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup .emoji {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup .emoji:hover, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup .emoji:hover {
+  transform: scale(1.2);
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup.show, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Yakuniy holat */
 }
 .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1:nth-of-type(2), .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:nth-of-type(2) {
   margin-top: 20px;
@@ -1490,8 +1697,8 @@
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   position: relative;
 }
@@ -1505,8 +1712,8 @@
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img .badge {
   position: absolute;
   bottom: 0;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1523,15 +1730,62 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info h3,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info h3 {
   line-height: 22px;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 500;
   color: rgb(0, 25, 91);
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info p,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info p {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 400;
   color: rgb(85, 89, 97);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms {
+  width: 35px !important;
+  height: 35px !important;
+  background-color: rgb(0, 65, 242);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:first-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:first-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:first-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:first-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:first-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:first-child:hover svg path {
+  fill: #007bff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child {
+  background-color: #fff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child:hover {
+  background-color: rgb(0, 85, 255);
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child:hover svg path {
+  fill: #fff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group {
@@ -1549,10 +1803,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:first-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:first-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover svg path {
+  fill: #007bff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child {
   background-color: #fff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover svg path {
+  fill: #fff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button {
@@ -1566,7 +1851,13 @@
   background-color: #fff;
   border: none;
   border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button:hover {
+  background-color: rgb(0, 85, 255);
+  transform: scale(1.1);
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button .dots,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button .dots {
@@ -1588,15 +1879,62 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf h3,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf h3 {
   line-height: 22px;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 500;
   color: rgb(0, 25, 91);
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf p,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf p {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 400;
   color: rgb(85, 89, 97);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms {
+  width: 35px !important;
+  height: 35px !important;
+  background-color: rgb(0, 65, 242);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:first-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:first-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover svg path {
+  fill: #007bff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child {
+  background-color: #fff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover {
+  background-color: rgb(0, 85, 255);
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover svg path {
+  fill: #fff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group {
@@ -1607,7 +1945,7 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn {
   border-radius: 12px;
-  padding: 8px 12px;
+  padding: 5px 12px;
   background: #0041F2;
   color: #fff;
   font-family: "TT Commons";
@@ -1618,10 +1956,34 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:hover {
+  background-color: rgb(0, 51.3016528926, 191); /* Effekt 1: Rangni biroz to'qroq qilish */
+  transform: translateY(-2px); /* Effekt 1: Biroz yuqoriga ko'tarilish */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effekt 1: Yengil soya */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:active,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:active {
+  transform: translateY(0); /* Bosilganda joyiga qaytish */
+  box-shadow: none;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child {
   background-color: #BFC4D2;
+  transition: background-color 0.3s ease, filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:hover {
+  background-color: rgb(161.0550458716, 168.3944954128, 188.9449541284); /* Effekt 2: Rangni biroz to'qroq qilish */
+  filter: brightness(95%); /* Effekt 2: Yengil xiralashish */
+  transform: scale(1.05); /* Effekt 2: Biroz kattalashish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:active,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:active {
+  transform: scale(1);
+  filter: brightness(100%);
 }
 @media screen and (max-width: 420px) {
   .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,
@@ -1934,6 +2296,7 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  border-radius: 8px;
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card {
   width: 100%;
@@ -2071,6 +2434,10 @@
   cursor: pointer;
   font-weight: 600;
   font-family: "TT Commons";
+  transition: background-color 0.3s ease;
+}
+.wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right button:hover {
+  background-color: rgb(0, 37.6033057851, 140);
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right .more-btn {
   display: flex;
@@ -2086,6 +2453,16 @@
   right: 0;
   width: 45px;
   height: 45px;
+  transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right .more-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+.wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right .more-btn:hover {
+  background-color: rgb(211.25, 217.5, 223.75);
 }
 .wrapper .main_wrapper .main ._about .container .profile-menu {
   padding: 20px 30px;
@@ -2202,35 +2579,44 @@
   color: rgba(0, 0, 0, 0.7);
   line-height: 20px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p {
-  margin: 15px 0;
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info {
+  margin-top: 20px;
+}
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row {
   display: flex;
-  justify-content: flex-start;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 20px;
+  align-items: baseline; /* Tekstlarni bazaviy chiziqda tekislash */
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p span {
-  flex: 1;
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row:nth-of-type(2) {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .strong {
-  flex: 2;
-  font-weight: 600;
-  margin-left: 10px;
-  color: rgb(0, 0, 0);
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row:nth-of-type(6) {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .str {
-  flex: 2;
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .label {
+  color: #777;
+  font-size: 0.9em;
+  width: 150px; /* Rasmdagi "Дата рождения" kabi yorliqlarning kengligi */
+  margin-right: 15px;
+  text-align: left;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .strong1 {
-  flex: 2;
-  font-weight: 600;
-  color: rgb(0, 65, 242);
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value {
+  color: #222;
+  font-size: 1em;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .strong2 {
-  font-weight: 600;
-  color: rgb(0, 65, 242);
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value > div { /* Ichki divlar uchun (masalan, chet tillari) */
+  margin-top: 5px;
+  color: #007bff; /* Rasmdagi ko'k rang */
+  font-size: 0.95em;
+}
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value > div:first-child {
+  margin-top: 0;
+}
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value > div:last-child {
+  color: #6c757d; /* Rasmdagi "базовые знания" kabi qo'shimcha ma'lumot rangi */
 }
 .wrapper .main_wrapper .main ._about .container .about_profile .profile_about .hr {
   width: 100%;
@@ -2239,7 +2625,7 @@
   margin: 20px 0;
 }
 .wrapper .main_wrapper .main ._about .container .about_profile .maps_profile {
-  width: 35%;
+  width: calc(35% - 25px);
   height: auto;
   padding: 20px 0 0 0;
   border-radius: 10px;
@@ -2259,7 +2645,7 @@
   cursor: pointer;
 }
 .wrapper .main_wrapper .main ._about .container .about_profile .maps_profile .leaflet-container {
-  height: 400px !important;
+  height: 420px !important;
   width: 100% !important;
 }
 .wrapper .main_wrapper .main ._about .container .about_friends {
@@ -2329,8 +2715,13 @@
   text-decoration: none;
   color: rgba(32, 33, 46, 0.8);
 }
-.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more {
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .tag, .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .tag:hover, .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more:hover {
   color: rgb(0, 25, 91);
+  transform: scale(1.1);
+  background-color: #e8e8e8;
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags button {
   background-color: rgba(0, 65, 242, 0.13);
@@ -2357,10 +2748,16 @@
   font-weight: 900;
   color: #00195B;
   font-size: 17px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .left_box ._link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box {
   width: calc(35% - 25px);
@@ -2400,6 +2797,12 @@
   border-radius: 8px;
   color: rgba(32, 33, 46, 0.8);
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container .directions .direction-item:hover {
+  color: rgb(0, 25, 91);
+  transform: scale(1.1);
+  background-color: #e8e8e8;
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link {
   display: flex;
@@ -2410,10 +2813,16 @@
   font-weight: 900;
   color: #00195B;
   font-size: 17px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box .help-container {
   border-radius: 8px;
@@ -4842,6 +5251,7 @@ body {
   flex-wrap: wrap;
 }
 .wrapper .main_wrapper .header .popup .popup-content .body-popup form .left_box .categories .category .tags .tag {
+  display: none;
   background-color: #F0F0F2;
   padding: 10px 15px;
   text-align: center;
@@ -4849,6 +5259,10 @@ body {
   font-size: 16px;
   font-weight: 500;
   border-radius: 8px;
+  transition: 0.5s ease all;
+}
+.wrapper .main_wrapper .header .popup .popup-content .body-popup form .left_box .categories .category .tags .tag:hover {
+  color: rgb(0, 25, 91);
 }
 .wrapper .main_wrapper .header .popup .popup-content .body-popup form .left_box .categories .category .tags button {
   background-color: rgba(0, 65, 242, 0.13);
@@ -4875,10 +5289,16 @@ body {
   font-weight: 900;
   color: #00195B;
   font-size: 18px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .header .popup .popup-content .body-popup form .left_box ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .header .popup .popup-content .body-popup form .left_box ._link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .header .popup .popup-content .body-popup form .left_box ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .header .popup .popup-content .body-popup form .textarea-group textarea {
   width: 100%;
@@ -5132,14 +5552,6 @@ body {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
-@media screen and (max-widh: 480px) {
-  .wrapper .main_wrapper .main .announcements .container .slide-tab .left .announcements__tabs .tabs.active::after {
-    border-top: 6px solid #0041F2; /* Aktiv fon rangi bilan bir xil */
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    bottom: -6px;
-  }
-}
 .wrapper .main_wrapper .main .announcements .container .slide-tab .left .announcements__tabs .tabs:focus {
   outline: none;
   border-color: #0041F2;
@@ -5263,10 +5675,16 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .announcements .container .links-container .link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main .announcements .container .links-container .link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main .announcements .container .links-container .link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main .announcements .container .links-container .right-links {
   display: flex;
@@ -5549,8 +5967,13 @@ body {
   text-decoration: none;
   color: rgba(32, 33, 46, 0.8);
 }
-.wrapper .main_wrapper .main .friends .container .left_box .categories .category .tags .show-more {
+.wrapper .main_wrapper .main .friends .container .left_box .categories .category .tags .tag, .wrapper .main_wrapper .main .friends .container .left_box .categories .category .tags .show-more {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrapper .main_wrapper .main .friends .container .left_box .categories .category .tags .tag:hover, .wrapper .main_wrapper .main .friends .container .left_box .categories .category .tags .show-more:hover {
   color: rgb(0, 25, 91);
+  transform: scale(1.1);
+  background-color: #e8e8e8;
 }
 .wrapper .main_wrapper .main .friends .container .left_box .categories .category .tags button {
   background-color: rgba(0, 65, 242, 0.13);
@@ -5577,10 +6000,16 @@ body {
   font-weight: 900;
   color: #00195B;
   font-size: 17px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .friends .container .left_box ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main .friends .container .left_box ._link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main .friends .container .left_box ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main .friends .container .right_box {
   width: calc(35% - 25px);
@@ -5620,6 +6049,12 @@ body {
   border-radius: 8px;
   color: rgba(32, 33, 46, 0.8);
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrapper .main_wrapper .main .friends .container .right_box .directions-container .directions .direction-item:hover {
+  color: rgb(0, 25, 91);
+  transform: scale(1.1);
+  background-color: #e8e8e8;
 }
 .wrapper .main_wrapper .main .friends .container .right_box .directions-container ._link {
   display: flex;
@@ -5630,10 +6065,16 @@ body {
   font-weight: 900;
   color: #00195B;
   font-size: 17px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .friends .container .right_box .directions-container ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main .friends .container .right_box .directions-container ._link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main .friends .container .right_box .directions-container ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main .friends .container .right_box .help-container {
   border-radius: 8px;
@@ -5905,10 +6346,16 @@ body {
   font-size: 18px;
   gap: 7px;
   padding-bottom: 30px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .hotels .container .view-all svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main .hotels .container .view-all:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main .hotels .container .view-all:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main .ranking_section {
   padding: 0 40px 0 40px;
@@ -6048,10 +6495,16 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: #00195B;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .ranking_section .container .ranking .ranking_link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main .ranking_section .container .ranking .ranking_link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main .ranking_section .container .ranking .ranking_link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main .ranking_section .container .forum {
   flex-grow: 1;
@@ -6182,10 +6635,16 @@ body {
   color: #00195B;
   font-size: 18px;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .ranking_section .container .forum .ranking_link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
 }
 .wrapper .main_wrapper .main .ranking_section .container .forum .ranking_link:hover {
   color: #0f5abb;
+}
+.wrapper .main_wrapper .main .ranking_section .container .forum .ranking_link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main .footer {
   padding: 40px;

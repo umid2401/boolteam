@@ -16,7 +16,12 @@
   background-color: #fff;
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads {
-  width: 55%;
+  width: 48%;
+}
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .container .location-container .ads {
+    width: 85% !important;
+  }
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads .slide-tab {
   display: flex;

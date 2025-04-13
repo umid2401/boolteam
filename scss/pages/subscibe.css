@@ -47,8 +47,8 @@
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .img,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   position: relative;
 }
@@ -63,8 +63,8 @@
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .img .badge {
   position: absolute;
   bottom: 0;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,15 +81,62 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info h3,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info h3 {
   line-height: 22px;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 500;
   color: rgb(0, 25, 91);
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info p,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info p {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 400;
   color: rgb(85, 89, 97);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms {
+  width: 35px !important;
+  height: 35px !important;
+  background-color: rgb(0, 65, 242);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:first-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:first-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:first-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:first-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:first-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:first-child:hover svg path {
+  fill: #007bff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child {
+  background-color: #fff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child:hover {
+  background-color: rgb(0, 85, 255);
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .sms:last-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .sms:last-child:hover svg path {
+  fill: #fff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group {
@@ -107,10 +154,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:first-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:first-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:first-child:hover svg path {
+  fill: #007bff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child {
   background-color: #fff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .sms:last-child:hover svg path {
+  fill: #fff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button {
@@ -124,7 +202,13 @@
   background-color: #fff;
   border: none;
   border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button:hover {
+  background-color: rgb(0, 85, 255);
+  transform: scale(1.1);
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info .btn-group .menu-button .dots,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info .btn-group .menu-button .dots {
@@ -146,15 +230,62 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf h3,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf h3 {
   line-height: 22px;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 500;
   color: rgb(0, 25, 91);
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf p,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf p {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 400;
   color: rgb(85, 89, 97);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms {
+  width: 35px !important;
+  height: 35px !important;
+  background-color: rgb(0, 65, 242);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:first-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:first-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover {
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:first-child:hover svg path {
+  fill: #007bff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child {
+  background-color: #fff;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child svg path {
+  fill: #0041F2; /* Boshlang'ich rang */
+  stroke: #0041F2;
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Rang o'zgarishini silliq qilish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover {
+  background-color: rgb(0, 85, 255);
+  transform: scale(1.1);
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover svg path,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .inf .sms:last-child:hover svg path {
+  fill: #fff; /* Hover bo'lgandagi rang (misol uchun, ochroq ko'k) */
+  stroke: #007bff;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group {
@@ -165,7 +296,7 @@
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn {
   border-radius: 12px;
-  padding: 8px 12px;
+  padding: 5px 12px;
   background: #0041F2;
   color: #fff;
   font-family: "TT Commons";
@@ -176,10 +307,34 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:hover {
+  background-color: #0033bf; /* Effekt 1: Rangni biroz to'qroq qilish */
+  transform: translateY(-2px); /* Effekt 1: Biroz yuqoriga ko'tarilish */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effekt 1: Yengil soya */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:active,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:active {
+  transform: translateY(0); /* Bosilganda joyiga qaytish */
+  box-shadow: none;
 }
 .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child,
 .wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child {
   background-color: #BFC4D2;
+  transition: background-color 0.3s ease, filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:hover,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:hover {
+  background-color: #a1a8bd; /* Effekt 2: Rangni biroz to'qroq qilish */
+  filter: brightness(95%); /* Effekt 2: Yengil xiralashish */
+  transform: scale(1.05); /* Effekt 2: Biroz kattalashish */
+}
+.wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:active,
+.wrapper .main_wrapper .main .friends_section .container .main_friend .friends_ .card .info-btn .btn-group .btn:last-child:active {
+  transform: scale(1);
+  filter: brightness(100%);
 }
 @media screen and (max-width: 420px) {
   .wrapper .main_wrapper .main .sub .container .main_friend .friends_ .card,

@@ -4,15 +4,19 @@
     font-weight: normal;
     font-style: normal;
 }
- $font-main: 'TT Commons';
- .wrapper {
+
+$font-main: 'TT Commons';
+
+.wrapper {
     .main_wrapper {
         .main {
             .location {
                 padding: 40px;
-                 .container {
+
+                .container {
                     border: none;
-                     .location-container {
+
+                    .location-container {
                         background-color: #fff;
                         padding: 20px 30px;
                         display: flex;
@@ -21,15 +25,19 @@
                         gap: 25px;
                         border-radius: 8px;
                         overflow: hidden;
+
                         .profile-card {
                             width: 45%;
-                             .profile-info {
+
+                            .profile-info {
                                 display: flex;
                                 align-items: start;
                                 gap: 20px;
-                                 .profile-img {
+
+                                .profile-img {
                                     position: relative;
-                                     &::after {
+
+                                    &::after {
                                         content: "9";
                                         color: #fff;
                                         display: flex;
@@ -44,43 +52,51 @@
                                         left: 5px;
                                     }
                                 }
-                                 .profile_detail {
+
+                                .profile_detail {
                                     flex-grow: 1;
                                     margin-bottom: 15px;
-                                     .div {
+
+                                    .div {
                                         width: 100%;
                                         margin-bottom: 7px;
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
                                         font-family: $font-main;
-                                         &:nth-of-type(2) {
+
+                                        &:nth-of-type(2) {
                                             align-items: start;
                                             margin-top: 5px;
                                         }
-                                         .name {
+
+                                        .name {
                                             display: flex;
                                             align-items: center;
                                             gap: 5px;
-                                             span {
+
+                                            span {
                                                 color: #0041F2;
                                                 font-family: $font-main;
                                                 font-size: 17px;
                                                 font-weight: 600;
                                             }
                                         }
-                                         span {
+
+                                        span {
                                             color: #555961;
                                             font-size: 14px;
                                             font-family: $font-main;
                                             font-weight: 500;
                                         }
-                                         .name1 {
+
+                                        .name1 {
                                             h3 {
                                                 font-size: 22px;
                                                 color: #00195B;
                                             }
-                                             span {
+
+                                            span {
                                                 font-family: $font-main;
                                                 font-size: 16px;
                                                 color: #000000;
@@ -89,34 +105,40 @@
                                                 display: block;
                                             }
                                         }
-                                         a {
+
+                                        a {
                                             text-decoration: none;
                                             display: flex;
                                             align-items: center;
                                             gap: 5px;
                                             font-family: $font-main;
-                                             img {
+
+                                            img {
                                                 width: 17px;
                                             }
-                                             span {
+
+                                            span {
                                                 color: #0041F2;
                                                 font-size: 20px;
                                                 font-weight: 500;
-                                             }
-                                         }
+                                            }
+                                        }
                                     }
                                 }
-                                 p {
+
+                                p {
                                     font-family: $font-main;
                                     font-size: 17px;
                                     color: #132030;
                                     opacity: 0.8;
                                     margin-top: 10px;
-                                     span {
+
+                                    span {
                                         color: rgba(19, 32, 48, 0.7);
                                     }
                                 }
-                                 .pi {
+
+                                .pi {
                                     color: rgba(0, 0, 0, 1);
                                     font-style: normal;
                                     font-weight: 400;
@@ -127,21 +149,25 @@
                                     margin: 20px 0;
                                 }
                             }
-                             .actions {
+
+                            .actions {
                                 display: flex;
                                 align-items: end;
                                 justify-content: space-between;
-                                 .profile-left {
+
+                                .profile-left {
                                     display: flex;
                                     align-items: center;
                                     gap: 10px;
                                 }
-                                 .profile-right {
+
+                                .profile-right {
                                     display: flex;
                                     justify-content: end;
                                     gap: 20px;
                                     flex-grow: 1;
-                                     button {
+
+                                    button {
                                         display: flex;
                                         align-items: center;
                                         font-size: 16px;
@@ -155,8 +181,14 @@
                                         cursor: pointer;
                                         font-weight: 600;
                                         font-family: $font-main;
+                                        transition: background-color 0.3s ease; 
+
+                                        &:hover {
+                                          background-color: darken(#0041F2, 25%); // Rangni biroz to'qroq qilish
+                                        }
                                     }
-                                     .more-btn {
+
+                                    .more-btn {
                                         display: flex;
                                         padding: 8px 10px;
                                         background: #f1f3f5;
@@ -166,22 +198,30 @@
                                         gap: 3px;
                                         border: none;
                                         cursor: pointer;
-                                     }
-                                 }
+                                        transition: background-color 0.3s ease;
+
+                                        &:hover {
+                                            background-color: darken(#f1f3f5, 10%); // Rangni biroz to'qroq qilish
+                                        }
+                                    }
+                                }
                             }
                         }
-                         .maps {
+
+                        .maps {
                             flex-grow: 1;
                             height: 300px;
                             border-radius: 10px;
                             z-index: 5 !important;
-                             .leaflet-container {
+
+                            .leaflet-container {
                                 height: 300px !important;
                                 width: 100% !important;
                             }
                         }
-                     }
-                     .profile-menu {
+                    }
+
+                    .profile-menu {
                         padding: 20px 30px;
                         display: flex;
                         align-items: center;
@@ -191,7 +231,8 @@
                         outline: none;
                         border: none;
                         border-radius: 8px;
-                         .menu-toggle-links {
+
+                        .menu-toggle-links {
                             display: none;
                             font-size: 24px;
                             background: none;
@@ -199,11 +240,13 @@
                             cursor: pointer;
                             color: #0041F2;
                         }
-                         .tabs {
+
+                        .tabs {
                             list-style: none;
                             display: flex;
                             gap: 25px;
-                             li {
+
+                            li {
                                 font-family: $font-main;
                                 font-size: 18px;
                                 color: #666;
@@ -211,13 +254,16 @@
                                 transition: color 0.3s ease;
                                 display: block;
                                 position: relative;
-                                 a {
+
+                                a {
                                     text-decoration: none;
                                     color: #00195B;
-                                     &.active {
+
+                                    &.active {
                                         font-weight: bold;
                                         color: #00195B;
-                                         &::after {
+
+                                        &::after {
                                             content: "";
                                             position: absolute;
                                             width: 100% !important;
@@ -225,149 +271,186 @@
                                             left: 0;
                                             bottom: calc(-100% - 3px);
                                             background-color: #0041F2;
-                                             @media screen and (max-width:840px) {
+
+                                            @media screen and (max-width:840px) {
                                                 display: none;
                                             }
                                         }
-                                     }
-                                     &:hover {
+                                    }
+
+                                    &:hover {
                                         color: #0056b3;
                                     }
                                 }
-                             }
+                            }
                         }
-                         .social-icons {
+
+                        .social-icons {
                             display: flex;
                             gap: 10px;
-                             a {
+
+                            a {
                                 display: block;
                                 padding: 5px 10px;
                                 border-radius: 5px;
                                 background-color: rgba(85, 89, 97, 0.11);
-                             }
+                            }
                         }
                     }
-                     .cards {
+
+                    .cards {
                         .card {
                             display: flex;
-                            align-items: center;
+                            align-items: start;
                             background-color: #fff;
                             border-radius: 8px;
                             margin: 20px 0;
                             overflow: hidden;
                             text-decoration: none;
                             border: 1px solid #D9D9D9;
-                             .card-left {
+                            height: 220px;
+                            @media screen and (max-width:992px) {
+                                height: auto;
+                                
+                            }
+
+                            .card-left {
                                 width: 45%;
                                 display: flex;
-                                align-items: center;
+                                align-items: start;
                                 gap: 25px;
                                 border-right: 1px solid #D9D9D9;
-                                 .card-img {
+                                height: 100%;
+                                .card-img {
                                     width: 240px;
-                                    height: 240px;
-                                     img {
+                                    height: 100%;
+                                    img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
                                     }
                                 }
-                                 .card-text {
+
+                                .post-header {
+                                    height: 100%;
+                                    box-sizing: border-box;
                                     font-family: $font-main !important;
-                                     .text {
-                                        .div {
-                                            display: flex;
-                                            align-items: center;
-                                             h3,
-                                            small {
-                                                font-size: 20px;
-                                                color: black;
-                                                font-weight: 600;
-                                                display: flex;
-                                                align-items: center;
-                                                gap: 3px;
-                                            }
-                                        }
-                                         span {
-                                            font-size: 17px;
-                                            font-weight: 400;
-                                            display: block;
-                                            margin-top: 10px;
-                                        }
+                                    color: #000000;
+                                    padding: 20px 10px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between; 
+                                    align-items: justify;
+                                    h1 {
+                                      font-size: 1.25rem;
+                                      margin-bottom: 15px;
                                     }
-                                     .text-bg {
-                                        font-family: $font-main;
-                                        padding: 7px 10px;
+                                  
+                                    .tags {
+                                      display: flex;
+                                      flex-wrap: wrap;
+                                      gap: 10px;
+                                  
+                                      .tag {
+                                        background-color: #f0f0f0;
+                                        color: #555;
+                                        font-size: 0.9em;
+                                        padding: 6px 15px;
                                         border-radius: 5px;
-                                        display: inline-flex;
-                                        gap: 10px;
+                                        cursor: pointer;
+                                        transition: background-color 0.3s ease;
+                                        display: flex;
                                         align-items: center;
-                                        background-color: rgba(0, 65, 242, 0.07);
-                                        margin: 20px 0;
-                                         .profile {
+                                        gap: 10px;
+                                        .tag-left{
                                             width: 30px;
                                             height: 30px;
-                                            border-radius: 50%;
                                             background-color: #0041F2;
-                                            color: white;
-                                            font-size: 11px;
-                                            font-weight: bold;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
+                                            border-radius: 50%;
+                                            display: grid;
+                                            place-items: center;
+                                            color: #fff;
+                                            font-family: $font-main;
+                                            font-size: 16px;
                                         }
-                                         p {
-                                            font-size: 15px;
-                                            font-weight: 400;
-                                            color: rgba(83, 86, 94, 1);
+                                  
+                                        &:hover {
+                                          background-color: #e0e0e0;
                                         }
+                                      }
                                     }
-                                     .text-footer {
-                                        margin-top: 12px;
-                                        display: block;
-                                         p,
-                                        span {
-                                            font-size: 15px;
-                                            font-weight: 400;
-                                            color: rgba(0, 0, 0, 1);
-                                        }
+                                  
+                                    .published-date {
+                                        display: flex;
+                                        align-items: center;
+                                      font-size: 0.85em;
+                                      color: #777;
+                                      margin-bottom: 7px;
                                     }
-                                }
-                             }
-                             .card-right {
+                                  }
+                            }
+
+                            .card-right {
                                 width: calc(55%);
-                                padding: 0 30px;
+                                padding: 20px 30px;
                                 font-family: $font-main;
-                                 p {
+                                box-sizing: border-box;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+
+                                p {
                                     font-size: 17px;
                                     font-weight: 500;
                                     color: #000000;
                                     opacity: 0.6;
-                                    line-height: 22px;
-                                 }
-                                 .item {
-                                    margin: 7px 0;
-                                     small {
-                                        font-size: 18px;
-                                        color: rgba(0, 0, 0, 1);
-                                        font-weight: 600;
-                                        /* На машине */
-                                         font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        /* identical to box height */
-                                         color: #000000;
-                                     }
-                                     small {
-                                        margin-left: 5px;
-                                    }
+                                    line-height: 1.25rem;
                                 }
-                                 .footer-items {
+
+                                .info-block {
+                                   
+                                    color: #000000;
+                                    padding: 15px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    font-family: $font-main;
+                                  
+                                    .info-row {
+                                      display: flex;
+                                      align-items: baseline; 
+                                      margin-bottom: 8px;
+                                  
+                                      &:last-child {
+                                        margin-bottom: 0;
+                                      }
+                                  
+                                      .label {
+                                        color: #777;
+                                        font-weight: bold;
+                                        width: 80px;
+                                        margin-right: 10px;
+                                        text-align: left;
+                                        font-size: 0.95em;
+                                      }
+                                  
+                                      .value {
+                                        color: #222;
+                                        font-size: 1em;
+                                        font-weight: 500;
+                                      }
+                                    }
+                                  }
+
+                                .footer-items {
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-between;
-                                     .ranking_link {
+                                    padding-bottom: 20px;
+
+                                    .ranking_link {
                                         display: flex;
                                         text-decoration: none;
                                         align-items: center;
@@ -375,24 +458,102 @@
                                         color: #00195B;
                                         font-weight: 600;
                                         font-size: 17px;
-                                         span {
+                                        transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                                        
+                                        span {
                                             margin: 0;
                                             transform: translateY(-2px);
                                         }
-                                     }
-                                     .hotel-meta {
+                                        svg {
+                                            transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                                          }
+                                        &:hover {
+                                            color: #0f5abb;
+                                            svg{
+                                                transform: translateX(3px);
+                                            }
+
+                                        }
+
+                                    }
+
+                                    .hotel-meta {
                                         display: flex;
                                         align-items: center;
-                                         gap: 10px;
-                                         .meta_div {
+                                        position: relative;
+                                        gap: 10px;
+                                        .meta_div {
                                             display: flex;
                                             align-items: center;
                                             gap: 5px;
-                                            background-color: rgba(0, 65, 242, 0.09);
+                                            background-color: #fff;
+                                            padding: 5px 10px;
+                                            @media screen and (max-width:480px) {
+                                                padding: 5px 10px;
+                                            }
+                                            border-radius: 15px;
+                                            cursor: pointer;
+                                            position: relative;
+                                            transition: 05s ease all;
+                                            cursor: pointer;
+                                            &:hover{
+                                                background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+                                                background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+                                            }
+                                           
+                                        }
+                                        .like-button {
+                                            gap: 5px;
+                                            background-color: #fff;
                                             padding: 5px 10px;
                                             border-radius: 15px;
                                             cursor: pointer;
+                                           
+                                        
+                                            .emoji-popup {
+                                                position: absolute;
+                                                left: -50%;
+                                                bottom: 40px;
+                                                z-index: 3500 !important;
+                                                /* Boshlang'ich holatda biroz pastda */
+                                                background-color: white;
+                                                padding: 8px 15px;
+                                                border-radius: 20px;
+                                                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                                opacity: 0;
+                                                display: none; /* Initially hidden */
+                                                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                                        
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 100%;
+                                                    left: 50%;
+                                                    transform: translateX(-50%);
+                                                    border-top: 8px solid white;
+                                                    border-left: 8px solid transparent;
+                                                    border-right: 8px solid transparent;
+                                                }
+                                        
+                                                .emoji {
+                                                    font-size: 20px;
+                                                    margin: 0 5px;
+                                                    cursor: pointer;
+                                                    transition: transform 0.2s ease-in-out;
+                                        
+                                                    &:hover {
+                                                        transform: scale(1.2);
+                                                    }
+                                                }
+                                        
+                                                &.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+                                                    display: flex;
+                                                    opacity: 1;
+                                                    transform: translateX(-50%) translateY(0); /* Yakuniy holat */
+                                                }
+                                            }
                                         }
+                                        
                                     }
                                 }
                             }
@@ -400,16 +561,19 @@
                     }
                 }
             }
-            .loaders{
-               display: flex;
+
+            .loaders {
+                display: flex;
                 align-items: center;
                 justify-content: center;
-                 padding-bottom: 40px;
+                padding-bottom: 40px;
+
                 .loader-container {
                     display: flex;
                     flex-direction: column;
-                    align-items: center; 
+                    align-items: center;
                     gap: 10px;
+
                     .loader {
                         width: 36px;
                         height: 36px;
@@ -420,91 +584,106 @@
                         margin: 0 auto;
                         box-sizing: border-box;
                         animation: rotation 1s linear infinite;
-                         @keyframes rotation {
+
+                        @keyframes rotation {
                             0% {
                                 transform: rotate(0deg);
                             }
+
                             100% {
                                 transform: rotate(360deg);
                             }
-                            } 
+                        }
                     }
-                    .text{
+
+                    .text {
                         font-size: 17px;
                         color: #A0A4AE;
                         font-family: $font-main;
-                     }
+                    }
                 }
-             }
+            }
         }
     }
 }
- @media screen and (max-width: 1092px) {
+
+@media screen and (max-width: 1092px) {
     .wrapper {
         .main_wrapper {
             .main {
                 .location {
                     padding: 10px;
-                     .location-container {
+
+                    .location-container {
                         flex-wrap: wrap !important;
-                         .profile-card {
+
+                        .profile-card {
                             width: 100% !important;
-                        }
-                     }
-                }
-            }
-        }
-    }
- }
- @media screen and (max-width: 992px) {
-    .wrapper {
-        .main_wrapper {
-            .main {
-                .location {
-                     .cards {
-                        .card {
-                            flex-wrap: wrap;
-                            gap: 20px;
-                            padding-bottom: 20px;
-                             .card-left {
-                                width: 100% !important;
-                                border-right: none;
-                                 .card-img {
-                                    width: 300px !important;
-                                    height: 240px;
-                                     img {
-                                        width: 100%;
-                                        height: 100%;
-                                        object-fit: cover;
-                                    }
-                                }
-                             }
-                             .card-right {
-                                width: 100% !important;
-                             }
                         }
                     }
                 }
             }
         }
     }
- }
- @media screen and (max-width: 840px) {
+}
+
+@media screen and (max-width: 992px) {
     .wrapper {
         .main_wrapper {
             .main {
                 .location {
-                     .profile-menu{
-                       padding: 10px 15px !important;
-                        position:  relative !important;
+                    .cards {
+                        .card {
+                            flex-wrap: wrap;
+                            gap: 20px;
+                            // padding-bottom: 20px;
+
+                            .card-left {
+                                width: 100% !important;
+                                border-right: none;
+                                height: 180px !important;
+
+                                .card-img {
+                                    width: 300px !important;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+
+                            .card-right {
+                                width: 100% !important;
+                                gap: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .wrapper {
+        .main_wrapper {
+            .main {
+                .location {
+                    .profile-menu {
+                        padding: 10px 15px !important;
+                        position: relative !important;
                         display: none;
+
                         .menu-toggle-links {
                             display: block !important;
                             position: relative;
                             z-index: 1001;
                         }
-                         .tabs {
-                              padding: 10px 15px !important;
+
+                        .tabs {
+                            padding: 10px 15px !important;
                             display: none;
                             flex-direction: column;
                             gap: 10px !important;
@@ -512,10 +691,11 @@
                             top: 50px;
                             left: 0;
                             background: white;
-                             width: 100%;
+                            width: 100%;
                             padding: 10px;
                             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                             &.show {
+
+                            &.show {
                                 display: flex !important;
                             }
                         }
@@ -524,24 +704,29 @@
             }
         }
     }
- }
- @media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 640px) {
     .wrapper {
         .main_wrapper {
             .main {
                 .location {
-                     .location-container {
+                    .location-container {
                         padding: 10px 15px !important;
-                         .profile-card {
+
+                        .profile-card {
                             position: relative !important;
-                             .profile-info {
+
+                            .profile-info {
                                 flex-direction: column !important;
-                             }
-                             .actions {
+                            }
+
+                            .actions {
                                 flex-direction: column;
                                 align-items: start !important;
                                 gap: 10px;
-                                 .profile-right {
+
+                                .profile-right {
                                     .more-btn {
                                         position: absolute !important;
                                         top: 0 !important;
@@ -552,45 +737,50 @@
                                 }
                             }
                         }
-                     }
-                     .cards {
+                    }
+
+                    .cards {
                         .card {
                             flex-wrap: wrap;
                             gap: 10px !important;
-                             .card-left {
+
+                            .card-left {
                                 gap: 10px !important;
                                 width: 100% !important;
-                                 .card-text {
-                                    .text-bg {
-                                        margin: 10px 0 0 0 !important;
-                                     }
-                                }
-                                 flex-wrap: wrap;
-                                 .card-img {
+                                height: auto !important;
+                                flex-direction: column;
+
+                                
+
+                                .card-img {
                                     width: 100% !important;
-                                    height: 240px;
-                                     img {
+                                    height: 200px !important;
+
+                                    img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
                                     }
                                 }
-                                 .card-text {
-                                    padding: 0 20px;
+
+                                .post-header{
+                                    gap: 20px;
                                 }
-                             }
-                             .card-right {
-                                padding: 0 20px !important;
+                            }
+
+                            .card-right {
+                                padding: 10px 10px !important;
                                 width: 100% !important;
-                             }
+                            }
                         }
                     }
-                 }
+                }
             }
         }
     }
- }
- @media screen and (max-width: 440px) {
+}
+
+@media screen and (max-width: 440px) {
     .wrapper {
         .main_wrapper {
             .main {
@@ -601,35 +791,40 @@
                                 .pi {
                                     margin-bottom: 0 !important;
                                 }
-                                 .div {
+
+                                .div {
                                     flex-direction: column !important;
                                     align-items: start !important;
                                     gap: 10px;
                                 }
                             }
-                             .actions {
+
+                            .actions {
                                 .profile-right {
                                     flex-direction: column;
                                     width: 100% !important;
                                     gap: 0px;
-                                     button {
+
+                                    button {
                                         width: 100% !important;
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
-                                     }
-                                 }
+                                    }
+                                }
                             }
                         }
-                     }
-                     .cards {
+                    }
+
+                    .cards {
                         .card-right {
                             .footer-items {
                                 margin-top: 10px;
                                 flex-direction: column !important;
                                 gap: 10px;
                                 align-items: flex-start !important;
-                                 .ranking_link {
+
+                                .ranking_link {
                                     order: 2;
                                 }
                             }
@@ -639,4 +834,4 @@
             }
         }
     }
- }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "TT Commons";
   src: url("../../assets/fonts/TT Commons Regular.otf") format("opentype");
@@ -43,9 +44,11 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  border-radius: 8px;
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card {
   width: 100%;
+  position: relative;
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .profile-info {
   display: flex;
@@ -151,9 +154,9 @@
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions {
   display: flex;
-  align-items: end;
+  justify-content: start;
   margin-top: 100px;
-  justify-content: space-between;
+  gap: 70px;
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-left {
   display: flex;
@@ -162,7 +165,6 @@
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right {
   display: flex;
-  justify-content: end;
   gap: 20px;
   flex-grow: 1;
 }
@@ -180,6 +182,10 @@
   cursor: pointer;
   font-weight: 600;
   font-family: "TT Commons";
+  transition: background-color 0.3s ease;
+}
+.wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right button:hover {
+  background-color: #00268c;
 }
 .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right .more-btn {
   display: flex;
@@ -191,6 +197,20 @@
   gap: 3px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right .more-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+.wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions .profile-right .more-btn:hover {
+  background-color: #d3dae0;
 }
 .wrapper .main_wrapper .main ._about .container .profile-menu {
   padding: 20px 30px;
@@ -307,35 +327,44 @@
   color: rgba(0, 0, 0, 0.7);
   line-height: 20px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p {
-  margin: 15px 0;
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info {
+  margin-top: 20px;
+}
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row {
   display: flex;
-  justify-content: flex-start;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 20px;
+  align-items: baseline; /* Tekstlarni bazaviy chiziqda tekislash */
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p span {
-  flex: 1;
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row:nth-of-type(2) {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .strong {
-  flex: 2;
-  font-weight: 600;
-  margin-left: 10px;
-  color: rgb(0, 0, 0);
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row:nth-of-type(6) {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .str {
-  flex: 2;
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .label {
+  color: #777;
+  font-size: 0.9em;
+  width: 150px; /* Rasmdagi "Дата рождения" kabi yorliqlarning kengligi */
+  margin-right: 15px;
+  text-align: left;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .strong1 {
-  flex: 2;
-  font-weight: 600;
-  color: rgb(0, 65, 242);
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value {
+  color: #222;
+  font-size: 1em;
 }
-.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .info p .strong2 {
-  font-weight: 600;
-  color: rgb(0, 65, 242);
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value > div { /* Ichki divlar uchun (masalan, chet tillari) */
+  margin-top: 5px;
+  color: #007bff; /* Rasmdagi ko'k rang */
+  font-size: 0.95em;
+}
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value > div:first-child {
+  margin-top: 0;
+}
+.wrapper .main_wrapper .main ._about .container .about_profile .profile_about .profile-info .row .value > div:last-child {
+  color: #6c757d; /* Rasmdagi "базовые знания" kabi qo'shimcha ma'lumot rangi */
 }
 .wrapper .main_wrapper .main ._about .container .about_profile .profile_about .hr {
   width: 100%;
@@ -344,7 +373,7 @@
   margin: 20px 0;
 }
 .wrapper .main_wrapper .main ._about .container .about_profile .maps_profile {
-  width: 35%;
+  width: calc(35% - 25px);
   height: auto;
   padding: 20px 0 0 0;
   border-radius: 10px;
@@ -364,7 +393,7 @@
   cursor: pointer;
 }
 .wrapper .main_wrapper .main ._about .container .about_profile .maps_profile .leaflet-container {
-  height: 400px !important;
+  height: 420px !important;
   width: 100% !important;
 }
 .wrapper .main_wrapper .main ._about .container .about_friends {
@@ -422,7 +451,8 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .tag, .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more {
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .tag,
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more {
   background-color: #F0F0F2;
   padding: 10px 15px;
   text-align: center;
@@ -433,8 +463,13 @@
   text-decoration: none;
   color: rgba(32, 33, 46, 0.8);
 }
-.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more {
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .tag, .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .tag:hover, .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags .show-more:hover {
   color: rgb(0, 25, 91);
+  transform: scale(1.1);
+  background-color: #e8e8e8;
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .left_box .categories .category .tags button {
   background-color: rgba(0, 65, 242, 0.13);
@@ -461,6 +496,16 @@
   font-weight: 900;
   color: #00195B;
   font-size: 17px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box ._link:hover {
+  color: #0f5abb;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .left_box ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box {
   width: calc(35% - 25px);
@@ -500,16 +545,32 @@
   border-radius: 8px;
   color: rgba(32, 33, 46, 0.8);
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container .directions .direction-item:hover {
+  color: rgb(0, 25, 91);
+  transform: scale(1.1);
+  background-color: #e8e8e8;
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 7px;
+  gap: 5px;
   font-family: "TT Commons", sans-serif;
   font-weight: 900;
   color: #00195B;
   font-size: 17px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link:hover {
+  color: #0f5abb;
+}
+.wrapper .main_wrapper .main ._about .container .about_friends .right_box .directions-container ._link:hover svg {
+  transform: translateX(3px);
 }
 .wrapper .main_wrapper .main ._about .container .about_friends .right_box .help-container {
   border-radius: 8px;
@@ -642,11 +703,11 @@
 }
 @media screen and (max-width: 640px) {
   .wrapper .main_wrapper .main ._about .container ._about-container .profile-card {
-    position: relative !important;
+    position: relative;
   }
   .wrapper .main_wrapper .main ._about .container ._about-container .profile-card .actions {
     flex-direction: column;
-    align-items: start !important;
+    align-items: start;
     gap: 10px;
     margin-top: 0 !important;
   }

@@ -22,7 +22,7 @@ $gilroy: "Gilroy";
                             margin: 20px 0;
                             gap: 20px;
                             .card{
-                                 width: 16%;
+                                 width: 20%;
                                  border-radius: 8px;
                                  overflow: hidden;
                                  position: relative;
@@ -59,6 +59,25 @@ $gilroy: "Gilroy";
                                         font-weight: 600;
                                     }
                                 }
+                                // .hotel-meta {
+                                //     padding: 0 10px;
+                                //     display: none;
+                                //     align-items: center;
+                                //     position: absolute;
+                                //     bottom: 40px;
+                                //     gap: 10px;
+                                //     transition: 0.5s ease all;
+
+                                //     .meta_div {
+                                //        display: flex;
+                                //        align-items: center;
+                                //         gap: 5px;
+                                //         background-color: #fff;
+                                //         padding: 5px 10px;
+                                //         border-radius: 15px;
+                                //         cursor: pointer;
+                                //     }
+                                // }
                                 .hotel-meta {
                                     padding: 0 10px;
                                     display: none;
@@ -67,16 +86,78 @@ $gilroy: "Gilroy";
                                     bottom: 40px;
                                     gap: 10px;
                                     transition: 0.5s ease all;
+                                    position: absolute;
 
                                     .meta_div {
-                                       display: flex;
-                                       align-items: center;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        background-color: #fff;
+                                        padding: 5px 10px;
+                                        @media screen and (max-width:480px) {
+                                            padding: 5px 10px;
+                                        }
+                                        border-radius: 15px;
+                                        cursor: pointer;
+                                        position: relative;
+                                        transition: 05s ease all;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+                                            background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+                                        }
+                                       
+                                    }
+                                    .like-button {
                                         gap: 5px;
                                         background-color: #fff;
                                         padding: 5px 10px;
                                         border-radius: 15px;
                                         cursor: pointer;
+                                       
+                                    
+                                        .emoji-popup {
+                                            position: absolute;
+                                            left: 40%;
+                                            bottom: 40px;
+                                            background-color: white;
+                                            padding: 6px 10px;
+                                            border-radius: 20px;
+                                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                            opacity: 0;
+                                            display: none; /* Initially hidden */
+                                            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                                    
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                top: 100%;
+                                                left: 50%;
+                                                transform: translateX(-50%);
+                                                border-top: 8px solid white;
+                                                border-left: 8px solid transparent;
+                                                border-right: 8px solid transparent;
+                                            }
+                                    
+                                            .emoji {
+                                                font-size: 20px;
+                                                margin: 0 5px;
+                                                cursor: pointer;
+                                                transition: transform 0.2s ease-in-out;
+                                    
+                                                &:hover {
+                                                    transform: scale(1.2);
+                                                }
+                                            }
+                                    
+                                            &.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+                                                display: flex;
+                                                opacity: 1;
+                                                transform: translateX(-50%) translateY(0); /* Yakuniy holat */
+                                            }
+                                        }
                                     }
+                                    
                                 }
                                 &:hover{
                                     .hotel-meta{
@@ -120,20 +201,81 @@ $gilroy: "Gilroy";
                                         display: none;
                                         align-items: center;
                                         position: absolute;
-                                        bottom: 20px;
+                                        bottom: 40px;
                                         gap: 10px;
                                         transition: 0.5s ease all;
+                                        position: absolute;
     
                                         .meta_div {
-                                           display: flex;
-                                           align-items: center;
-                                           z-index: 3;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 5px;
+                                            background-color: #fff;
+                                            padding: 5px 10px;
+                                            @media screen and (max-width:480px) {
+                                                padding: 5px 10px;
+                                            }
+                                            border-radius: 15px;
+                                            cursor: pointer;
+                                            position: relative;
+                                            transition: 05s ease all;
+                                            cursor: pointer;
+                                            &:hover{
+                                                background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+                                                background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+                                            }
+                                           
+                                        }
+                                        .like-button {
                                             gap: 5px;
                                             background-color: #fff;
                                             padding: 5px 10px;
                                             border-radius: 15px;
                                             cursor: pointer;
+                                           
+                                        
+                                            .emoji-popup {
+                                                position: absolute;
+                                                left: 50%;
+                                                bottom: 40px;
+                                                background-color: white;
+                                                padding: 6px 10px;
+                                                border-radius: 20px;
+                                                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                                opacity: 0;
+                                                display: none; /* Initially hidden */
+                                                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                                        
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 100%;
+                                                    left: 50%;
+                                                    transform: translateX(-50%);
+                                                    border-top: 8px solid white;
+                                                    border-left: 8px solid transparent;
+                                                    border-right: 8px solid transparent;
+                                                }
+                                        
+                                                .emoji {
+                                                    font-size: 20px;
+                                                    margin: 0 5px;
+                                                    cursor: pointer;
+                                                    transition: transform 0.2s ease-in-out;
+                                        
+                                                    &:hover {
+                                                        transform: scale(1.2);
+                                                    }
+                                                }
+                                        
+                                                &.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+                                                    display: flex;
+                                                    opacity: 1;
+                                                    transform: translateX(-50%) translateY(0); /* Yakuniy holat */
+                                                }
+                                            }
                                         }
+                                        
                                     }
 
                                     &:nth-of-type(2){

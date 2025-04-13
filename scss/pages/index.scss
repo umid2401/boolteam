@@ -1606,6 +1606,7 @@ body {
                                             flex-wrap: wrap;
 
                                             .tag {
+                                                display: none;
                                                 background-color: #F0F0F2;
                                                 padding: 10px 15px;
                                                 text-align: center;
@@ -1613,6 +1614,10 @@ body {
                                                 font-size: 16px;
                                                 font-weight: 500;
                                                 border-radius: 8px;
+                                                transition: 0.5s ease all;
+                                            &:hover{
+                                                color: rgba(0, 25, 91, 1);
+                                            }
                                             }
 
                                             button {
@@ -1644,10 +1649,16 @@ body {
                                     font-weight: 900;
                                     color: #00195B;
                                     font-size: 18px;
-                                    transition: color 0.3s ease;
-
+                                    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                                    svg {
+                                        transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                                      }
                                     &:hover {
                                         color: #0f5abb;
+                                        svg{
+                                            transform: translateX(3px);
+                                        }
+        
                                     }
                                 }
                             }
@@ -1940,12 +1951,7 @@ body {
                                             border-top: 8px solid #0041F2; /* Aktiv fon rangi bilan bir xil */
                                             border-left: 8px solid transparent;
                                             border-right: 8px solid transparent;
-                                            @media screen and (max-widh:480px) {
-                                                border-top: 6px solid #0041F2; /* Aktiv fon rangi bilan bir xil */
-                                                border-left: 6px solid transparent;
-                                                border-right: 6px solid transparent;
-                                                bottom: -6px;
-                                            }
+                                            
                                         }
                                     }
                             
@@ -2101,10 +2107,16 @@ body {
                             display: flex;
                             align-items: center;
                             gap: 5px;
-                            transition: color 0.3s ease;
-
+                            transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                            svg {
+                                transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                              }
                             &:hover {
                                 color: #0f5abb;
+                                svg{
+                                    transform: translateX(3px);
+                                }
+
                             }
                         }
 
@@ -2561,10 +2573,15 @@ body {
                                         text-decoration: none;
                                         color: rgba(32, 33, 46, 0.8);
                                     }
-
-                                    .show-more {
-                                        color: rgba(0, 25, 91, 1);
+                                    .tag, .show-more{
+                                        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                                            &:hover{
+                                                color: rgba(0, 25, 91, 1);
+                                                transform: scale(1.1);
+                                                background-color: #e8e8e8;
+                                            }
                                     }
+                                    
 
                                     button {
                                         background-color: rgba(0, 65, 242, 0.13);
@@ -2595,10 +2612,16 @@ body {
                             font-weight: 900;
                             color: #00195B;
                             font-size: 17px;
-                            transition: color 0.3s ease;
-
+                            transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                            svg {
+                                transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                              }
                             &:hover {
                                 color: #0f5abb;
+                                svg{
+                                    transform: translateX(3px);
+                                }
+
                             }
                         }
                     }
@@ -2643,6 +2666,12 @@ body {
                                     border-radius: 8px;
                                     color: rgba(32, 33, 46, 0.8);
                                     text-decoration: none;
+                                    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                                    &:hover{
+                                        color: rgba(0, 25, 91, 1);
+                                        transform: scale(1.1);
+                                        background-color: #e8e8e8;
+                                    }
                                 }
                             }
 
@@ -2654,10 +2683,16 @@ body {
                                 font-weight: 900;
                                 color: #00195B;
                                 font-size: 17px;
-                                transition: color 0.3s ease;
-
+                                transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                                svg {
+                                    transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                                  }
                                 &:hover {
                                     color: #0f5abb;
+                                    svg{
+                                        transform: translateX(3px);
+                                    }
+    
                                 }
                             }
                         }
@@ -2976,10 +3011,16 @@ body {
                         font-size: 18px;
                         gap: 7px;
                         padding-bottom: 30px;
-                        transition: color 0.3s ease;
-
+                        transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                        svg {
+                            transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                          }
                         &:hover {
                             color: #0f5abb;
+                            svg{
+                                transform: translateX(3px);
+                            }
+
                         }
                     }
                 }
@@ -3144,10 +3185,16 @@ body {
                             font-size: 18px;
                             font-weight: 600;
                             color: #00195B;
-                            transition: color 0.3s ease;
-
+                            transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                            svg {
+                                transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                              }
                             &:hover {
                                 color: #0f5abb;
+                                svg{
+                                    transform: translateX(3px);
+                                }
+
                             }
                         }
                     }
@@ -3309,10 +3356,16 @@ body {
                             color: #00195B;
                             font-size: 18px;
                             font-weight: 600;
-                            transition: color 0.3s ease;
-
+                            transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                            svg {
+                                transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                              }
                             &:hover {
                                 color: #0f5abb;
+                                svg{
+                                    transform: translateX(3px);
+                                }
+
                             }
                         }
                     }

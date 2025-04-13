@@ -79,6 +79,11 @@ $font-main: 'TT Commons';
                             cursor: pointer;
                             font-weight: bold;
                             font-family: $font-main;
+                            transition: background-color 0.3s ease; 
+
+                            &:hover {
+                              background-color: darken(#0041F2, 25%); // Rangni biroz to'qroq qilish
+                            }
                         }
                     }
                 }

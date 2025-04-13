@@ -7,6 +7,7 @@
 .wrapper .main_wrapper .main .location .container .location-container {
   display: flex;
   align-items: center;
+  position: relative !important;
 }
 .wrapper .main_wrapper .main .location .container .location-container .swiper,
 .wrapper .main_wrapper .main .location .container .location-container .forum {
@@ -14,9 +15,88 @@
 }
 .wrapper .main_wrapper .main .location .container .location-container .swiper {
   background-color: #fff;
+  position: static !important;
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev {
+  position: absolute !important;
+  left: 46%;
+  top: 50%;
+  background-color: #F3F3F3 !important;
+  border-radius: 50%;
+  width: 32px !important;
+  height: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev {
+    left: 0;
+    top: 70%;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev {
+    left: 10px;
+    top: 80%;
+  }
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev::after {
+  display: none !important;
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev svg {
+  width: 100% !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  height: 14px !important;
+  margin-right: 3px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next {
+  position: absolute !important;
+  right: 12px;
+  top: 50%;
+  width: 32px !important;
+  height: 32px !important;
+  background-color: #F3F3F3;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next {
+    right: 0;
+    top: 70%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next {
+    right: 10px;
+    top: 80%;
+  }
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next::after {
+  display: none !important;
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next svg {
+  width: 100% !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  height: 14px !important;
+  margin-left: 3px;
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads {
-  width: 55%;
+  width: 48%;
+}
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .container .location-container .ads {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location .container .location-container .ads {
+    width: 0%;
+  }
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads .slide-tab {
   display: flex;

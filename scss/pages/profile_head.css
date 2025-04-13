@@ -66,6 +66,10 @@
   cursor: pointer;
   font-weight: bold;
   font-family: "TT Commons";
+  transition: background-color 0.3s ease;
+}
+.main_wrapper .main .profile_head .container .profile_section .profile-right button:hover {
+  background-color: #001f73;
 }
 .main_wrapper .main .profile_head .container .profile-menu {
   padding: 20px 30px;
