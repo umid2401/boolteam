@@ -1,30 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
     const openSidebarButton = document.querySelector('.mobile-sidebar-button');
+    const closeSidebarButton = document.querySelector('.close-mobile-button');
     const mobileSidebar = document.querySelector('.mobile-sidebar');
 
+    function openMobileSidebar() {
+        if (mobileSidebar) {
+            mobileSidebar.classList.add('open');
+        }
+    }
+
     function closeMobileSidebar() {
-        if (mobileSidebar && mobileSidebar.classList.contains('open')) {
+        if (mobileSidebar) {
             mobileSidebar.classList.remove('open');
         }
     }
 
-    if (openSidebarButton && mobileSidebar) {
-        openSidebarButton.addEventListener('click', () => {
-            mobileSidebar.classList.toggle('open');
-        });
+    if (openSidebarButton && mobileSidebar && closeSidebarButton) {
+        openSidebarButton.addEventListener('click', openMobileSidebar);
+        closeSidebarButton.addEventListener('click', closeMobileSidebar);
 
-        // Ekran o'lchami o'zgarganda tekshirish
+        // Ekran o'lchami o'zgarganda tekshirish (agar kerak bo'lsa)
         window.addEventListener('resize', () => {
             if (window.innerWidth > 480) {
                 closeMobileSidebar();
             }
         });
     } else {
-        console.error("Ochish tugmasi yoki mobil sidebar elementi topilmadi.");
+        console.error("Ochish tugmasi, yopish tugmasi yoki mobil sidebar elementi topilmadi.");
     }
 
     // Sahifa birinchi marta yuklanganda ham kichik ekranda bo'lsa, yopiq bo'lsin (ixtiyoriy)
     if (window.innerWidth <= 480 && mobileSidebar && !mobileSidebar.classList.contains('open')) {
-        mobileSidebar.classList.remove('open'); // Agar qandaydir sababga ko'ra ochiq bo'lsa
+        closeMobileSidebar(); // Agar qandaydir sababga ko'ra ochiq bo'lsa
     }
 });
