@@ -3632,6 +3632,7 @@ body {
 }
 .wrapper .mobile-sidebar .image_links1 .image_link1 {
   margin-left: 20px;
+  margin-top: 20px;
   position: relative;
   display: flex;
   align-items: center;
