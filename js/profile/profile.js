@@ -77,24 +77,24 @@ document.addEventListener("click", (e) => {
     }
 });
 // 
-const menuBtn = document.querySelector(".menu-btn1");
-const menu_right = document.querySelector(".menu-hidden");
+// const menuBtn = document.querySelector(".menu-btn1");
+// const menu_right = document.querySelector(".menu-hidden");
 
-function toggleMenu() {
-    if (window.innerWidth < 1600) {
-        menu_right.classList.toggle("show");
-    }
-}
-menuBtn.addEventListener("click", toggleMenu);
-// Resize hodisasi
-window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1600) {
-        menu_right.classList.remove("show"); 
-    }
-});
-// Tashqariga bosganda yopiladi
-document.addEventListener("click", (e) => {
-    if (!menu_right.contains(e.target) && !menuBtn.contains(e.target)) {
-        menu_right.classList.remove("show");
-    }
-});
+// function toggleMenu() {
+//     if (window.innerWidth < 1600) {
+//         menu_right.classList.toggle("show");
+//     }
+// }
+// menuBtn.addEventListener("click", toggleMenu);
+// // Resize hodisasi
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth >= 1600) {
+//         menu_right.classList.remove("show"); 
+//     }
+// });
+// // Tashqariga bosganda yopiladi
+// document.addEventListener("click", (e) => {
+//     if (!menu_right.contains(e.target) && !menuBtn.contains(e.target)) {
+//         menu_right.classList.remove("show");
+//     }
+// });
