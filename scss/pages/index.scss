@@ -1940,6 +1940,12 @@ body {
                                             border-top: 8px solid #0041F2; /* Aktiv fon rangi bilan bir xil */
                                             border-left: 8px solid transparent;
                                             border-right: 8px solid transparent;
+                                            @media screen and (max-widh:480px) {
+                                                border-top: 6px solid #0041F2; /* Aktiv fon rangi bilan bir xil */
+                                                border-left: 6px solid transparent;
+                                                border-right: 6px solid transparent;
+                                                bottom: -6px;
+                                            }
                                         }
                                     }
                             

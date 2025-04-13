@@ -5132,6 +5132,14 @@ body {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
+@media screen and (max-widh: 480px) {
+  .wrapper .main_wrapper .main .announcements .container .slide-tab .left .announcements__tabs .tabs.active::after {
+    border-top: 6px solid #0041F2; /* Aktiv fon rangi bilan bir xil */
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    bottom: -6px;
+  }
+}
 .wrapper .main_wrapper .main .announcements .container .slide-tab .left .announcements__tabs .tabs:focus {
   outline: none;
   border-color: #0041F2;
