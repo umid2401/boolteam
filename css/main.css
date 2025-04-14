@@ -562,14 +562,23 @@
   align-items: center;
   gap: 5px;
   font-family: "TT Commons";
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a img {
   width: 17px;
+  transition: transform 0.3s ease-in-out;
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a span {
   color: #0041F2;
   font-size: 20px;
   font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a:hover img {
+  transform: translateX(-4px);
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a:hover span {
+  color: #00195B;
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info p {
   font-family: "TT Commons";
@@ -1221,7 +1230,7 @@
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads .swiper-wrapper .card .card__image {
   width: 100%;
-  height: 300px;
+  height: 250px !important;
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads .swiper-wrapper .card .card__image img {
   width: 100%;
@@ -3085,6 +3094,7 @@
   border-radius: 50%;
   width: 32px !important;
   height: 32px !important;
+  transition: background-color 0.3s ease-in-out;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -3110,6 +3120,12 @@
   height: 14px !important;
   margin-right: 3px;
 }
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev:hover {
+  background-color: #0041F2 !important;
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-prev:hover svg path {
+  stroke: white !important;
+}
 .wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next {
   position: absolute !important;
   right: 12px;
@@ -3117,6 +3133,7 @@
   width: 32px !important;
   height: 32px !important;
   background-color: #F3F3F3;
+  transition: background-color 0.3s ease-in-out;
   border-radius: 50%;
   display: flex !important;
   align-items: center !important;
@@ -3142,6 +3159,13 @@
   object-fit: contain !important;
   height: 14px !important;
   margin-left: 3px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next:hover {
+  background-color: #0041F2 !important;
+  /* Hoverda fonni biroz to'qroq qilish */
+}
+.wrapper .main_wrapper .main .location .container .location-container .swiper .swiper-button-next:hover svg path {
+  stroke: white !important;
 }
 .wrapper .main_wrapper .main .location .container .location-container .ads {
   width: 48%;
@@ -3382,6 +3406,10 @@
   color: #fff;
   border-radius: 5px;
   margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .social-layout .sidebar .sidebar__one .view-all:hover {
+  background-color: rgb(0, 30.7541322314, 114.5);
 }
 .wrapper .main_wrapper .main .location .container .social-layout .sidebar .sidebar__two {
   padding: 20px 30px;
@@ -3544,6 +3572,7 @@
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
+  border-radius: 8px;
   width: 100%;
 }
 .wrapper .main_wrapper .main .location .container .social-layout .content .tabs .menu-toogles {
@@ -3569,11 +3598,11 @@
   color: #0041F2;
   opacity: 1;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 {
   position: relative;
   display: inline-block;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown .dropdown-btn {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 .dropdown-btn {
   background: none;
   border: none;
   font-size: 16px;
@@ -3586,7 +3615,7 @@
   display: flex;
   gap: 5px;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown .dropdown-menu {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -3599,14 +3628,14 @@
   width: 150px;
   display: none;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown .dropdown-menu li {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 .dropdown-menu li {
   font-family: "TT Commons";
   border-bottom: 1px solid #eee;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown .dropdown-menu li:last-child {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 .dropdown-menu li:last-child {
   border-bottom: none;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown .dropdown-menu li a {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 .dropdown-menu li a {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -3614,10 +3643,10 @@
   font-family: "TT Commons";
   color: rgb(109, 114, 126);
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown .dropdown-menu li a:hover {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1 .dropdown-menu li a:hover {
   background: #f5f5f5;
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown.active .dropdown-menu {
+.wrapper .main_wrapper .main .location .container .social-layout .content .tabs .dropdown1.active .dropdown-menu {
   display: block;
 }
 .wrapper .main_wrapper .main .location .container .social-layout .content .tab-content {
@@ -3626,6 +3655,8 @@
 .wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post {
   background-color: #fff;
   margin-top: 25px;
+  border-radius: 8px;
+  overflow: hidden;
   padding: 20px;
 }
 .wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-header {
@@ -3693,8 +3724,8 @@
   justify-content: center;
 }
 .wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-header .card .info .btn-group .menu-button {
-  width: 35px !important;
-  height: 35px !important;
+  width: 37px !important;
+  height: 37px !important;
   display: flex;
   border-radius: 50%;
   align-items: center;
@@ -3705,12 +3736,12 @@
   border: none;
   padding: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  /* Yumshoq o'tish */
 }
-.wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-header .card .info .btn-group .menu-button .dots {
-  width: 5px;
-  height: 5px;
-  background-color: rgb(0, 65, 242);
-  border-radius: 50%;
+.wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-header .card .info .btn-group .menu-button:hover {
+  background-color: rgb(223.5, 223.5, 223.5);
+  /* Fonni 10% ga to'qroq qilish */
 }
 .wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-images {
   display: flex;
@@ -3749,6 +3780,12 @@
   padding: 5px 10px;
   border-radius: 15px;
   cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-footer .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #4a87a3);
+  /* Hover holatidagi gradient */
+  background-position: 100% 0;
+  /* Gradientni o'ng tomonga siljitish */
 }
 .wrapper .main_wrapper .main .location .container .social-layout .content .tab-content .post .post-footer .hotel-meta .meta_div1 {
   background: transparent;

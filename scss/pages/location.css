@@ -96,14 +96,23 @@
   align-items: center;
   gap: 5px;
   font-family: "TT Commons";
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a img {
   width: 17px;
+  transition: transform 0.3s ease-in-out;
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a span {
   color: #0041F2;
   font-size: 20px;
   font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a:hover img {
+  transform: translateX(-4px);
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a:hover span {
+  color: #00195B;
 }
 .wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info p {
   font-family: "TT Commons";

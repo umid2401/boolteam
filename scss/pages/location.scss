@@ -64,7 +64,7 @@ $font-main: 'TT Commons';
                                         align-items: center;
                                         justify-content: space-between;
                                         font-family: $font-main;
-
+                                        
                                         &:nth-of-type(2) {
                                             align-items: start;
                                             margin-top: 5px;
@@ -112,15 +112,28 @@ $font-main: 'TT Commons';
                                             align-items: center;
                                             gap: 5px;
                                             font-family: $font-main;
+                                            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+                                        
 
                                             img {
                                                 width: 17px;
+                                                transition: transform 0.3s ease-in-out; 
                                             }
 
                                             span {
                                                 color: #0041F2;
                                                 font-size: 20px;
                                                 font-weight: 500;
+                                                transition: color 0.3s ease-in-out;
+                                            }
+                                            &:hover{
+                                                img{
+                                                    transform: translateX(-4px);
+                                                }
+                                                span{
+
+                                                    color: #00195B;
+                                                }
                                             }
                                         }
                                     }
