@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
     let menuToggle = document.querySelector(".menu-toggle-links");
     let menu = document.querySelector(".tabs");
-
     function toggleMenu(event) {
       event.stopPropagation();
       menu.classList.toggle("show");
     }
-
     function closeMenu() {
       if (menu.classList.contains("show")) {
         menu.classList.remove("show");
