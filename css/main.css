@@ -4197,10 +4197,32 @@ body {
   position: fixed;
   bottom: 20px;
   right: 0;
-  display: none;
   z-index: 1002 !important;
-  opacity: 0;
+}
+.wrapper .main_wrapper .header .toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5000 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  gap: 10px;
+}
+.wrapper .main_wrapper .header .toast-container .toast {
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  opacity: 1;
+  transform: translateX(0px);
   background: #fff;
+  display: block;
   padding: 20px;
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(94, 92, 154, 0.06);
@@ -4208,7 +4230,7 @@ body {
   max-width: 400px;
   width: 100%;
 }
-.wrapper .main_wrapper .header .toast-container .card {
+.wrapper .main_wrapper .header .toast-container .toast .card {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -4216,18 +4238,18 @@ body {
   justify-content: space-between;
   border-radius: 6px;
 }
-.wrapper .main_wrapper .header .toast-container .card .img {
+.wrapper .main_wrapper .header .toast-container .toast .card .img {
   width: 50px !important;
   height: 50px !important;
   border-radius: 50%;
   position: relative;
 }
-.wrapper .main_wrapper .header .toast-container .card .img img {
+.wrapper .main_wrapper .header .toast-container .toast .card .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.wrapper .main_wrapper .header .toast-container .card .img .badge {
+.wrapper .main_wrapper .header .toast-container .toast .card .img .badge {
   position: absolute;
   bottom: 0;
   width: 20px;
@@ -4239,12 +4261,12 @@ body {
   background-color: blue;
   border-radius: 50%;
 }
-.wrapper .main_wrapper .header .toast-container .card .info {
+.wrapper .main_wrapper .header .toast-container .toast .card .info {
   width: calc(100% - 60px);
   display: flex;
   justify-content: space-between;
 }
-.wrapper .main_wrapper .header .toast-container .card .info h3 {
+.wrapper .main_wrapper .header .toast-container .toast .card .info h3 {
   width: 80%;
   line-height: 22px;
   font-size: 17px;
@@ -4252,25 +4274,25 @@ body {
   font-family: "TT Commons", sans-serif;
   color: #5e6167;
 }
-.wrapper .main_wrapper .header .toast-container .card .info h3 span {
+.wrapper .main_wrapper .header .toast-container .toast .card .info h3 span {
   color: rgb(0, 25, 91);
 }
 @media screen and (max-width: 540px) {
-  .wrapper .main_wrapper .header .toast-container .card .info h3 {
+  .wrapper .main_wrapper .header .toast-container .toast .card .info h3 {
     width: 100%;
   }
 }
-.wrapper .main_wrapper .header .toast-container .card .info p {
+.wrapper .main_wrapper .header .toast-container .toast .card .info p {
   font-size: 15px;
   font-weight: 400;
   color: rgb(85, 89, 97);
 }
-.wrapper .main_wrapper .header .toast-container .card .info .btn-group {
+.wrapper .main_wrapper .header .toast-container .toast .card .info .btn-group {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.wrapper .main_wrapper .header .toast-container .card .info .btn-group .sms {
+.wrapper .main_wrapper .header .toast-container .toast .card .info .btn-group .sms {
   width: 35px !important;
   height: 35px !important;
   background-color: rgb(0, 65, 242);
@@ -4280,7 +4302,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.wrapper .main_wrapper .header .toast-container .card .info .btn-group .menu-button {
+.wrapper .main_wrapper .header .toast-container .toast .card .info .btn-group .menu-button {
   width: 35px !important;
   height: 35px !important;
   display: flex;
@@ -4293,17 +4315,17 @@ body {
   border-radius: 12px;
   cursor: pointer;
 }
-.wrapper .main_wrapper .header .toast-container .card .info .btn-group .menu-button .dots {
+.wrapper .main_wrapper .header .toast-container .toast .card .info .btn-group .menu-button .dots {
   width: 5px;
   height: 5px;
   background-color: rgb(0, 65, 242);
   border-radius: 50%;
 }
-.wrapper .main_wrapper .header .toast-container .btn-group {
+.wrapper .main_wrapper .header .toast-container .toast .btn-group {
   display: flex;
   gap: 20px;
 }
-.wrapper .main_wrapper .header .toast-container .btn-group button {
+.wrapper .main_wrapper .header .toast-container .toast .btn-group button {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 12px;
@@ -4314,22 +4336,34 @@ body {
   font-size: 14px;
   font-family: "Gilroy", sans-serif;
 }
-.wrapper .main_wrapper .header .toast-container .btn-group button:nth-last-of-type(1) {
+.wrapper .main_wrapper .header .toast-container .toast .btn-group button:nth-last-of-type(1) {
   background-color: rgb(180, 185, 199);
 }
 @media screen and (max-width: 540px) {
-  .wrapper .main_wrapper .header .toast-container .btn-group {
+  .wrapper .main_wrapper .header .toast-container .toast .btn-group {
     align-items: center;
     justify-content: center;
   }
 }
-.wrapper .main_wrapper .header .toast-container .close-btn {
+.wrapper .main_wrapper .header .toast-container .toast .close-btn {
   position: absolute;
   right: 20px;
   cursor: pointer;
 }
-.wrapper .main_wrapper .header .toast-container .close-btn img {
-  width: 11px;
+.wrapper .main_wrapper .header .toast-container .toast .close-btn svg {
+  transition: 0.3s ease all;
+}
+.wrapper .main_wrapper .header .toast-container .toast .close-btn:hover svg {
+  stroke: #0041F2;
+  transform: scale(1.3);
+}
+.wrapper .main_wrapper .header .toast-container .show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.wrapper .main_wrapper .header .toast-container .hide {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
 }
 .wrapper .main_wrapper .header .settings {
   position: absolute;
@@ -5295,6 +5329,10 @@ body {
 .wrapper .main_wrapper .main__section .sidebar__section {
   width: 72px;
   transition: width 0.3s ease-in-out;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
   height: 100vh;
   padding: 72px 0 20px 0;
   position: fixed;
@@ -5310,16 +5348,12 @@ body {
   }
 }
 .wrapper .main_wrapper .main__section .sidebar__section.expanded {
-  width: 200px;
+  width: 240px;
 }
 .wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu::-webkit-scrollbar {
   display: none;
 }
 .wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu {
-  height: 100%;
-  overflow-y: auto;
-  scrollbar-width: none !important;
-  -ms-overflow-style: none;
   display: flex;
   flex-direction: column;
 }
@@ -5347,7 +5381,7 @@ body {
 .wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__item a.row {
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 .wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__item a.row span {
   font-size: 15px;
@@ -5357,6 +5391,34 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__line {
+  padding: 10px 0;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__socials {
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__socials span {
+  color: #FFF;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .social {
+  display: block;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__copyright {
+  padding: 12px 20px !important;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__copyright a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: "TT Commons", sans-serif;
+}
+.wrapper .main_wrapper .main__section .sidebar__section .sidebar__menu .sidebar__copyright span {
+  color: #FFF;
+  font-family: "TT Commons", sans-serif;
 }
 .wrapper .main_wrapper .main__section .main {
   max-width: calc(100% - 72px);
@@ -5668,11 +5730,8 @@ body {
   color: #000000;
   opacity: 0.5;
   margin-top: 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
-.wrapper .main_wrapper .main__section .main .announcements .container .content .slider-wrapper .swiper-wrapper .card .card__info a {
+.wrapper .main_wrapper .main__section .main .announcements .container .content .slider-wrapper .swiper-wrapper .card .card__info button {
   text-decoration: none;
   display: block;
   margin: 8px 0;
@@ -5774,10 +5833,9 @@ body {
   width: 100%;
   width: 100%;
   border: 1px solid rgba(210, 214, 223, 0.5);
-  border-radius: 8px;
-  overflow: hidden;
 }
 .wrapper .main_wrapper .main__section .main .form_section form .form-row {
+  border-radius: 8px;
   display: flex;
   width: 50%;
   position: relative;
@@ -5786,7 +5844,12 @@ body {
   width: 100%;
   height: 45px;
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data img {
+  background: transparent;
 }
 .wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data input {
   display: block;
@@ -5802,24 +5865,15 @@ body {
   padding: 0 10px;
   font-weight: 400;
   line-height: normal;
+  background-color: transparent;
   letter-spacing: 0.17px;
-  border-right: 1px solid rgba(210, 214, 223, 0.5);
 }
-.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list1 {
-  width: 300px;
-  height: 270px;
-  background-color: #FFF;
-  position: absolute;
-  left: 0;
-  z-index: 4000 !important;
-  display: flex;
-  flex-direction: column;
-}
-.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data label {
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .label {
   position: absolute;
   pointer-events: none;
   bottom: 10px;
   left: 10px;
+  z-index: 3099 !important;
   font-size: 16px;
   transition: all 0.3s ease;
   color: #6D727E;
@@ -5830,6 +5884,84 @@ body {
   line-height: normal;
   letter-spacing: 0.17px;
   opacity: 0.7;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .arrow-toogle {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .rotated {
+  transform: rotate(180deg);
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list {
+  width: 100%; /* Ширина по содержимому или задайте конкретное значение */
+  border: 1px solid #dee2e6; /* Тонкая серая граница */
+  border-radius: 0.25rem; /* Небольшое скругление углов */
+  padding: 0.5rem 0; /* Вертикальные отступы */
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(100%);
+  opacity: 0;
+  left: 0;
+  max-height: 280px;
+  bottom: 55px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  margin: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out; /* Плавное выделение при наведении */
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list:hover {
+  background-color: #e9ecef; /* Более светлый серый при наведении */
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list span {
+  font-size: 16px;
+  font-family: "TT Commons", sans-serif;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list input[type=checkbox] {
+  appearance: none; /* Убираем стандартные стили чекбокса */
+  width: 18px;
+  height: 20px;
+  border: 1px solid #ced4da; /* Серая граница чекбокса */
+  border-radius: 0.25rem;
+  margin-right: 0.75rem;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list input[type=checkbox]:hover {
+  border-color: #007bff;
+  /* Синяя граница при наведении */
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list input[type=checkbox]:checked {
+  background-color: #007bff; /* Синий фон при выборе */
+  border-color: #007bff;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list input[type=checkbox]:checked::before {
+  content: "";
+  mask-size: 70%;
+  background-color: white; /* Цвет галочки */
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .checkbox-list .label-list span {
+  font-size: 1rem;
+  color: #495057; /* Основной цвет текста */
+}
+.wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data .visible {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 3999 !important;
 }
 .wrapper .main_wrapper .main__section .main .form_section form .form-row .input-data input:focus ~ label,
 .wrapper .main_wrapper .main__section .main .form_section form .form-row .textarea textarea:focus ~ label,
