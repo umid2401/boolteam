@@ -349,7 +349,7 @@ $font-medium: 'Commons', sans-serif;
                         font-family: $font-main !important;
 
                         .profile_about {
-                            width: 65%;
+                            width: 60%;
                             padding: 20px 30px;
                             background-color: #fff;
                             border-radius: 8px;
@@ -500,7 +500,7 @@ $font-medium: 'Commons', sans-serif;
                         }
 
                         .maps_profile {
-                            width: calc(35% - 25px);
+                            width: calc(40% - 25px);
                             height: auto;
                             padding: 20px 0 0 0;
                             border-radius: 10px;
@@ -535,7 +535,7 @@ $font-medium: 'Commons', sans-serif;
                         align-items: stretch;
 
                         .left_box {
-                            width: 65%;
+                            width: 60%;
 
                             .categories {
                                 @include flex_one();
@@ -630,28 +630,31 @@ $font-medium: 'Commons', sans-serif;
 
                             ._link {
                                 @include flex_one();
-                                text-decoration: none;
-                                gap: 7px;
-                                font-family: $font-primary;
-                                font-weight: 900;
-                                color: #00195B;
-                                font-size: 17px;
-                                transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
-                            svg {
-                                transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
-                              }
-                            &:hover {
-                                color: #0f5abb;
-                                svg{
-                                    transform: translateX(3px);
-                                }
-
-                            }
+                                    text-decoration: none;
+                                    gap: 10px;
+                                    font-family: $font-primary;
+                                    font-weight: 900;
+                                    color: #00195B;
+                                    align-items: center;
+                                    font-size: 17px;
+                                    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+                                    svg {
+                                        height: 1.5cap;
+                                        transform: translateY(0.8px);
+                                        transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+                                      }
+                                    &:hover {
+                                        color: #0f5abb;
+                                        svg{
+                                            transform: translate(3px, 0.8px);
+                                        }
+        
+                                    }
                             }
                         }
 
                         .right_box {
-                            width: calc(35% - 25px);
+                            width: calc(40% - 25px);
                         }
 
                         .left_box {
@@ -660,6 +663,9 @@ $font-medium: 'Commons', sans-serif;
                         }
 
                         .right_box {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
                             .directions-container {
                                 border-radius: 8px;
                                 background-color: #fff;
@@ -702,19 +708,22 @@ $font-medium: 'Commons', sans-serif;
                                 ._link {
                                     @include flex_one();
                                     text-decoration: none;
-                                    gap: 5px;
+                                    gap: 10px;
                                     font-family: $font-primary;
                                     font-weight: 900;
                                     color: #00195B;
+                                    align-items: center;
                                     font-size: 17px;
                                     transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
                                     svg {
+                                        height: 1.5cap;
+                                        transform: translateY(0.8px);
                                         transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
                                       }
                                     &:hover {
                                         color: #0f5abb;
                                         svg{
-                                            transform: translateX(3px);
+                                            transform: translate(3px, 0.8px);
                                         }
         
                                     }
@@ -724,7 +733,7 @@ $font-medium: 'Commons', sans-serif;
                             .help-container {
                                 border-radius: 8px;
                                 margin-top: 20px;
-                                padding: 40px 25px;
+                                padding: 48px 25px;
                                 background-color: #0041F2;
                                 display: flex;
                                 justify-content: space-between;

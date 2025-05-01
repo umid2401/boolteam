@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper .main_wrapper .main .location .container .images {
+  padding: 20px 30px;
+  background-color: white;
+  margin: 25px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images {
+  display: flex;
+  margin: 20px 0;
+  gap: 20px;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card {
+  width: 20%;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .image {
+  width: 100%;
+  height: 240px;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 10px;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .text p {
+  font-size: 14px;
+  margin-right: 10px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  line-height: 19px;
+  color: #fff;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .text span {
+  font-size: 16px;
+  font-family: "Gilroy";
+  color: #fff;
+  font-weight: 600;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta {
+  padding: 0 10px;
+  display: none;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  gap: 10px;
+  transition: 0.5s ease all;
+  position: absolute;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .meta_div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 5s ease all;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .meta_div {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+  background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button {
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup {
+  position: absolute;
+  left: 40%;
+  bottom: 40px;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup .emoji {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup .emoji:hover {
+  transform: scale(1.2);
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card .hotel-meta .like-button .emoji-popup.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Yakuniy holat */
+}
+.wrapper .main_wrapper .main .location .container .images .card-images .card:hover .hotel-meta {
+  display: flex;
+}
+.wrapper .main_wrapper .main .location .container .gallery {
+  padding: 20px 30px;
+  background-color: white;
+  margin: 25px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 20px;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item {
+  width: calc(33.3333333333% - 13.3333333333px);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 img, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image img {
+  width: 100% !important;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta {
+  padding: 0 10px;
+  display: none;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  gap: 10px;
+  transition: 0.5s ease all;
+  position: absolute;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 5s ease all;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div:hover, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+  background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button {
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup::before, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup .emoji, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup .emoji {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup .emoji:hover, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup .emoji:hover {
+  transform: scale(1.2);
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .like-button .emoji-popup.show, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .like-button .emoji-popup.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Yakuniy holat */
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1:nth-of-type(2), .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:nth-of-type(2) {
+  margin-top: 20px;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1:hover .hotel-meta, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:hover .hotel-meta {
+  display: flex;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image {
+  width: 100%;
+  height: 660px;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image img {
+  width: 100% !important;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:hover .hotel-meta {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper .main_wrapper .main .location .container .images .card-images {
+    width: 100%;
+  }
+  .wrapper .main_wrapper .main .location .container .images .card-images .card {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper .main_wrapper .main .location .container .gallery {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos {
+    flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item {
+    width: calc(100% - 13.3333333333px);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 img, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image img {
+    width: 100% !important;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta {
+    padding: 0 10px;
+    display: none;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    gap: 10px;
+    transition: 0.5s ease all;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1 .hotel-meta .meta_div, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image .hotel-meta .meta_div {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    gap: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1:nth-of-type(2), .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:nth-of-type(2) {
+    margin-top: 20px;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .images1:hover .hotel-meta, .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:hover .hotel-meta {
+    display: flex;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image {
+    width: 100%;
+    height: 180px;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image img {
+    width: 100% !important;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wrapper .main_wrapper .main .location .container .gallery .photos .gallery-item .image:hover .hotel-meta {
+    display: flex;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .location .container .images {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .location .container .images .card-images {
+    width: 100%;
+    margin: 10px 0 !important;
+    flex-wrap: wrap;
+  }
+  .wrapper .main_wrapper .main .location .container .images .card-images .card {
+    width: 100%;
+    max-width: none;
+  }
+}/*# sourceMappingURL=photos.css.map */

@@ -198,46 +198,49 @@ document.addEventListener('click', () => {
 });
 
 // Checkboxlardagi o'zgarishlarni kuzatish va inputni yangilash
-checkboxLists.forEach((checkboxList, index) => {
-    const checkboxes = checkboxList.querySelectorAll('input[type="checkbox"]');
-    const relatedInput = checkboxList.previousElementSibling; // Birinchi holat uchun to'g'ri
+const showmoreButtons = document.querySelectorAll(".show-mores");
 
-    // Agar inputlar boshqa joyda bo'lsa, ularni index bo'yicha olishga harakat qilamiz
-    const inputElement = inputFields[index];
-    if (inputElement) {
-        relatedInput = inputElement;
-    }
+showmoreButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const parent = button.previousElementSibling;
+        const dots = parent.querySelector(".dots");
+        const hiddenText = parent.querySelector(".hidden-text");
 
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => {
-            const selected = Array.from(checkboxes)
-                .filter(cb => cb.checked)
-                .map(cb => cb.nextElementSibling.textContent);
-
-            if (selected.length === 1) {
-                relatedInput.value = selected[0];
-            } else if (selected.length > 1) {
-                relatedInput.value = selected.map((item, idx) => `Bibrano${idx + 1}`).join(', ');
-            } else {
-                relatedInput.value = ''; // Agar hech narsa tanlanmagan bo'lsa
-            }
-        });
+        if (hiddenText.classList.contains("hidden-active")) {
+            hiddenText.classList.remove("hidden-active");
+            dots.style.display = "none";
+            button.textContent = "Скрыть";
+        } else {
+            hiddenText.classList.add("hidden-active");
+            dots.style.display = "inline";
+            button.textContent = "Показать дальше";
+        }
     });
 });
 
-
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Показать дальше"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Свернуть"; 
-    moreText.style.display = "inline";
-  }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const descElements = document.querySelectorAll('.descs');
+  
+    descElements.forEach(function(descElement) {
+      const dotsSpan = descElement.querySelector('.pdots');
+      const moreSpan = descElement.querySelector('.pmore');
+      const showMoreLink = descElement.querySelector('.show-mores-p');
+  
+      if (dotsSpan && moreSpan && showMoreLink) {
+        moreSpan.style.display = 'none';
+  
+        showMoreLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          if (showMoreLink.textContent === 'Показать дальше') {
+            dotsSpan.style.display = 'none';
+            moreSpan.style.display = 'inline';
+            showMoreLink.textContent = 'Скрыть';
+          } else {
+            dotsSpan.style.display = 'inline';
+            moreSpan.style.display = 'none';
+            showMoreLink.textContent = 'Показать дальше';
+          }
+        });
+      }
+    });
+  });

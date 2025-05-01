@@ -27,14 +27,18 @@ $font-main: "TT Commons";
             .sub,
             .friends_section {
                 .container {
+                   box-sizing: border-box;
+                    width: 100%;
                     .main_friend {
+                        width: 100% !important;
                         background-color: #fff;
                         padding: 20px 30px;
                         margin: 25px 0;
-                        overflow: hidden;
+                        // overflow: hidden;
                         border-radius: 8px;
 
                         .friends_ {
+                            
                             display: none;
                             align-items: center;
                             justify-content: flex-start;
@@ -536,6 +540,13 @@ $font-main: "TT Commons";
                         background-color: rgba(85, 89, 97, 0.11);
                     }
                 }
+            }
+        }
+        @media screen and (min-width:1200px) {
+            
+            .main_min{
+                min-width: calc(1200px - 72px);
+                width: 100%;
             }
         }
     }

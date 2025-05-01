@@ -1,0 +1,678 @@
+@font-face {
+  font-family: "TT Commons";
+  src: url("../../assets/fonts/TT Commons Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper .main_wrapper .main .location {
+  padding: 40px;
+}
+.wrapper .main_wrapper .main .location .container {
+  border: none;
+}
+.wrapper .main_wrapper .main .location .container .location-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card {
+  width: 45%;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile-img {
+  position: relative;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile-img::after {
+  content: "9";
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #EB0D6F;
+  bottom: 0;
+  left: 5px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div {
+  width: 100%;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "TT Commons";
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div:nth-of-type(2) {
+  align-items: start;
+  margin-top: 5px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div .name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div .name span {
+  color: #0041F2;
+  font-family: "TT Commons";
+  font-size: 17px;
+  font-weight: 600;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div span {
+  color: #555961;
+  font-size: 14px;
+  font-family: "TT Commons";
+  font-weight: 500;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div .name1 h3 {
+  font-size: 22px;
+  color: #00195B;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div .name1 span {
+  font-family: "TT Commons";
+  font-size: 16px;
+  color: #000000;
+  font-family: 500;
+  margin-top: 5px;
+  display: block;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "TT Commons";
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a img {
+  width: 17px;
+  transition: transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a span {
+  color: #0041F2;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a:hover img {
+  transform: translateX(-4px);
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .profile_detail .div a:hover span {
+  color: #00195B;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info p {
+  font-family: "TT Commons";
+  font-size: 17px;
+  color: #132030;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info p span {
+  color: rgba(19, 32, 48, 0.7);
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .profile-info .pi {
+  color: rgb(0, 0, 0);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.6;
+  margin: 20px 0;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  flex-grow: 1;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px 20px;
+  background-color: #0041F2;
+  gap: 10px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "TT Commons";
+  transition: background-color 0.3s ease;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right button:hover {
+  background-color: #001f73;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right .more-btn {
+  display: flex;
+  padding: 8px 10px;
+  background: #f1f3f5;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.wrapper .main_wrapper .main .location .container .location-container .profile-card .actions .profile-right .more-btn:hover {
+  background-color: #d3dae0;
+}
+.wrapper .main_wrapper .main .location .container .location-container .maps {
+  flex-grow: 1;
+  height: 300px;
+  border-radius: 10px;
+  z-index: 5 !important;
+}
+.wrapper .main_wrapper .main .location .container .location-container .maps .leaflet-container {
+  height: 300px !important;
+  width: 100% !important;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .menu-toggle-links {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0041F2;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li {
+  font-family: "TT Commons";
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: block;
+  position: relative;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a {
+  text-decoration: none;
+  color: #00195B;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a.active {
+  font-weight: bold;
+  color: #00195B;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a.active::after {
+  content: "";
+  position: absolute;
+  width: 100% !important;
+  height: 2px;
+  left: 0;
+  bottom: calc(-100% - 3px);
+  background-color: #0041F2;
+}
+@media screen and (max-width: 840px) {
+  .wrapper .main_wrapper .main .location .container .profile-menu .tabs li a.active::after {
+    display: none;
+  }
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .tabs li a:hover {
+  color: #0056b3;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .location .container .profile-menu .social-icons a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(85, 89, 97, 0.11);
+}
+.wrapper .main_wrapper .main .location .container .cards .card {
+  display: flex;
+  align-items: start;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px 0;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid #D9D9D9;
+  height: 220px;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .main_wrapper .main .location .container .cards .card {
+    height: auto;
+  }
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left {
+  width: 45%;
+  display: flex;
+  align-items: start;
+  gap: 25px;
+  border-right: 1px solid #D9D9D9;
+  height: 100%;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-img {
+  width: 240px;
+  height: 100%;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "TT Commons" !important;
+  color: #000000;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: justify;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header h1 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags .tag {
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9em;
+  padding: 6px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags .tag .tag-left {
+  width: 30px;
+  height: 30px;
+  background-color: #0041F2;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: "TT Commons";
+  font-size: 16px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .tags .tag:hover {
+  background-color: #e0e0e0;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-left .post-header .published-date {
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 7px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right {
+  width: 55%;
+  padding: 20px 30px;
+  font-family: "TT Commons";
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0.6;
+  line-height: 1.25rem;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block {
+  color: #000000;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "TT Commons";
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row:last-child {
+  margin-bottom: 0;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row .label {
+  color: #777;
+  font-weight: bold;
+  width: 80px;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 0.95em;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .info-block .info-row .value {
+  color: #222;
+  font-size: 1em;
+  font-weight: 500;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 3px;
+  color: #00195B;
+  font-weight: 600;
+  font-size: 17px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link span {
+  margin: 0;
+  transform: translateY(-2px);
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link svg {
+  transition: transform 0.2s ease-in-out; /* SVG transform uchun o'tish */
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link:hover {
+  color: #0f5abb;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .ranking_link:hover svg {
+  transform: translateX(3px);
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .meta_div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 5s ease all;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .meta_div {
+    padding: 5px 10px;
+  }
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .meta_div:hover {
+  background-image: linear-gradient(to right, #e0f7fa, #b3e5fc); /* Hover holatidagi gradient */
+  background-position: 100% 0; /* Gradientni o'ng tomonga siljitish */
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button {
+  gap: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup {
+  position: absolute;
+  left: -50%;
+  bottom: 40px;
+  z-index: 3500 !important;
+  /* Boshlang'ich holatda biroz pastda */
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup .emoji {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup .emoji:hover {
+  transform: scale(1.2);
+}
+.wrapper .main_wrapper .main .location .container .cards .card .card-right .footer-items .hotel-meta .like-button .emoji-popup.show { /* Emojilar ko'rsatilganda qo'shiladigan class */
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Yakuniy holat */
+}
+.wrapper .main_wrapper .main .loaders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.wrapper .main_wrapper .main .loaders .loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .main_wrapper .main .loaders .loader-container .loader {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #0041F2;
+  border-bottom-color: #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wrapper .main_wrapper .main .loaders .loader-container .text {
+  font-size: 17px;
+  color: #A0A4AE;
+  font-family: "TT Commons";
+}
+
+@media screen and (max-width: 1092px) {
+  .wrapper .main_wrapper .main .location {
+    padding: 10px;
+  }
+  .wrapper .main_wrapper .main .location .location-container {
+    flex-wrap: wrap !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper .main_wrapper .main .location .cards .card {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left {
+    width: 100% !important;
+    border-right: none;
+    height: 180px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
+    width: 300px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-right {
+    width: 100% !important;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .wrapper .main_wrapper .main .location .profile-menu {
+    padding: 10px 15px !important;
+    position: relative !important;
+    display: none;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .menu-toggle-links {
+    display: block !important;
+    position: relative;
+    z-index: 1001;
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs {
+    padding: 10px 15px !important;
+    display: none;
+    flex-direction: column;
+    gap: 10px !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .main_wrapper .main .location .profile-menu .tabs.show {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper .main_wrapper .main .location .location-container {
+    padding: 10px 15px !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card {
+    position: relative !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info {
+    flex-direction: column !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right .more-btn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card {
+    flex-wrap: wrap;
+    gap: 10px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left {
+    gap: 10px !important;
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: column;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .card-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-left .post-header {
+    gap: 20px;
+  }
+  .wrapper .main_wrapper .main .location .cards .card .card-right {
+    padding: 10px 10px !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info .pi {
+    margin-bottom: 0 !important;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .profile-info .div {
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 10px;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right {
+    flex-direction: column;
+    width: 100% !important;
+    gap: 0px;
+  }
+  .wrapper .main_wrapper .main .location .location-container .profile-card .actions .profile-right button {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .main_wrapper .main .location .cards .card-right .footer-items {
+    margin-top: 10px;
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: flex-start !important;
+  }
+  .wrapper .main_wrapper .main .location .cards .card-right .footer-items .ranking_link {
+    order: 2;
+  }
+}/*# sourceMappingURL=location.css.map */

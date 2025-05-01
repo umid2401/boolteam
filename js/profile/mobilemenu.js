@@ -5,6 +5,7 @@ const sidebarSection = document.querySelector('.sidebar__section');
 const sidebarSocial = document.querySelector(".sidebar__socials");
 const sidebarCopyright = document.querySelector(".sidebar__copyright");
 const sidebarLine = document.querySelectorAll(".sidebar__line");
+const bottombar = document.querySelector(".bottom-bar");
 let isExpanded = false;
 sidebarSocial.style.display = 'none';
 sidebarCopyright.style.display = 'none';
@@ -20,6 +21,11 @@ headerButton.addEventListener('click', () => {
         line.style.borderTop = isExpanded ? '0.5px solid white' : 'none';
         line.style.borderBottom = isExpanded ? '0.5px solid white' : 'none';
     });
+    if (window.innerWidth <= 768) {
+        bottombar.classList.toggle('show-bottom', isExpanded);
+    }
+
+    
 });
 sidebarLinks.forEach(link => {
     link.addEventListener('click', (event) => {
@@ -37,6 +43,9 @@ sidebarLinks.forEach(link => {
             line.style.borderTop =  'none';
             line.style.borderBottom = 'none';
         });
+        if (window.innerWidth <= 768) {
+            bottombar.classList.remove('show-bottom');
+        }
 
     });
 });
