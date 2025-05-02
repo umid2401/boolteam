@@ -1568,14 +1568,33 @@ body {
 
                 &__content {
                     background-color: #fff;
+                    max-width: 700px;
+                    width: 100%;
                     border-radius: 8px;
                     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-                    padding: 30px;
-                    width: 90%;
-                    max-width: 500px;
+                    padding: 20px 0;
                     position: relative;
                     transform: translateY(-20px);
                     transition: transform 0.3s ease-in-out;
+                    .modal__head{
+                        margin-bottom: 20px;
+                        padding: 10px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .modal-body{
+
+                        min-height: 400px;
+                        background-color: #F6F7F9;
+                        padding: 0 20px;
+                        p{
+                           padding-top: 20px;
+                           font-size: 17px;
+                           font-family: $font-medium;
+                           color: #00195B;
+                        }
+                    }
 
                     .show & {
                         transform: translateY(0);
@@ -1583,41 +1602,46 @@ body {
                 }
 
                 &__close {
-                    position: absolute;
-                    top: 10px;
-                    right: 15px;
-                    font-size: 24px;
+                    
+                    font-size: 18px;
                     font-weight: bold;
                     color: #aaa;
                     cursor: pointer;
                     border: none;
-                    background: none;
-                    padding: 0;
+                    background-color: #F6F7F9;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    text-align: center;
+                    transition: 0.3s ease-in-out;
 
                     &:hover {
-                        color: #333;
+                        color: #FFF;
+                        background: #0041F2;
+                        padding: 5px;
+                        
                     }
                 }
 
                 &__title {
                     font-size: 24px;
-                    margin-bottom: 20px;
-                    color: #333;
+                    color: #001346;
+                    font-family: $font-primary;
+                    font-weight: 500;
                 }
 
-                &__text {
-                    color: #555;
-                    margin-bottom: 25px;
-                }
+              
 
                 &__buttons {
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: flex-start;
+                    padding: 20px;
                     gap: 10px;
                 }
-
+                
                 &__button {
-                    padding: 12px 20px;
+                    font-family: $font-primary;
+                    padding: 10px 20px;
                     border-radius: 6px;
                     cursor: pointer;
                     font-size: 16px;
@@ -1625,7 +1649,7 @@ body {
                     border: 1px solid transparent;
 
                     &--apply {
-                        background-color: #007bff;
+                        background-color: #0041F2;
                         color: #fff;
                         border-color: #007bff;
 
@@ -1637,7 +1661,7 @@ body {
 
                     &--close {
                         background-color: #f8f9fa;
-                        color: #333;
+                        color: #001346;
                         border-color: #ced4da;
 
                         &:hover {
@@ -1743,7 +1767,16 @@ body {
                         flex-direction: column;
 
                         span {
-                            color: #FFF;
+                            color: #0a7b2c;
+                            margin-bottom: 10px;
+                        }
+                        .sidebar__socials-links{
+                            padding: 10px ;
+                            background-color: #1B222B;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 80%;
+
                         }
                     }
 
@@ -2419,9 +2452,10 @@ body {
                                                     background-color: #007bff;
                                                     /* Синий фон при выборе */
                                                     border-color: #007bff;
-                                                    background-image: url("../../assets/img/icon-check.png");
-                                                    background-position: top center;
-                                                    background-size: contain;
+                                                    background-image: url("../../assets/img/icon-check.svg");
+                                                    background-position: center;
+                                                    background-size: 60%;
+                                                    background-repeat: no-repeat;
                                                     cursor: pointer;
 
                                                     &::before {
@@ -2517,8 +2551,8 @@ body {
 
                                 input[type="checkbox"] {
                                     appearance: none;
-                                    width: 22px;
-                                    height: 20px;
+                                    width: 20px;
+                                    height: 18px;
                                     border-radius: 5px;
                                     background: rgba(137, 143, 159, 0.15);
                                     outline: none;
@@ -2535,15 +2569,17 @@ body {
                                     &:checked {
                                         background-color: #007bff;
                                         border-color: #007bff;
-                                        background-image: url("../../assets/img/icon-check.png");
-                                        background-position: top center;
-                                        background-size: contain;
+                                        background-image: url("../../assets/img/icon-check.svg");
+                                        background-position: center;
+                                        background-size: 60%;
+                                        background-repeat: no-repeat;
+
                                         cursor: pointer;
 
                                         &::before {
                                             content: '';
 
-                                            mask-size: 70%;
+                                            mask-size: 00%;
                                             background-color: white;
                                         }
                                     }
@@ -2562,6 +2598,7 @@ body {
 
                         .filter_dropdown {
                             span {
+                                cursor: pointer;
                                 color: #42454B;
                                 font-family: $font-primary;
                                 font-size: 16px;
