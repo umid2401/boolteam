@@ -6000,7 +6000,7 @@ body {
   border-color: #007bff;
   background-image: url("../../assets/img/icon-check.png");
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
   cursor: pointer;
 }
 .wrapper .main_wrapper .main__section .main .form_section form .form_first .form-row .input-data .checkbox-list .label-list input[type=checkbox]:checked::before {
@@ -6080,7 +6080,7 @@ body {
 }
 .wrapper .main_wrapper .main__section .main .form_section .form_second .filter_label label input[type=checkbox] {
   appearance: none;
-  width: 20px;
+  width: 22px;
   height: 20px;
   border-radius: 5px;
   background: rgba(137, 143, 159, 0.15);
@@ -6099,12 +6099,12 @@ body {
   border-color: #007bff;
   background-image: url("../../assets/img/icon-check.png");
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
   cursor: pointer;
 }
 .wrapper .main_wrapper .main__section .main .form_section .form_second .filter_label label input[type=checkbox]:checked::before {
   content: "";
-  mask-size: 100%;
+  mask-size: 70%;
   background-color: white;
 }
 .wrapper .main_wrapper .main__section .main .form_section .form_second .filter_label label span {

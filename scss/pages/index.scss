@@ -2421,7 +2421,7 @@ body {
                                                     border-color: #007bff;
                                                     background-image: url("../../assets/img/icon-check.png");
                                                     background-position: top center;
-                                                    background-size: cover;
+                                                    background-size: contain;
                                                     cursor: pointer;
 
                                                     &::before {
@@ -2517,7 +2517,7 @@ body {
 
                                 input[type="checkbox"] {
                                     appearance: none;
-                                    width: 20px;
+                                    width: 22px;
                                     height: 20px;
                                     border-radius: 5px;
                                     background: rgba(137, 143, 159, 0.15);
@@ -2537,13 +2537,13 @@ body {
                                         border-color: #007bff;
                                         background-image: url("../../assets/img/icon-check.png");
                                         background-position: top center;
-                                        background-size: cover;
+                                        background-size: contain;
                                         cursor: pointer;
 
                                         &::before {
                                             content: '';
 
-                                            mask-size: 100%;
+                                            mask-size: 70%;
                                             background-color: white;
                                         }
                                     }
