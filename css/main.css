@@ -3984,6 +3984,11 @@ body {
   width: 100%;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding-bottom: 100px;
+  }
+}
 .wrapper .main_wrapper {
   height: auto;
   width: 100%;
@@ -7178,7 +7183,7 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  max-width: 500px;
+  max-width: 768px;
   width: 100%;
   background: linear-gradient(0deg, #00195B 0%, #00195B 100%), linear-gradient(219deg, rgba(235, 13, 111, 0) -2.18%, rgba(235, 13, 111, 0.6) 157.52%), #0041F2;
   z-index: 8000 !important;
