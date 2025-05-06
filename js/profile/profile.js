@@ -83,14 +83,16 @@ document.addEventListener('mouseup', () => {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const dropdown = document.querySelector(".dropdown");
+    const doropdownmenu = document.querySelector(".dropdown-menu")
     const toggleBtn = document.querySelector(".dropdown-toggle");
     toggleBtn.addEventListener("click", function (e) {
+        doropdownmenu.classList.toggle("active");
+        console.log("assalomu alaykum")
         e.stopPropagation();
-        dropdown.classList.toggle("active");
     });
     document.addEventListener("click", function (e) {
         if (!dropdown.contains(e.target)) {
-            dropdown.classList.remove("active");
+            doropdownmenu.classList.remove("active");
         }
     });
 });
