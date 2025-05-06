@@ -25,7 +25,7 @@ headerButton.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
         bottombar.classList.toggle('show-bottom', isExpanded);
     }
-    if (window.innerWidth >= 1300&& window.innerWidth<=2000) {
+    if (window.innerWidth >= 1366&& window.innerWidth<=2000) {
         main.forEach(m => {
             m.classList.toggle('expand', isExpanded);
         });
