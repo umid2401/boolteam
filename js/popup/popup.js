@@ -3,9 +3,11 @@ const authPopup = document.getElementById('authPopup');
 const regPopup = document.getElementById('regPopup');
 const closePopups = document.querySelectorAll('.close-popup');
 const openRegFromAuth = document.getElementById('openRegFromAuth');
-
+const popupContent = document.querySelectorAll(".popup-content")
 openAuth.addEventListener('click', () => {
     authPopup.classList.add('active');
+   
+
 });
 
 openRegFromAuth.addEventListener('click', (e) => {

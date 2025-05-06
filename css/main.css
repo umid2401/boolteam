@@ -6609,6 +6609,9 @@ body {
   gap: 7px;
   align-items: center;
 }
+.wrapper .main_wrapper .main__section .main .hotels .container .hotels-container {
+  display: flex;
+}
 .wrapper .main_wrapper .main__section .main .hotels .container .hotels-container .hotels-list {
   display: flex;
   align-items: center;
@@ -6616,6 +6619,10 @@ body {
   justify-content: space-between;
   align-items: stretch;
   gap: 20px;
+  display: none;
+}
+.wrapper .main_wrapper .main__section .main .hotels .container .hotels-container .hotels-list.active {
+  display: flex;
 }
 .wrapper .main_wrapper .main__section .main .hotels .container .hotels-container .hotels-list .hotel-card {
   width: calc(50% - 10px);
@@ -7089,6 +7096,10 @@ body {
 }
 .wrapper .main_wrapper .main__section .main .ranking_section .container .forum .public-message {
   flex-direction: column;
+  display: none;
+}
+.wrapper .main_wrapper .main__section .main .ranking_section .container .forum .public-message.active {
+  display: flex;
 }
 .wrapper .main_wrapper .main__section .main .ranking_section .container .forum .public-message .message {
   padding: 20px 20px;

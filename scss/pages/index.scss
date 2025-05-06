@@ -3113,13 +3113,17 @@ body {
                         }
 
                         .hotels-container {
+                            display: flex;
                             .hotels-list {
                                 @include flex_one();
                                 flex-wrap: wrap;
                                 justify-content: space-between;
                                 align-items: stretch;
                                 gap: 20px;
-
+                                display: none;
+                                &.active{
+                                    display: flex;
+                                }
                                 .hotel-card {
                                     width: calc(50% - 10px);
                                     background-color: #F0F0F2;
@@ -3669,7 +3673,12 @@ body {
 
                             .public-message {
                                 flex-direction: column;
+                                display: none;
+                                &.active{
+                                    display: flex;
 
+                                }
+                                
                                 .message {
                                     padding: 20px 20px;
 

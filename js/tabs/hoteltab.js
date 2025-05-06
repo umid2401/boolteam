@@ -21,8 +21,12 @@ function handleTabClick(tabs, lists) {
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            lists.forEach(list => list.style.display = 'none');
-            document.getElementById(tab.dataset.tab).style.display = 'flex';
+            lists.forEach(list => {
+                list.classList.remove('active');
+            });
+
+            const activeList = document.getElementById(tab.dataset.tab);
+            activeList.classList.add('active');
         });
     });
 }
